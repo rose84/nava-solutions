@@ -374,11 +374,11 @@
   })();
 
   // App Code, don’t bother with the subset font here.
-  var fontA = new FontFaceObserver('');
-  var fontB = new FontFaceObserver('', {
+  var fontA = new FontFaceObserver('Lato');
+  var fontB = new FontFaceObserver('Lato', {
     weight: 600,
   });
-  var fontC = new FontFaceObserver('', {
+  var fontC = new FontFaceObserver('Lato', {
     style: 'italic',
   });
 

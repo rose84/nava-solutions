@@ -1,50 +1,50 @@
 @font-face {
   font-display: swap;
-  font-family: '-optimized';
+  font-family: 'Lato-optimized';
   font-weight: 400;
   font-style: normal;
-  src: local(-optimized),
-       local(-optimized),
-       url("fonts/-optimized.woff2") format("woff2"),
-       url("fonts/-optimized.woff") format("woff");
+  src: local(lato-optimized),
+       local(lato-optimized),
+       url("fonts/lato-optimized.woff2") format("woff2"),
+       url("fonts/lato-optimized.woff") format("woff");
 }
 @font-face {
   font-display: swap;
-  font-family: '';
+  font-family: 'Lato';
   font-weight: 400;
   font-style: normal;
-  src: local(),
-       local(),
-       url("fonts/.woff2") format("woff2"),
-       url("fonts/.woff") format("woff");
+  src: local(lato),
+       local(lato),
+       url("fonts/lato.woff2") format("woff2"),
+       url("fonts/lato.woff") format("woff");
 }
 @font-face {
   font-display: swap;
-  font-family: '';
+  font-family: 'Lato';
   font-weight: 400;
   font-style: italic;
-  src: local(),
-       local(),
-       url("fonts/.woff2") format("woff2"),
-       url("fonts/.woff") format("woff");
+  src: local(lato-italic),
+       local(lato-italic),
+       url("fonts/lato-italic.woff2") format("woff2"),
+       url("fonts/lato-italic.woff") format("woff");
 }
 @font-face {
   font-display: swap;
-  font-family: '';
+  font-family: 'Lato';
   font-weight: 600;
   font-style: bold;
-  src: local(),
-       local(),
-       url("fonts/.woff2") format("woff2"),
-       url("fonts/.woff") format("woff");
+  src: local(lato-bold),
+       local(lato-bold),
+       url("fonts/lato-bold.woff2") format("woff2"),
+       url("fonts/lato-bold.woff") format("woff");
 }
 
 body {
   font-family: sans-serif;
 }
 .fonts-loaded-1 body {
-  font-family: '-optimized';
+  font-family: 'Lato-optimized';
 }
 .fonts-loaded-2 body {
-  font-family: '';
+  font-family: 'Lato';
 }
