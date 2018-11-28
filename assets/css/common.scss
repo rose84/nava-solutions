@@ -74,13 +74,12 @@
   font: 700 16px 'Lato';
   height: 30px;
   text-align: center;
-  text-transform: uppercase;
   &.button-alt {
     background-color: $bg;
     color: $text !important;
   }
   &.button-sm {
-    width: 180px;
+    width: 160px;
   }
   &.button-lg {
     width: 240px;

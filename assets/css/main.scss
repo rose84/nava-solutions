@@ -21,7 +21,7 @@ footer#footer {
   @extend %items-center;
   background-color: $text;
   color: $bg;
-  padding: 30px;
+  padding: 20px;
   li {
     list-style: none;
   }
@@ -57,7 +57,7 @@ footer#footer {
       }
       @include media-query-max($phone) {
         align-items: center !important;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
       }
     }
   }
@@ -68,7 +68,7 @@ footer#footer {
 
     margin-bottom: 15px;
     @include media-query-max($phone) {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
   }
   p.copy {

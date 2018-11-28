@@ -3,3 +3,175 @@
 @import 'common';
 @import 'reset';
 @import 'fonts';
+
+// Header
+header#header {
+  @extend %content-space-between;
+  @extend %items-flex-start;
+  @extend %relative;
+  background-color: $bg;
+  padding: 20px;
+  @supports (display:grid) {
+    align-items: center;
+    display: grid !important;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2,auto);
+    padding-bottom: 0;
+  }
+  a.home {
+    background-color: $main;
+    height: 30px;
+    width: 130px;
+    @supports (display:grid) {
+      grid-column: 1;
+      grid-row: 1;
+      margin-bottom: 20px;
+    }
+  }
+  nav.navigation {
+    @extend %content-center;
+    @extend %items-center;
+    a.nav-item {
+      @extend %no-decoration;
+      margin: 0 10px;
+    }
+    div.drop-container {
+      @extend %content-center;
+      @extend %flex;
+      @extend %flex-column;
+      @extend %items-center;
+      ul#sub-nav {
+        @extend %absolute;
+        background-color: rgba($bg,0.5);
+        border: 2px solid $bg;
+        margin: 0;
+        max-height: 82px;
+        overflow: hidden;
+        padding: 0;
+        top: 70px;
+        width: 160px;
+        &.collapsed {
+          border: none;
+          max-height: 0;
+        }
+        li.sub-item {
+          @extend %content-center;
+          @extend %flex;
+          @extend %full-width;
+          @extend %items-center;
+          list-style: none;
+          margin: 0;
+          &:first-child {
+            border-bottom: 2px solid $bg;
+          }
+          &:hover {
+            background-color: $bg;
+            a {
+              color: $main;
+            }
+          }
+          a {
+            @extend %no-decoration;
+            padding: 10px 0;
+            text-align: center;
+          }
+        }
+      }
+    }
+    @include media-query-max($tablet) {
+      display: none;
+    }
+  }
+  // Mobile
+  input#toggle {
+    @extend %none;
+    @include media-query-max($tablet) {
+      &:checked + .hamburger .top {
+        margin-top: 11px;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+      }
+      &:checked + .hamburger .meat {
+        margin-top: -6px;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+      &:checked + .hamburger .bottom {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+      }
+      &:checked ~ .menu {
+        height: 220px;
+        margin-top: 40px;
+        @supports (display:grid) {
+          border-top: 1.5px solid rgba($text,0.5);
+          height: 250px;
+          margin-top: 0;
+          padding: 5px 0;
+        }
+      }
+    }
+  }
+  label.hamburger {
+    @extend %absolute;
+    @extend %content-center;
+    @extend %flex;
+    @extend %flex-column;
+    @extend %full-width;
+    @extend %items-end;
+    background-color: $bg;
+    height: auto;
+    max-width: 240px;
+    min-height: 27px;
+    right: 20px;
+    top: 20px;
+    z-index: 120;
+    @supports (display:grid) {
+      grid-column: 2;
+      grid-row: 1;
+      margin-bottom: 20px;
+      position: unset;
+    }
+    div {
+      background-color: $text;
+      border-radius: 5px;
+      height: 3px;
+      margin: 3px 0;
+      position: relative;
+      transition: all 0.2s ease-in-out;
+      width: 30px;
+    }
+    @include media-query-min($tablet) {
+      display: none;
+    }
+  }
+  nav.menu {
+    @extend %content-center;
+    @extend %flex;
+    @extend %flex-column;
+    @extend %full-width;
+    @extend %items-end;
+    clear: both;
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    @supports (display:grid) {
+      align-items: center;
+      grid-column: 1/3;
+      grid-row: 2;
+      margin-left: -20px;
+      margin-right: -20px;
+      width: 100vw;
+    }
+    @include media-query-min($tablet) {
+      display: none;
+    }
+    a.menu-item {
+      @extend %no-decoration;
+      margin: 10px 0;
+    }
+    a#button {
+      margin: 10px 0;
+    }
+  }
+}

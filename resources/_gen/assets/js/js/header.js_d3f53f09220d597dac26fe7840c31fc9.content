@@ -1,0 +1,3 @@
+var subNav=document.getElementById('sub-nav');var navToggle=document.getElementById('drop');function show(){subNav.classList.remove('collapsed');}
+function hide(){subNav.classList.add('collapsed');}
+navToggle.addEventListener('mouseover',show);subNav.addEventListener('mouseleave',hide);

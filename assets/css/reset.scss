@@ -1,9 +1,17 @@
 @import 'variables';
+@import 'extends';
+@import 'mixins';
 // Reset
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+}
+a {
+  color: $text;
+  &:hover {
+    color: $main;
+  }
 }
 article,
 footer,
@@ -19,6 +27,10 @@ article,
 main {
   max-width: 700px;
   width: 100%;
+}
+body {
+  background-color: $bg;
+  color: $text;
 }
 body,
 figure,
@@ -40,9 +52,6 @@ footer,
 header,
 nav {
   @extend %flex;
-}
-header {
-  text-transform: uppercase;
 }
 header,
 h1, h2, h3, h4 {

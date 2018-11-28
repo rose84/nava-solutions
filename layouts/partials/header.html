@@ -2,10 +2,32 @@
   <a href="{{ .Site.BaseURL }}" class="home"></a>
   <nav class="navigation">
     <a href="{{ .Site.BaseURL }}" class="nav-item">Home</a>
-    <a href="{{ .Site.BaseURL }}products" class="nav-item">Products</a>
+    <div class="drop-container">
+      <a id="drop" href="{{ .Site.BaseURL }}products" class="nav-item">Products</a>
+      <ul id="sub-nav" class="collapsed">
+        <li class="sub-item"><a href="{{ .Site.BaseURL }}products/cloud-migration">Nava Certus</a></li>
+        <li class="sub-item"><a href="{{ .Site.BaseURL }}products/cloud-security">Nava Siem Agent</a></li>
+      </ul>
+    </div>
     <a href="{{ .Site.BaseURL }}cloud-security" class="nav-item">Cloud Security</a>
     <a href="{{ .Site.BaseURL }}cloud-migration" class="nav-item">Cloud Migration</a>
     <a href="{{ .Site.BaseURL }}about-us" class="nav-item">About Us</a>
+    <a href="{{ .Site.BaseURL }}request-a-quote" id="button" class="button-sm quote">Request a Quote</a>
+  </nav>
+
+  <input id="toggle" type="checkbox" />
+  <label class="hamburger" for="toggle">
+    <div class="top"></div>
+    <div class="meat"></div>
+    <div class="bottom"></div>
+  </label>
+
+  <nav class="menu">
+    <a href="{{ .Site.BaseURL }}" class="menu-item">Home</a>
+    <a id="drop" href="{{ .Site.BaseURL }}products" class="menu-item">Products</a>
+    <a href="{{ .Site.BaseURL }}cloud-security" class="menu-item">Cloud Security</a>
+    <a href="{{ .Site.BaseURL }}cloud-migration" class="menu-item">Cloud Migration</a>
+    <a href="{{ .Site.BaseURL }}about-us" class="menu-item">About Us</a>
     <a href="{{ .Site.BaseURL }}request-a-quote" id="button" class="button-sm quote">Request a Quote</a>
   </nav>
 </header>

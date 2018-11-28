@@ -57,7 +57,9 @@
   {{ block "main" . }}
   {{ end }}
 
-  {{ $js := resources.Get "js/lazy-loading.js" | minify }}
+  {{ $lazy := resources.Get "js/lazy-loading.js" | minify }}
+  {{ $header := resources.Get "js/header.js" | minify }}
+  {{ $js := slice $lazy $header | resources.Concat "js/bundle.js" }}
   <script src="{{ $js.Permalink }}"></script>
 </body>
 </html>
