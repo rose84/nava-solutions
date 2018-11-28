@@ -1,11 +1,7 @@
 const autoprefixer    = require('autoprefixer'),
-      cache           = require('gulp-cache'),
       concat          = require('gulp-concat-util'),
       cssnano         = require('cssnano'),
-      gm              = require('gulp-gm'),
       gulp            = require('gulp'),
-      imagemin        = require('gulp-imagemin'),
-      imageminMozjpeg = require('imagemin-mozjpeg'),
       plumber         = require('gulp-plumber'),
       postcss         = require('gulp-postcss'),
       rename          = require('gulp-rename'),
@@ -34,43 +30,19 @@ gulp.task('critical', () => {
   );
 });
 
-// Image Conversion
-gulp.task('convert', () => gulp.src('assets/img/*.png')
-  .pipe(plumber())
-  .pipe(gm(gmfile => gmfile.interlace('Line')))
-  .pipe(gulp.dest('assets/img')));
-
-// Image Optimization
-gulp.task('optimize', () => gulp.src('assets/img/*.jpg')
-  .pipe(plumber())
-  .pipe(
-    cache(
-      imagemin({
-        use: [
-          imageminMozjpeg({
-            quality: 100,
-            progressive: true
-          })
-        ]
-      })
-    )
-  )
-  .pipe(gulp.dest('assets/img')));
-
 // Watch asset folder for changes
-gulp.task('watch', ['critical', 'convert', 'optimize'], () => {
-  gulp.watch('assets/css/fonts.scss', ['critical']);
-  gulp.watch('assets/css/variables.scss', ['critical']);
-  gulp.watch('assets/css/extends.scss', ['critical']);
-  gulp.watch('assets/css/reset.scss', ['critical']);
-  gulp.watch('assets/css/layout.scss', ['critical']);
+gulp.task('watch', ['critical'], () => {
+  gulp.watch('assets/css/common.scss', ['critical']);
   gulp.watch('assets/css/critical.scss', ['critical']);
-  gulp.watch('assets/img/*', ['convert']);
-  gulp.watch('assets/img/*', ['optimize']);
+  gulp.watch('assets/css/extends.scss', ['critical']);
+  gulp.watch('assets/css/fonts.scss', ['critical']);
+  gulp.watch('assets/css/mixins.scss', ['critical']);
+  gulp.watch('assets/css/reset.scss', ['critical']);
+  gulp.watch('assets/css/variables.scss', ['critical']);
 });
 
 // Run Watch as default
 gulp.task('default', ['watch']);
 
 // Build
-gulp.task('build', ['critical', 'convert', 'optimize']);
+gulp.task('build', ['critical']);
