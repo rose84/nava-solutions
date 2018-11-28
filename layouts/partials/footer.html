@@ -1,4 +1,21 @@
 <footer id="footer">
-  <!-- Copyright -->
-  <p>&copy{{ .Site.Copyright }}</p>
+  <section class="info">
+    <ul class="contact">
+      <li>Nava Solutions</li>
+      <li>1.855.554.2777</li>
+      <li><a href="mailto:sales@navasolutions.com">sales@navasolutions.com</a></li>
+      <li>
+        {{ partial "social.html" . }}
+      </li>
+    </ul>
+    <ul class="nav">
+      <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+      <li><a href="{{ .Site.BaseURL }}products">Products</a></li>
+      <li><a href="{{ .Site.BaseURL }}cloud-security">Cloud Security</a></li>
+      <li><a href="{{ .Site.BaseURL }}cloud-migration">Cloud Migration</a></li>
+      <li><a href="{{ .Site.BaseURL }}about-us">About Us</a></li>
+    </ul>
+  </section>
+  <a href="{{ .Site.BaseURL }}" class="home"></a>
+  <p>Copyright {{ time.Now.Format "2006" }}{{ .Site.Copyright }}</p>
 </footer>

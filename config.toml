@@ -1,9 +1,8 @@
 baseURL = "/"
-copyright = ""
-enableEmoji = "true"
+copyright = " Linkgard International, Inc. | All Rights Reserved"
 enableRobotsTXT = "true"
 languageCode = "en-us"
-title = ""
+title = "Nava Solutions"
 
 FootnoteReturnLinkContents = "↩"
 SectionPagesMenu = "main"
@@ -11,26 +10,24 @@ SectionPagesMenu = "main"
 [permalinks]
   blog = "/:title/"
 
-[author]
-  name = ""
-  email = ""
-
 [blackfriday]
   hrefTargetBlank = true
   plainIDAnchors = true
 
 [params]
   OpenLinksInNewWindow = true
-  social = ""
+
+[params.soclial]
+  facebook = "NavaSolns"
+  twitter = "nava_solutions"
+  linkedin = "nava-solutions"
 
 [params.google]
   analytics = ""
-  tagManager = ""
-  adsense = ""
 
 [params.meta]
-  description = ""
-  keywords = ""
+  description = "As an independent business unit of LinkGard, Nava Solutions is committed to develop software applications which accelerate the adoption of cloud solutions in a secure manner. The Nava Solutions software team produces solid, high-level and professional products which are easy to use at the same time."
+  keywords = "nava,nava solutions,cloud,security,linkgard,nava siem,navacertus"
 
 [outputs]
   home = ["html", "rss"]
