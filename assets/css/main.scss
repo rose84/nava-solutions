@@ -2,3 +2,12 @@
 @import 'variables';
 @import 'extends';
 @import 'mixins';
+
+body {
+  footer#footer {
+    @extend %content-center;
+    @extend %flex-column;
+    @extend %items-center;
+    padding: 30px 30px 15px;
+  }
+}

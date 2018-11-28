@@ -1,8 +1,8 @@
 {{ define "main" }}
   {{ partial "header.html" . }}
   <main class="list">
-    {{ listFeed := .Paginate (where .Data.Pages "Type" "home") 10 }}
-    {{ range listFeed.Pages }}
+    {{ $listFeed := .Paginate (where .Data.Pages "Type" "home") 10 }}
+    {{ range $listFeed.Pages }}
       {{ .Render "li"}}
     {{ end }}
   </main>

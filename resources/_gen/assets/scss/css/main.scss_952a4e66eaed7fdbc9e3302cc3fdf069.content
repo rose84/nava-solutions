@@ -1,0 +1,1 @@
+body footer#footer{justify-content:center}body footer#footer{flex-direction:column}body footer#footer{align-items:center}body footer#footer{padding:30px 30px 15px}

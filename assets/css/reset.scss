@@ -21,7 +21,6 @@ article p {
 }
 article,
 main {
-  @extend %margin-center;
   max-width: 700px;
   width: 100%;
 }
