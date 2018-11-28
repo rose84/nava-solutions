@@ -3,11 +3,75 @@
 @import 'extends';
 @import 'mixins';
 
-body {
-  footer#footer {
-    @extend %content-center;
-    @extend %flex-column;
-    @extend %items-center;
-    padding: 30px 30px 15px;
+// Social Nav
+nav.social {
+  @extend %content-space-between;
+  @extend %items-center;
+  width: 90px;
+  a, a svg {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+// Footer
+footer#footer {
+  @extend %content-center;
+  @extend %flex-column;
+  @extend %items-center;
+  background-color: $text;
+  color: $bg;
+  padding: 30px;
+  li {
+    list-style: none;
+  }
+  a {
+    @extend %no-decoration;
+    color: $bg;
+  }
+  section.info {
+    @extend %content-space-between;
+    @extend %flex;
+    @extend %full-width;
+    @extend %items-flex-start;
+    margin-bottom: 15px;
+    @include media-query-max($phone) {
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+    ul {
+      @extend %content-center;
+      @extend %flex;
+      @extend %flex-column;
+      padding: 0;
+      margin: 0;
+      &.contact {
+        @extend %items-start;
+      }
+      &.nav {
+        @extend %items-end;
+      }
+      li {
+        margin: 5px 0;
+      }
+      @include media-query-max($phone) {
+        align-items: center !important;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  a.home {
+    background-color: $bg;
+    height: 30px;
+    width: 130px;
+
+    margin-bottom: 15px;
+    @include media-query-max($phone) {
+      margin-bottom: 30px;
+    }
+  }
+  p.copy {
+    text-align: center;
   }
 }

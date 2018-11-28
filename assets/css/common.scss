@@ -66,11 +66,13 @@
   @extend %content-center;
   @extend %flex;
   @extend %items-center;
+  @extend %no-decoration;
   background-color: $main;
+  border-radius: 5px;
   color: $bg !important;
   cursor: pointer;
   font: 700 16px 'Open Sans';
-  height: 40px;
+  height: 30px;
   text-align: center;
   text-transform: uppercase;
   &.button-alt {
@@ -78,16 +80,14 @@
     color: $text !important;
   }
   &.button-sm {
-    min-width: 140px;
-    width: 140px;
+    width: 180px;
   }
   &.button-lg {
-    min-width: 240px;
     width: 240px;
   }
   &:hover {
     box-shadow: $box;
     text-decoration: none;
-    transition: box-shadow 0.3s ease;
+    transition: all 0.3s ease-in-out;
   }
 }
