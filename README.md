@@ -1,4 +1,5 @@
 # Nava Solutions
+Nava Solutions is committed to develop software applications which accelerate the adoption of cloud solutions in a secure manner. The Nava Solutions software team produces solid, high-level and professional products which are easy to use at the same time.
 
 ## Usage
 ### Prerequisites
