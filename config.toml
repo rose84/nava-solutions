@@ -1,5 +1,5 @@
 baseURL = "/"
-copyright = " Linkgard International, Inc. | All Rights Reserved"
+copyright = "Nava Solutions | All Rights Reserved"
 enableRobotsTXT = "true"
 languageCode = "en-us"
 title = "Nava Solutions"
@@ -26,7 +26,7 @@ SectionPagesMenu = "main"
   analytics = ""
 
 [params.meta]
-  description = "As an independent business unit of LinkGard, Nava Solutions is committed to develop software applications which accelerate the adoption of cloud solutions in a secure manner. The Nava Solutions software team produces solid, high-level and professional products which are easy to use at the same time."
+  description = "Nava Solutions is committed to develop software applications which accelerate the adoption of cloud solutions in a secure manner. The Nava Solutions software team produces solid, high-level and professional products which are easy to use at the same time."
   keywords = "nava,nava solutions,cloud,security,linkgard,nava siem,navacertus"
 
 [outputs]
