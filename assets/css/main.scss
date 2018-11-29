@@ -51,6 +51,20 @@ footer#footer {
       }
       &.nav {
         @extend %items-end;
+        li {
+          @extend %content-flex-end;
+          @extend %flex;
+          @extend %full-width;
+          a {
+            margin-left: auto;
+            @include media-query-max($phone) {
+              margin: 0;
+            }
+          }
+          @include media-query-max($phone) {
+            justify-content: center;
+          }
+        }
       }
       li {
         margin: 5px 0;

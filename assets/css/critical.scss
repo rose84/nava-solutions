@@ -44,10 +44,12 @@ header#header {
         @extend %absolute;
         background-color: rgba($bg,0.5);
         border: 2px solid $bg;
+        left: auto;
         margin: 0;
         max-height: 82px;
         overflow: hidden;
         padding: 0;
+        right: 490px;
         top: 70px;
         width: 160px;
         &.collapsed {
@@ -127,10 +129,13 @@ header#header {
     top: 20px;
     z-index: 120;
     @supports (display:grid) {
+      @extend %self-end;
       grid-column: 2;
       grid-row: 1;
       margin-bottom: 20px;
+      max-width: 30px;
       position: unset;
+      width: 30px;
     }
     div {
       background-color: $text;
