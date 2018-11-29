@@ -1,15 +1,23 @@
 {
-  "name": "",
+  "name": "nava-solutions",
   "version": "1.0.0",
-  "description": "",
+  "description": "Nava Solutions is committed to develop software applications which accelerate the adoption of cloud solutions in a secure manner. The Nava Solutions software team produces solid, high-level and professional products which are easy to use at the same time.",
   "main": "gulpfile.js",
   "scripts": {
     "build": "gulp build --max_old_space_size=8000; hugo",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://fourjuaneight@github.com/four-one-eight/nava-solutions.git"
+  },
   "keywords": [],
-  "author": "",
+  "author": "Juan Villela",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/four-one-eight/nava-solutions/issues"
+  },
+  "homepage": "https://github.com/four-one-eight/nava-solutions#readme",
   "devDependencies": {
     "autoprefixer": "^9.0.1",
     "cssnano": "^4.0.4",
