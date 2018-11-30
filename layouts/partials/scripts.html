@@ -1,4 +1,7 @@
-<!-- Lazy Loader -->
+{{ $lazy := resources.Get "js/lazy-loading.js" | minify }}
+{{ $header := resources.Get "js/header.js" | minify }}
+{{ $js := slice $lazy $header | resources.Concat "js/bundle.js" }}
+<script src="{{ $js.Permalink }}"></script>
 <script>
   var myLazyLoad = new LazyLoad({
     elements_selector: ".lazy",
@@ -6,14 +9,4 @@
     class_loading: "loading",
     class_error: "error"
   });
-
-  var mutationObserver = new MutationObserver(function (mutations) {
-    mutations.forEach(function (mutation) {
-      myLazyLoad.update();
-    });
-  });
-
-  var b = document.getElementsByClassName("list")[0];
-  var config = { childList: true, subtree: true };
-  mutationObserver.observe(b, config);
 </script>
