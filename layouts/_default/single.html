@@ -3,7 +3,9 @@
   <main id="main">
     <section class="hero">
       <h1>{{ .Title }}</h1>
-      <p>{{ .Params.heroText }}</p>
+      {{ if .Params.heroText }}
+        <p>{{ .Params.heroText }}</p>
+      {{ end }}
       {{ if .Params.heroButton }}
         <a href="{{ .Site.BaseURL }}" id="button" class="button-lg button-alt">{{ .Params.heroButton }}</a>
       {{ end }}
