@@ -18,6 +18,16 @@ nav.social {
 section.content {
   @extend %full-width;
   max-width: 860px;
+  min-height: calc(100vh - 768px);
+  div.content-block {
+    padding: 30px 0;
+    @include media-query-max($tablet) {
+      padding: 20px 0;
+    }
+    @include media-query-max($phone) {
+      padding: 10px 0;
+    }
+  }
   h2 {
     margin: 0 0 15px;
     text-align: center;
@@ -100,6 +110,7 @@ footer#footer {
     }
   }
   p.copy {
+    margin-bottom: 30px;
     text-align: center;
   }
 }

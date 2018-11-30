@@ -5,12 +5,13 @@ draft = false
 showthedate = false
 +++
 
-## History
-Founded in 2004 by IT security experts, LinkGard helps companies develop leading software products, secure their data, take full advantage of cloud computing, and maximize their investments in IT. LinkGard’s team of software engineers, security experts, and consultants are veritable assets for customers’ evolving strategies to grow their businesses. LinkGard is always at the forefront of new technologies and helps customers integrate and use these technologies without compromising security.
-
-Nava Solutions was started as an independently run business unit in early 2013 to accelerate the delivery of quality products to the market.
-
-## Partnership
-Are you a customer looking for Nava Solutions partners in your area or servicing companies like you? Check out our partners.
-
-If you’re interested in becoming a Nava Solutions partner, click here.
+<div class="content-block">
+  <h2>History</h2>
+  <p>Founded in 2004 by IT security experts, LinkGard helps companies develop leading software products, secure their data, take full advantage of cloud computing, and maximize their investments in IT. LinkGard’s team of software engineers, security experts, and consultants are veritable assets for customers’ evolving strategies to grow their businesses. LinkGard is always at the forefront of new technologies and helps customers integrate and use these technologies without compromising security.</p>
+  <p>Nava Solutions was started as an independently run business unit in early 2013 to accelerate the delivery of quality products to the market.</p>
+</div>
+<div class="content-block">
+  <h2>Partnership</h2>
+  <p>Are you a customer looking for Nava Solutions partners in your area or servicing companies like you? Check out our partners.</p>
+  <p>If you’re interested in becoming a Nava Solutions partner, click here.</p>
+</div>

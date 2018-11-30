@@ -191,6 +191,7 @@ main#main {
     @extend %items-center;
     background: url('/img/hero-bg.jpg') bottom center no-repeat;
     background-size: cover;
+    min-height: 350px;
     padding: 60px 30px;
     @include media-query-max($tablet) {
       padding: 30px;
