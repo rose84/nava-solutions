@@ -1,7 +1,14 @@
 {{ define "main" }}
   {{ partial "header.html" . }}
-  <main class="list">
-    
+  <main id="main">
+    <section class="hero">
+      <h1>Simplify Your Journey To The Cloud With Nava Solutions</h1>
+      <p>Software tools to help cloud solution providers. We develop tools to enable worry-free migrations to the cloud and to keep your cloud infrastructure secure once you've migrated.</p>
+      <a href="{{ .Site.BaseURL }}products" id="button" class="button-lg button-alt">Learn More</a>
+    </section>
+    <section class="content">
+      
+    </section>
   </main>
   {{ partial "footer.html" . }}
 {{ end }}

@@ -12,7 +12,7 @@ header#header {
   background-color: $bg;
   padding: 20px;
   @supports (display:grid) {
-    align-items: center;
+    align-items: start;
     display: grid !important;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2,auto);
@@ -177,6 +177,46 @@ header#header {
     }
     a#button {
       margin: 10px 0;
+    }
+  }
+}
+
+// Hero
+main#main {
+  section.hero {
+    @extend %content-center;
+    @extend %flex;
+    @extend %flex-column;
+    @extend %full-width;
+    @extend %items-center;
+    background: url('/img/hero-bg.jpg') bottom center no-repeat;
+    background-size: cover;
+    padding: 60px 30px;
+    @include media-query-max($tablet) {
+      padding: 30px;
+    }
+    h1, p {
+      @extend %full-width;
+      color: $bg;
+      margin-bottom: 15px;
+      max-width: 800px;
+      text-align: center;
+    }
+    p {
+      font-size: 18px;
+      line-height: 22px;
+      @include media-query-max($tablet) {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+    a#button {
+      text-transform: uppercase;
+      @include media-query-max($tablet) {
+        font-size: 15px;
+        height: 30px;
+        width: 160px;
+      }
     }
   }
 }

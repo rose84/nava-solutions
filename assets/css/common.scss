@@ -72,17 +72,18 @@
   color: $bg !important;
   cursor: pointer;
   font: 700 16px 'Lato';
-  height: 30px;
   text-align: center;
   &.button-alt {
     background-color: $bg;
     color: $text !important;
   }
   &.button-sm {
+    height: 30px;
     width: 160px;
   }
   &.button-lg {
-    width: 240px;
+    height: 40px;
+    width: 200px;
   }
   &:hover {
     box-shadow: $box;
