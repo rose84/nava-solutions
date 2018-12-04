@@ -214,6 +214,28 @@ section.alt-content {
       }
     }
   }
+  div.diagram {
+    @extend %content-space-between;
+    @extend %flex;
+    @extend %flex-wrap;
+    @extend %full-width;
+    @extend %items-center;
+    @include media-query-max(860px) {
+      justify-content: center;
+    }
+    ul.info {
+      padding: 0;
+      width: 300px;
+      h4 {
+        margin: 15px 0 5px;
+        text-align: start;
+      }
+    }
+    img {
+      margin: 15px 0;
+      max-width: 500px;
+    }
+  }
 }
 // Footer
 footer#footer {
