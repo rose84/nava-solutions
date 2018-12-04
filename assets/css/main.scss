@@ -59,7 +59,7 @@ section.content {
     @include media-query-max($phone) {
       padding: 0;
     }
-    input, textarea {
+    input, textarea, select {
       @extend %full-width;
       @extend %relative;
       background-color: rgba($accent,0.1);
@@ -71,8 +71,12 @@ section.content {
       margin-bottom: 10px;
       padding: 0 15px;
     }
-    input {
+    input, select {
       height: 40px;
+    }
+    select option {
+      background-color: #fff;
+      border: none;
     }
     textarea {
       height: 172px;
@@ -84,7 +88,8 @@ section.content {
       @extend %flex;
       @extend %full-width;
       @extend %items-center;
-      input:nth-child(2) {
+      input:nth-child(2),
+      select:nth-child(2) {
         margin-right: 10px;
         @include media-query-max($phone) {
           margin-right: 0;
