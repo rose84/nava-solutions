@@ -91,3 +91,11 @@
     transition: all 0.3s ease-in-out;
   }
 }
+
+// Styling
+.muted {
+  color: lighten($text,10%)
+}
+.normal {
+  font-weight: normal;
+}
