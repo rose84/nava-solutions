@@ -10,7 +10,7 @@
         <a href="{{ .Site.BaseURL }}" id="button" class="button-lg button-alt">{{ .Params.heroButton }}</a>
       {{ end }}
     </section>
-    <section class="content">{{ .Content }}</section>
+    {{ .Content }}
   </main>
   {{ partial "footer.html" . }}
 {{ end }}
