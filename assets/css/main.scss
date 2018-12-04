@@ -49,6 +49,48 @@ section.content {
     @include media-query-max($phone) {
       padding: 10px 0;
     }
+    div.logo {
+      img {
+        height: 125px;
+        width: auto;
+      }
+      @include media-query-max(800px) {
+        margin-bottom: 30px;
+      }
+    }
+    div.info {
+      @extend %full-width;
+      max-width: 475px;
+      h2, h4 {
+        text-align: start;
+      }
+      ul li.sub-list {
+        list-style: circle;
+        margin-left: 15px;
+      }
+    }
+    a#button {
+      margin: 15px 0 0 auto;
+      @include media-query-max($phone) {
+        margin: 0 auto;
+      }
+    }
+    &.columns {
+      @extend %content-space-between;
+      @extend %flex;
+      @extend %full-width;
+      @extend %items-flex-start;
+      &:first-child {
+        padding-bottom: 45px;
+      }
+      &:last-child {
+        padding-top: 45px;
+      }
+      @include media-query-max(800px) {
+        align-items: center;
+        flex-direction: column;
+      }
+    }
   }
   form#form {
     @extend %content-center;
@@ -104,6 +146,14 @@ section.content {
       margin: 0 0 0 auto;
       padding: 0;
     }
+  }
+  div.divider {
+    @extend %absolute;
+    @extend %full-width;
+    background-color: rgba($accent,0.5);
+    height: 1.5px;
+    left: 0;
+    right: 0;
   }
 }
 section.alt-content {

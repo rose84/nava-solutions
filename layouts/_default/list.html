@@ -1,13 +1,16 @@
 {{ define "main" }}
   {{ partial "header.html" . }}
-  <main class="list">
-    {{ $listFeed := .Paginate (where .Data.Pages "Type" "home") 10 }}
-    {{ range $listFeed.Pages }}
-      {{ .Render "li"}}
-    {{ end }}
+  <main id="main">
+    <section class="hero">
+      <h1>{{ .Title }}</h1>
+      {{ if .Params.heroText }}
+        <p>{{ .Params.heroText }}</p>
+      {{ end }}
+      {{ if .Params.heroButton }}
+        <a href="{{ .Site.BaseURL }}" id="button" class="button-lg button-alt">{{ .Params.heroButton }}</a>
+      {{ end }}
+    </section>
+    <section class="content">{{ .Content }}</section>
   </main>
-  {{ if or .Paginator.HasPrev .Paginator.HasNext }}
-    {{ partial "paginator.html" . }}
-  {{ end }}
   {{ partial "footer.html" . }}
 {{ end }}
