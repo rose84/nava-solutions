@@ -16,6 +16,31 @@ nav.social {
 
 // Page Content
 // min-height: calc(100vh - 738px);
+div.column-layout {
+  @extend %content-space-around;
+  @extend %flex;
+  @extend %flex-wrap;
+  @extend %full-width;
+  @extend %items-center;
+  min-height: calc(100vh - 738px);
+  padding: 20px 0;
+  section.content-block {
+    div.inner {
+      div.logo {
+        margin-right: 20px;
+      }
+      div.info {
+        max-width: 475px;
+      }
+    }
+    &:first-child {
+      max-width: 860px;
+    }
+    &:last-child {
+      max-width: 685px;
+    }
+  }
+}
 section.content {
   h2, h3, h4 {
     margin: 0 0 15px;
