@@ -190,6 +190,37 @@ section.content-block {
         h4, p {
           text-align: center;
         }
+        ul {
+          text-align: center;
+        }
+        ul.info-list.alt-list {
+          @extend %content-space-around;
+          @extend %flex;
+          @extend %items-flex-start;
+          text-align: start;
+          div.list-column {
+            li {
+              text-align: start;
+              ul.sub-info-list {
+                text-align: start;
+                li {
+                  list-style-type: circle;
+                }
+              }
+            }
+          }
+        }
+        &.columns {
+          @extend %content-flex-start;
+          @extend %flex;
+          @extend %flex-column;
+          @extend %full-width;
+          @extend %items-center;
+          margin-bottom: auto;
+          div.sub-info {
+            margin-bottom: 50px;
+          }
+        }
       }
     }
     &.features {
@@ -208,8 +239,49 @@ section.content-block {
             margin-bottom: 20px;
             width: auto;
           }
+          ul.info-list.alt-list {
+            @extend %flex-column;
+            li {
+              text-align: start;
+            }
+          }
           p.heading {
             font-size: 20px;
+          }
+          &.alt-info {
+            @extend %items-flex-start;
+            @extend %full-width;
+            max-width: 400px;
+            h4.heading {
+              text-align: start;
+            }
+          }
+        }
+      }
+      div.info-columns {
+        @extend %content-space-between;
+        @extend %flex;
+        @extend %full-width;
+        @extend %items-center;
+        @include media-query-max(920px) {
+          flex-direction: column;
+          img {
+            margin-top: 40px;
+          }
+        }
+        img {
+          max-width: 550px;
+          &.graphic-mb {
+            display: none;
+          }
+          @include media-query-max(480px) {
+            margin-top: 20px;
+            &.graphic-desk {
+              display: none;
+            }
+            &.graphic-mb {
+              display: block;
+            }
           }
         }
       }
