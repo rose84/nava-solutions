@@ -296,6 +296,32 @@ section.content-block {
       }
     }
   }
+  &.cloud {
+    max-width: 1080px;
+    div.inner {
+      @extend %content-center;
+      @extend %flex;
+      @extend %flex-wrap;
+      @extend %items-flex-start;
+      > div {
+        margin: 20px auto;
+      }
+      h2.heading {
+        @extend %full-width;
+        margin: 20px auto;
+      }
+      div.info {
+        p {
+          text-align: center;
+        }
+      }
+    }
+    &.alt-content {
+      div.inner {
+        max-width: 1080px;
+      }
+    }
+  }
 }
 div.divider {
   @extend %full-width;
@@ -310,6 +336,7 @@ section.alt-content {
   @extend %full-width;
   @extend %items-center;
   background-color: rgba(#577ABA,0.15);
+  max-width: 100% !important;
   padding: 30px;
   @include media-query-max($tablet) {
     padding: 20px;

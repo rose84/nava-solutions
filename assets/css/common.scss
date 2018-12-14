@@ -93,6 +93,9 @@
 }
 
 // Styling
+.full {
+  max-width: 100% !important;
+}
 .muted {
   color: lighten($text,10%)
 }
