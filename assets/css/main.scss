@@ -446,6 +446,13 @@ section.partners {
         padding: 0;
         perspective: 1000px;
         width: 350px;
+        @include media-query-max(380px) {
+          height: 300px;
+          margin: 10px;
+          min-height: 300px;
+          min-width: 300px;
+          width: 300px;
+        }
         div.front,
         div.back {
           @extend %absolute;
@@ -479,6 +486,9 @@ section.partners {
           }
           img {
             width: 200px;
+            @include media-query-max(380px) {
+              width: 150px;
+            }
           }
         }
         div.back {
