@@ -189,7 +189,7 @@ main#main {
     @extend %flex-column;
     @extend %full-width;
     @extend %items-center;
-    background: url('/img/hero-bg.jpg') bottom center no-repeat;
+    background: url('/img/hero-home.jpg') bottom center no-repeat;
     background-size: cover;
     min-height: 350px;
     padding: 60px 30px;
@@ -225,6 +225,15 @@ main#main {
         height: 30px;
         width: 160px;
       }
+    }
+    &.hero-migration {
+      background-image: url('/img/hero-migration.jpg');
+    }
+    &.hero-products {
+      background-image: url('/img/hero-products.jpg');
+    }
+    &.hero-security {
+      background-image: url('/img/hero-security.jpg');
     }
   }
 }
