@@ -1,7 +1,7 @@
 {{ define "main" }}
   {{ partial "header.html" . }}
   <main id="main">
-    <section class="hero">
+    <section class="hero {{ .Params.heroBg }}">
       <h1>{{ .Title }}</h1>
       {{ if .Params.heroText }}
         <p>{{ .Params.heroText }}</p>
