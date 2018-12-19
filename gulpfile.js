@@ -9,7 +9,7 @@ const autoprefixer    = require('autoprefixer'),
 
 // Critical CSS
 gulp.task('critical', () => {
-  const plugins = [autoprefixer({browsers: ['last 2 version']}), cssnano()];
+  const plugins = [autoprefixer({browsers: ['> 5%']}), cssnano()];
   return (
     gulp.src('assets/css/critical.scss')
       .pipe(plumber())
@@ -31,18 +31,18 @@ gulp.task('critical', () => {
 });
 
 // Watch asset folder for changes
-gulp.task('watch', ['critical'], () => {
-  gulp.watch('assets/css/common.scss', ['critical']);
-  gulp.watch('assets/css/critical.scss', ['critical']);
-  gulp.watch('assets/css/extends.scss', ['critical']);
-  gulp.watch('assets/css/fonts.scss', ['critical']);
-  gulp.watch('assets/css/mixins.scss', ['critical']);
-  gulp.watch('assets/css/reset.scss', ['critical']);
-  gulp.watch('assets/css/variables.scss', ['critical']);
-});
+gulp.task('watch', gulp.series(['critical'], () => {
+  gulp.watch('assets/css/common.scss', gulp.parallel(['critical']));
+  gulp.watch('assets/css/critical.scss', gulp.parallel(['critical']));
+  gulp.watch('assets/css/extends.scss', gulp.parallel(['critical']));
+  gulp.watch('assets/css/fonts.scss', gulp.parallel(['critical']));
+  gulp.watch('assets/css/mixins.scss', gulp.parallel(['critical']));
+  gulp.watch('assets/css/reset.scss', gulp.parallel(['critical']));
+  gulp.watch('assets/css/variables.scss', gulp.parallel(['critical']));
+}));
 
 // Run Watch as default
-gulp.task('default', ['watch']);
+gulp.task('default', gulp.series(['watch']));
 
 // Build
-gulp.task('build', ['critical']);
+gulp.task('build', gulp.series(['critical']));
