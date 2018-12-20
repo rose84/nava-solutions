@@ -30,4 +30,4 @@ SectionPagesMenu = "main"
   keywords = "nava,nava solutions,cloud,security,linkgard,nava siem,navacertus"
 
 [outputs]
-  home = ["html", "rss"]
+  home = ["html"]
