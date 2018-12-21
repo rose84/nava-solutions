@@ -459,15 +459,16 @@ section.partners {
           @extend %content-center;
           @extend %flex;
           @extend %items-center;
-          text-align: center;
-          height: 100%;
-          width: 100%;
           backface-visibility: hidden;
+          border: 2px solid $alt-bg;
+          height: 100%;
+          text-align: center;
           transform-style: preserve-3d;
           transition: ease-in-out 600ms;
+          width: 100%;
         }
         div.front {
-          border: 2px solid $alt-bg;
+          background: $alt-bg;
           overflow: hidden;
           padding: 30px;
           &:before {
@@ -485,17 +486,19 @@ section.partners {
             transform: rotateY(180deg);
           }
           img {
-            width: 200px;
+            width: 250px;
             @include media-query-max(380px) {
               width: 150px;
             }
           }
         }
         div.back {
-          background: $alt-bg;
           color: $text;
           padding: 30px;
           transform: rotateY(-180deg);
+          p {
+            font-size: 25px;
+          }
         }
         &:hover {
           .front {
