@@ -43,7 +43,7 @@ header#header {
       @extend %flex;
       @extend %flex-column;
       @extend %items-center;
-      ul#sub-nav {
+      ul {
         @extend %absolute;
         background-color: rgba($bg,0.75);
         border: 2px solid $bg;
@@ -52,9 +52,14 @@ header#header {
         max-height: 82px;
         overflow: hidden;
         padding: 0;
-        right: 490px;
         top: 70px;
         width: 160px;
+        &#sub-nav-prod {
+          right: 490px;
+        }
+        &#sub-nav-au {
+          right: 140px;
+        }
         &.collapsed {
           border: none;
           max-height: 0;

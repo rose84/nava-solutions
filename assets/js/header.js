@@ -1,15 +1,28 @@
 // Set variables for key elements
-var subNav = document.getElementById('sub-nav');
-var navToggle = document.getElementById('drop');
+var prodNav = document.getElementById('sub-nav-prod');
+var prodToggle = document.getElementById('drop-prod');
+
+var auNav = document.getElementById('sub-nav-au');
+var auToggle = document.getElementById('drop-au');
 
 // Establish a function to toggle the class "collapse"
-function show() {
-  subNav.classList.remove('collapsed');
+function showProd() {
+  prodNav.classList.remove('collapsed');
 }
-function hide() {
-  subNav.classList.add('collapsed');
+function hideProd() {
+  prodNav.classList.add('collapsed');
+}
+
+function showAu() {
+  auNav.classList.remove('collapsed');
+}
+function hideAu() {
+  auNav.classList.add('collapsed');
 }
 
 // Add a click event to run the subNavToggle function
-navToggle.addEventListener('mouseover', show);
-subNav.addEventListener('mouseleave', hide);
+prodToggle.addEventListener('mouseover', showProd);
+prodNav.addEventListener('mouseleave', hideProd);
+
+auToggle.addEventListener('mouseover', showAu);
+auNav.addEventListener('mouseleave', hideAu);
