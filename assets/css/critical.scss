@@ -45,7 +45,7 @@ header#header {
       @extend %items-center;
       ul#sub-nav {
         @extend %absolute;
-        background-color: rgba($bg,0.5);
+        background-color: rgba($bg,0.75);
         border: 2px solid $bg;
         left: auto;
         margin: 0;
