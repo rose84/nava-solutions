@@ -58,11 +58,15 @@ header#header {
           right: 490px;
         }
         &#sub-nav-au {
+          max-height: 156px;
           right: 140px;
+          li.sub-item:last-child {
+            border-top: 2px solid $bg;
+          }
         }
         &.collapsed {
           border: none;
-          max-height: 0;
+          max-height: 0 !important;
         }
         li.sub-item {
           @extend %content-center;
