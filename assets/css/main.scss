@@ -175,7 +175,7 @@ section.content-block {
     }
   }
   &.product {
-    max-width: 1080px;
+    max-width: 100%;
     div.inner {
       @extend %content-center;
       @extend %flex;
@@ -195,7 +195,7 @@ section.content-block {
         margin: 20px auto;
       }
       div.info {
-        h4, p {
+        h4 {
           text-align: center;
         }
         ul {
@@ -235,7 +235,7 @@ section.content-block {
       max-width: 100%;
       div.inner {
         @extend %items-flex-start;
-        max-width: 1080px;
+        max-width: 100%;
         div.info {
           @extend %content-flex-start;
           @extend %flex;
