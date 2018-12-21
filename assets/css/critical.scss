@@ -34,6 +34,9 @@ header#header {
     a.nav-item {
       @extend %no-decoration;
       margin: 0 10px;
+      &.active {
+        color: $main;
+      }
     }
     div.drop-container {
       @extend %content-center;
@@ -174,6 +177,9 @@ header#header {
     a.menu-item {
       @extend %no-decoration;
       margin: 10px 0;
+      &.active {
+        color: $main;
+      }
     }
     a#button {
       margin: 10px 0;
