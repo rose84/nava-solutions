@@ -12,10 +12,14 @@
         <h4 class="normal"> Nava Solutions is committed to develop software applications which accelerate the adoption of cloud solutions in a secure manner</h4>
       </div>
       <div class="products">
-        {{ $navaCertus := resources.Get "img/nava-certus.jpg" }}
-        <img src="{{ $navaCertus.RelPermalink }}" alt="Nava Certus" class="prod-logo">
-        {{ $navaSiem := resources.Get "img/nava-siem.jpg" }}
-        <img src="{{ $navaSiem.RelPermalink }}" alt="Nava Siem Agent" class="prod-logo">
+        <a href="{{ .Site.BaseURL }}products/nava-certus">
+          {{ $navaCertus := resources.Get "img/nava-certus.jpg" }}
+          <img src="{{ $navaCertus.RelPermalink }}" alt="Nava Certus" class="prod-logo">
+        </a>
+        <a href="{{ .Site.BaseURL }}products/nava-siem">
+          {{ $navaSiem := resources.Get "img/nava-siem.jpg" }}
+          <img src="{{ $navaSiem.RelPermalink }}" alt="Nava Siem Agent" class="prod-logo">
+        </a>
       </div>
     </section>
     <section class="content alt-content">
@@ -24,7 +28,7 @@
           <div class="header">
             {{ $migration := resources.Get "img/cloud-migration.svg" | minify }}
             <div><img src="{{ $migration.RelPermalink }}" alt="Cloud Migration" class="icon"></div>
-            <p class="title">Cloud Migration</p>
+            <p class="title"><a href="{{ .Site.BaseURL }}cloud-migration">Cloud Migration</a></p>
           </div>
           <p>Nava Certus enables migrations to, from, and between cloud infrastructures. Whether you are an administrator/consultant migrating files for thousands of users or a single user wishing to migrate their own files, you can count on Nava Certus to do the job. Try Nava Certus for your next Google Drive, Amazon S3, or Dropbox migration project.</p>
         </li>
@@ -32,7 +36,7 @@
           <div class="header">
             {{ $security := resources.Get "img/cloud-security.svg" | minify }}
             <div><img src="{{ $security.RelPermalink }}" alt="Cloud Security" class="icon"></div>
-            <p class="title">Cloud Security</p>
+            <p class="title"><a href="{{ .Site.BaseURL }}cloud-security">Cloud Security</a></p>
           </div>
           <p>Secure your cloud infrastructure using Nava SIEM Agent, a revolutionary tool that retrieves audit logs from various data sources, including Google Apps Amazon S3. Ingest your cloud audit logs into your favorite SIEM solution and have a unified framework for log retention, analysis, compliance, and forensics.</p>
         </li>
@@ -40,7 +44,7 @@
           <div class="header">
             {{ $resellers := resources.Get "img/resellers.svg" | minify }}
             <div><img src="{{ $resellers.RelPermalink }}" alt="Resellers" class="icon"></div>
-            <p class="title">Resellers</p>
+            <p class="title"><a href="{{ .Site.BaseURL }}partnership">Resellers</a></p>
           </div>
           <p>Looking for a reseller to purchase our products from? Check our growing list of resellers.</p>
           <p>Are you a cloud solutions provider? Find out how our products can add value to your services.</p>

@@ -387,6 +387,9 @@ section.alt-content {
         p.title {
           font-size: 18px;
           font-weight: bold;
+          a {
+            @extend %no-decoration;
+          }
         }
       }
       p {
