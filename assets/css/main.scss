@@ -199,7 +199,8 @@ section.content-block {
           text-align: center;
         }
         ul {
-          text-align: center;
+          padding-left: 15px;
+          text-align: left;
         }
         ul.info-list.alt-list {
           @extend %content-space-around;
