@@ -532,7 +532,7 @@ footer#footer {
     @extend %flex;
     @extend %full-width;
     @extend %items-flex-start;
-    @include media-query-max($phone) {
+    @include media-query-max(590px) {
       align-items: center;
       flex-direction: column;
       justify-content: center;
@@ -547,11 +547,14 @@ footer#footer {
         @extend %items-start;
       }
       &.nav {
-        @extend %items-end;
+        @extend %content-flex-start;
+        @extend %flex-wrap;
+        @extend %items-center;
+        height: 147px;
+        width: 320px;
         li {
           @extend %content-flex-end;
           @extend %flex;
-          @extend %full-width;
           a {
             margin-left: auto;
             @include media-query-max($phone) {
@@ -562,11 +565,14 @@ footer#footer {
             justify-content: center;
           }
         }
+        @include media-query-max(590px) {
+          height: auto;
+        }
       }
       li {
         margin: 5px 0;
       }
-      @include media-query-max($phone) {
+      @include media-query-max(590px) {
         align-items: center !important;
         margin-bottom: 20px;
       }
