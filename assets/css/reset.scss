@@ -112,6 +112,9 @@ ul {
 ol ul {
   padding-left: 20px;
 }
+p:empty {
+  @extend %none;
+}
 section {
   padding: 30px;
   @include media-query-max($tablet) {

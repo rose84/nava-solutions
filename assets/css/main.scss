@@ -55,6 +55,7 @@ section.content {
     text-align: center;
   }
   p {
+    @extend %full-width;
     line-height: 20px;
     margin-bottom: 10px;
   }
@@ -190,7 +191,7 @@ section.content-block {
         @extend %full-width;
         @extend %items-center;
       }
-      h2.heading {
+      h2 {
         @extend %full-width;
         margin: 20px auto;
       }
@@ -306,7 +307,7 @@ section.content-block {
       > div {
         margin: 20px auto;
       }
-      h2.heading {
+      h2 {
         @extend %full-width;
         margin: 20px auto;
       }

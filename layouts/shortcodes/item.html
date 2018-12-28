@@ -1,0 +1,3 @@
+{{ print "<" | safeHTML }}{{ .Get "tag" }} {{ with .Get "id" }}id="{{.}}"{{ end }} {{ with .Get "class" }}class="{{.}}"{{ end }}>
+  {{ .Get "content" }}
+{{ print "<" | safeHTML }}/{{ .Get "tag" }}>
