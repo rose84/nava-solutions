@@ -5,7 +5,7 @@ heroList = [
   "Transfer data and applications from a local, on-premises infrastructure to public, private or hybrid clouds.",
   "Moving data and applications from one cloud platform or provider to another -- cloud-to-cloud migration."
 ]
-heroBg = "hero-migration"
+heroBg = "hero-migration.jpg"
 draft = false
 showthedate = false
 +++

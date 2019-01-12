@@ -1,7 +1,7 @@
 {{ define "main" }}
   {{ partial "header.html" . }}
   <main id="main">
-    {{ $homeHero := resources.Get (print "img/hero/hero-home.jpg") }}
+    {{ $homeHero := resources.Get "img/hero/hero-home.jpg" }}
     <section class="hero" style="background-image: url('{{ $homeHero.Permalink }}');">
       <h1>Simplify Your Journey To The Cloud With Nava Solutions</h1>
       <p>Software tools to help cloud solution providers. We develop tools to enable worry-free migrations to the cloud and to keep your cloud infrastructure secure once you've migrated.</p>
