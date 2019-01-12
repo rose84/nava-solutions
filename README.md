@@ -40,10 +40,13 @@ The project should be available on [localhost:1313](http://localhost:1313) from 
 ## Structure
 ```
 |--assets           // Files that will pass through the asset pipeline
-|  |--icons         // Icons files in the root of this folder will be minified, fingerprinted, and end up in /icons/...
-|  |--img      	    // Image files in the root of this folder will be minified, fingerprinted, and end up in /img/...
-|  |--js      	    // JS files in the root of this folder will be optimized, fingerprinted, and  end up in /js/...
-|  |--css          // Sass files in the root of this folder will be compiled, minified, fingerprinted, and end up in /scss/...
+|  |--icons         // Icons files used for favicon, iOS webclip, OpenGraph icons, and other alike.
+|  |--fonts         // Font files.
+|  |--img      	    // Image files.
+|  |  |--hero       // Hero background image files.
+|  |  |--partners   // Partner logos image files.
+|  |--js            // Custom scripts and external libraries minified and locally loaded.
+|  |--css           // Sass files are compiled, minified and autoprefixed.
 |--content          // Pages and collections
 |--layouts          // This is where all templates go
 |  |--_default      // This is where base templates and blocks live
