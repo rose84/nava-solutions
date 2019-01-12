@@ -204,7 +204,8 @@ main#main {
     @extend %flex-column;
     @extend %full-width;
     @extend %items-center;
-    background: url('/img/hero-home.jpg') bottom center no-repeat;
+    background-position: center bottom;
+    background-repeat: no-repeat;
     background-size: cover;
     height: 50vh;
     max-height: 550px;
@@ -242,15 +243,6 @@ main#main {
         height: 30px;
         width: 160px;
       }
-    }
-    &.hero-migration {
-      background-image: url('/img/hero-migration.jpg');
-    }
-    &.hero-products {
-      background-image: url('/img/hero-products.jpg');
-    }
-    &.hero-security {
-      background-image: url('/img/hero-security.jpg');
     }
   }
 }

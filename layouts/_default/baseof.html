@@ -11,7 +11,22 @@
   <meta name="theme-color" content="#">
 
   <!-- Fonts -->
-  <link rel="preload" href={{ "fonts/lato-optimized.woff2" | relURL }} as="font" type="font/woff2" crossorigin>
+  {{ $latoo2 := resources.Get "fonts/lato-optimized.woff2" }}
+  <link rel="preload" href="{{ $latoo2.Permalink }}" as="font" type="font/woff2" crossorigin>
+  {{ $latoo := resources.Get "fonts/lato-optimized.woff" }}
+  <link rel="preload" href="{{ $latoo.Permalink }}" as="font" type="font/woff" crossorigin>
+  {{ $lato2 := resources.Get "fonts/lato.woff2" }}
+  <link rel="preload" href="{{ $lato2.Permalink }}" as="font" type="font/woff2" crossorigin>
+  {{ $lato := resources.Get "fonts/lato.woff" }}
+  <link rel="preload" href="{{ $lato.Permalink }}" as="font" type="font/woff" crossorigin>
+  {{ $latoi2 := resources.Get "fonts/lato-italic.woff2" }}
+  <link rel="preload" href="{{ $latoi2.Permalink }}" as="font" type="font/woff2" crossorigin>
+  {{ $latoi := resources.Get "fonts/lato-italic.woff" }}
+  <link rel="preload" href="{{ $latoi.Permalink }}" as="font" type="font/woff" crossorigin>
+  {{ $latob2 := resources.Get "fonts/lato-bold.woff2" }}
+  <link rel="preload" href="{{ $latob2.Permalink }}" as="font" type="font/woff2" crossorigin>
+  {{ $latob := resources.Get "fonts/lato-bold.woff" }}
+  <link rel="preload" href="{{ $latob.Permalink }}" as="font" type="font/woff" crossorigin>
 
   <!-- Critical -->
   {{ partial "critical.html" . }}
