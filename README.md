@@ -23,7 +23,17 @@ npm install
 ```
 
 ### Development
-Running the local server can be done the following two commands: `gulp watch` on one terminal window and `hugo server` on another. The former watches any changes done to critical CSS files. The latter runs a local server with live reload for the site itself.
+Running the local server can be done the following two commands.
+
+Gulp watches for any changes done to critical CSS files:
+```
+gulp watch
+```
+
+Hugo runs a local server with live reload for the site itself.
+```
+hugo server
+```
 
 The project should be available on [localhost:3000](localhost:3000) from your browser.
 
