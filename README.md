@@ -3,14 +3,23 @@ Nava Solutions is committed to develop software applications which accelerate th
 
 ## Usage
 ### Prerequisites
-You need to have the latest versions of [Hugo](https://gohugo.io/getting-started/installing/) and [npm](https://docs.npmjs.com/getting-started/what-is-npm) installed.
-Next, clone repository and on the root project directory run:
+Install the latest version of [Hugo](https://gohugo.io/getting-started/installing/).
+
+[npm](https://docs.npmjs.com/getting-started/what-is-npm) is used to managed dependencies. To asure compatibility, version 8.14.0 of node and version 6.4.1 of npm are recommended. You can manage node versions using [nvm](https://github.com/creationix/nvm#installation). Once installed, you can use the config file on the repo to install and download the recommeneded node/npm version.
+
+From the root directory of the repo, run the install command for the recommended node version.
+`nvm install`
+
+Then, tell nvm to use that version:
+`nvm use`
+
+Once those are set, run npm to install all dependencies:
 `npm install`
 
 ### Development
-Running the local server can be done the following two commands: `gulp watch` on one terminal window and `hugo server` on another. The former watched the changes done to critical CSS files. The latter runs a local server with live reload for the site itself.
+Running the local server can be done the following two commands: `gulp watch` on one terminal window and `hugo server` on another. The former watches any changes done to critical CSS files. The latter runs a local server with live reload for the site itself.
 
-The project should be available on `localhost:3000` from your browser.
+The project should be available on [localhost:3000](localhost:3000) from your browser.
 
 ## Structure
 ```
@@ -27,8 +36,3 @@ The project should be available on `localhost:3000` from your browser.
 |  |--index.html    // The index page
 |--static     	    // Files in here end up in the public folder
 ```
-
-## Version Control
-All changes under development are hosted on the **staging** branch which is viewable via [nava-solutions.netlify.com](http://nava-solutions.netlify.com/).
-
-Once a new version of the site is approve, these change can then be merge into the master branch.
