@@ -35,7 +35,7 @@ Hugo runs a local server with live reload for the site itself.
 hugo server
 ```
 
-The project should be available on [localhost:3000](http://localhost:3000) from your browser.
+The project should be available on [localhost:1313](http://localhost:1313) from your browser.
 
 ## Structure
 ```
