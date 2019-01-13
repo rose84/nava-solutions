@@ -35,11 +35,17 @@
 .items-center {
   @extend %items-center;
 }
-.items-flex-end {
+.items-end {
   @extend %items-end;
 }
-.items-flex-start {
+.items-flex-end {
   @extend %items-flex-end;
+}
+.items-flex-start {
+  @extend %items-flex-start;
+}
+.items-start {
+  @extend %items-start;
 }
 .relative {
   @extend %relative;
@@ -97,7 +103,7 @@
   max-width: 100% !important;
 }
 .muted {
-  color: lighten($text,10%)
+  color: lighten($text,10%);
 }
 .normal {
   font-weight: normal;
