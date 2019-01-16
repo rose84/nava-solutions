@@ -10,8 +10,8 @@ draft = false
 showthedate = false
 +++
 
-{{% container tag="section" class="content content-block cloud" %}}
-{{% container tag="div" class="inner" %}}
+{{% container tag="section" class="content-block cloud" %}}
+{{% container tag="div" class="inner content-center items-center" %}}
 
 Agility, speed and lower maintenance costs are always among the top migration drivers. Cloud computing enables you to spin up thousands of customized tailored servers in minutes whenever needed. Another advantage is that Instead of going through complicated and time consuming procurement process, you pay for the services and resources that you use on the go. Today cloud computing provides nearly everything from quantum computing, storage, and databases to continuous integration, data analytics, and artificial intelligence - at your fingertips. Such powerful resources enables you to tremendously reduce the timeframe for going from idea to implementation.
 
@@ -20,8 +20,8 @@ Agility, speed and lower maintenance costs are always among the top migration dr
 
 {{< divider >}}
 
-{{% container tag="section" class="content alt-content content-block cloud" %}}
-{{% container tag="div" class="inner" %}}
+{{% container tag="section" class="content-block alt-content cloud" %}}
+{{% container tag="div" class="inner content-center items-center flex-column" %}}
 
 ## Challanges in Migration to Cloud
 
@@ -38,8 +38,8 @@ While cloud computing services are easy to obtain, they become more valuable whe
 
 {{< divider >}}
 
-{{% container tag="section" class="content content-block cloud" %}}
-{{% container tag="div" class="inner" %}}
+{{% container tag="section" class="content-block cloud" %}}
+{{% container tag="div" class="inner content-center items-center flex-column" %}}
 
 ## What we offer
 

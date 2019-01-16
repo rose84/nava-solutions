@@ -22,6 +22,9 @@
 %flex-column {
   flex-direction: column;
 }
+%flex-row {
+  flex-direction: row;
+}
 %flex-wrap {
   flex-wrap: wrap;
 }
@@ -34,6 +37,9 @@
 %items-center {
   align-items: center;
 }
+%items-self-center {
+  align-self: center;
+}
 %items-end {
   align-items: end;
 }
@@ -42,6 +48,12 @@
 }
 %items-flex-start {
   align-items: flex-start;
+}
+%items-self-flex-end {
+  align-self: flex-end;
+}
+%items-self-flex-start {
+  align-self: flex-start;
 }
 %margin-horizontal-center {
   margin: 0 auto;

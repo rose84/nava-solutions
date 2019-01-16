@@ -26,6 +26,9 @@
 .flex-column {
   @extend %flex-column;
 }
+.flex-row {
+  @extend %flex-row;
+}
 .flex-wrap {
   @extend %flex-wrap;
 }
@@ -35,6 +38,9 @@
 .items-center {
   @extend %items-center;
 }
+.items-self-center {
+  @extend %items-self-center;
+}
 .items-end {
   @extend %items-end;
 }
@@ -43,6 +49,12 @@
 }
 .items-flex-start {
   @extend %items-flex-start;
+}
+.items-self-flex-end {
+  @extend %items-self-flex-end;
+}
+.items-self-flex-start {
+  @extend %items-self-flex-start;
 }
 .items-start {
   @extend %items-start;
