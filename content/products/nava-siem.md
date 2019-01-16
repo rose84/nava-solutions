@@ -13,7 +13,7 @@ showthedate = false
 {{% container tag="div" class="info" %}}
 #### Simple, Unique, Flexible, Powerful
 
-{{< item tag="p" class="sub-heading" content=Nava SIEM Agent unifies cloud and on-premise security by forwarding cloud-based service provider logs to your favorite log-management and/or SIEM service." >}}
+{{< item tag="p" class="sub-heading" content="Nava SIEM Agent unifies cloud and on-premise security by forwarding cloud-based service provider logs to your favorite log-management and/or SIEM service." >}}
 
 * Comply with regulations by archiving cloud logs
 * Analyze your cloud logs for indicators of intrusion
