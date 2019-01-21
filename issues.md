@@ -9,6 +9,8 @@ There are two ways the issue is manifested:
 
 The issue has been heavily documented and argued on the Hugo repository. A ticket has been open and closed multiple times where the issue is primarily discussed. There have been several occasions when the project maintainers have claimed the issues has been resolved, but it still persists to this day. More can be found [here](https://github.com/gohugoio/hugo/issues/1642).
 
+The issue can be found more commonly in the [Nava Certus](https://nava-solutions.netlify.com/products/nava-certus) page. You'll notice the **Features** section icons are blown up. Looking at the console will show the images being wrapped around `p` tags.
+
 ## Solutions
 There are a number of commonly used workarounds for these issues. Due to the nature of Markdown, the accuracy of these solutions vary greatly.
 
