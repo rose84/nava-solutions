@@ -1,5 +1,7 @@
 <header id="header">
-  <a href="{{ .Site.BaseURL }}" class="home"></a>
+  <a href="{{ .Site.BaseURL }}" class="home">
+    {{ partial "logo.html" . }}
+  </a>
   {{ $lr := replaceRE "/nava-(certus|siem)/" "" .RelPermalink }}
   {{ $l := replaceRE "/" "" $lr }}
   <nav class="navigation">

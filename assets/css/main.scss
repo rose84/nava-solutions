@@ -562,13 +562,14 @@ footer#footer {
     }
   }
   a.home {
-    background-color: $bg;
     height: 30px;
     width: 130px;
-
     margin-bottom: 15px;
     @include media-query-max($phone) {
       margin-bottom: 20px;
+    }
+    svg {
+      fill: $bg;
     }
   }
   p.copy {

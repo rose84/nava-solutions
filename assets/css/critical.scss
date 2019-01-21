@@ -19,13 +19,19 @@ header#header {
     padding-bottom: 0;
   }
   a.home {
-    background-color: $main;
+    // background-color: $main;
     height: 30px;
     width: 130px;
     @supports (display:grid) {
       grid-column: 1;
       grid-row: 1;
       margin-bottom: 20px;
+    }
+    svg {
+      fill: $text;
+      &:hover {
+        fill: $main;
+      }
     }
   }
   nav.navigation {
