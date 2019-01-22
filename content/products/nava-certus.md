@@ -7,10 +7,12 @@ draft = false
 showthedate = false
 +++
 
+<!-- BEGIN ISSUE: https://github.com/fourjuaneight/nava-solutions/issues/2  --> 
 {{% container tag="section" class="content-block product" %}}
 {{% container tag="div" class="inner content-center items-center flex-wrap" %}}
 {{% container tag="div" class="logo" %}}{{< img src="nava-certus.jpg" alt="Nava Certus" >}}{{% /container %}}
 {{% container tag="div" class="info" %}}
+<!-- END ISSUE: https://github.com/fourjuaneight/nava-solutions/issues/2  --> 
 #### Multiple Cloud Services
 
 {{< item tag="p" class="sub-heading" content="Nava Certus moves data to/from multiple cloud storage providers, including Google Drive, Dropbox/DropBox for Business, OneDrive/OneDrive for Business, Egnyte, Box and Amazon S3." >}}
