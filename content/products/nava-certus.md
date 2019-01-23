@@ -42,7 +42,7 @@ showthedate = false
 
 {{< divider >}}
 
-{{% container tag="section" class="content-block product" %}}
+{{% container tag="section" class="content-block alt-content product" %}}
 {{% container tag="div" class="inner content-center items-center flex-wrap" %}}
 ## Features
 

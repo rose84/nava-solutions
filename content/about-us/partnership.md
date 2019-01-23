@@ -52,7 +52,8 @@ Here is an example how Google Apps partners derive more value by partnering with
 #### Preferred Reseller WL
 * Everything "Preferred Reseller"
 * Special "White Label" build of Nava Certus customized with Reseller's logo and trademark. (Yearly maintanence fee)
-{{% /container %}}{{< img src="how-it-works.svg" alt="How it works, graphics." class="graphic" >}}
+{{% /container %}}
+{{< img src="how-it-works.svg" alt="How it works, graphics." id="graphic" >}}
 {{% /container %}}
 
 {{% /container %}}

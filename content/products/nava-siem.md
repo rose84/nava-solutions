@@ -18,13 +18,14 @@ showthedate = false
 * Comply with regulations by archiving cloud logs
 * Analyze your cloud logs for indicators of intrusion
 * Conduct incident response and forensics using cloud logs
+{{% /container %}}
 
 {{% /container %}}
 {{% /container %}}
 
 {{< divider >}}
 
-{{% container tag="section" class="content-block product" %}}
+{{% container tag="section" class="content-block alt-content product" %}}
 {{% container tag="div" class="inner content-center items-center flex-column" %}}
 ## Features
 
@@ -39,33 +40,62 @@ showthedate = false
 
 {{% /container %}}
 
-{{< img src="nava-siem-graphic.svg" class="graphic-desk" >}}
-{{< img src="nava-siem-graphic-mb.svg" class="graphic-mb" >}}
+{{< img src="nava-siem-graphic.svg" id="graphic-desk" >}}
+{{< img src="nava-siem-graphic-mb.svg" id="graphic-mb" >}}
 
 {{% /container %}}
+
 {{% /container %}}
 {{% /container %}}
 
 {{< divider >}}
 
 {{% container tag="section" class="content-block product" %}}
-{{% container tag="div" class="inner content-center items-center flex-column" %}}
+{{% container tag="div" class="inner content-center items-center flex-wrap" %}}
 ## Why Us?
 
 {{% container tag="div" class="info" %}}
 #### Supported sources
 {{< item tag="p" class="sub-heading" content="Add the sources which we are currently supporting:" >}}
-{{% container tag="ul" class="info-list alt-list" %}}
+{{% container tag="div" class="info-list alt-list" %}}
 {{% container tag="div" class="list-column" %}}
-
+* Zendesk
+  - Zendesk Ticket
+  - Zendesk Logs
+* Salesforce
+  - Salesforce Login
+* Amazon S3
+* Amazon Cloud Trail
+* Box
+* Dropbox
+  - Apps
+  - Devices
+  - Groups
+  - Logins
+  - Members
+  - Passwords
+  - Sharing
+  - Team Admin Actions
 {{% /container %}}
 {{% container tag="div" class="list-column" %}}
-
+* Google Activity
+  - Admin
+  - Calendar
+  - Drive, Groups
+  - Login
+  - Mobile
+  - Token Admin
+  - Calendar, Drive
+  - Group, Login
+  - Mobile
+  - Token
+* Google Cloud
+* Okta
 {{% /container %}}
 {{% /container %}}
 {{% /container %}}
 
-{{% container tag="div" class="info coolumns" %}}
+{{% container tag="div" class="info columns" %}}
 
 {{% container tag="div" class="sub-info" %}}
 #### Google Apps: Admin Activity
