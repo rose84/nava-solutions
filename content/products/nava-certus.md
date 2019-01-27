@@ -10,7 +10,11 @@ showthedate = false
 <!-- BEGIN ISSUE: https://github.com/fourjuaneight/nava-solutions/issues/2  --> 
 {{% container tag="section" class="content-block product" %}}
 {{% container tag="div" class="inner content-center items-center flex-wrap" %}}
-{{% container tag="div" class="logo" %}}{{< img src="nava-certus.jpg" alt="Nava Certus" >}}{{% /container %}}
+{{% container tag="div" class="logo" %}}
+
+{{< img src="nava-certus.jpg" alt="Nava Certus" >}}
+
+{{% /container %}}
 {{% container tag="div" class="info" %}}
 <!-- END ISSUE: https://github.com/fourjuaneight/nava-solutions/issues/2  --> 
 #### Multiple Cloud Services
@@ -47,28 +51,36 @@ showthedate = false
 ## Features
 
 {{% container tag="div" class="info" %}}
+
 {{< img src="google-drive.png" class="icon" >}}
+
 #### Google Drive
 
 {{< item tag="p" class="sub-heading" content="Google Drive (Centralized) destination type migrates the selected source to a centralized (single) Google drive account and preserves the source permissions. Google Drive (Distributed) destination type migrates the selected source to one or more Google drives while distributing each file to its owner, and replicates the permissions at the destination." >}}
 {{% /container %}}
 
 {{% container tag="div" class="info" %}}
+
 {{< img src="s3.png" class="icon" >}}
+
 #### Amazon S3
 
 {{< item tag="p" class="sub-heading" content="Amazon S3 migration allows you to seamlessly transfer your file server, Dropbox files or files stored in personal Google Drive to Amazon S3, with support for permission mapping and integrity checking." >}}
 {{% /container %}}
 
 {{% container tag="div" class="info" %}}
+
 {{< img src="dropbox.png" class="icon" >}}
+
 #### Dropbox
 
 {{< item tag="p" class="sub-heading" content="Dropbox migration allows you to migrate Windows file server, Dropbox files and Google Drive to a centralized Dropbox account." >}}
 {{% /container %}}
 
 {{% container tag="div" class="info" %}}
+
 {{< img src="file-system.png" class="icon" >}}
+
 #### File System
 
 {{< item tag="p" class="sub-heading" content="File system migration allows you to migrate files stored in Google Drive or Dropbox to a network storage, NTFS File System or local storage, meanwhile preserving the source permissions for domain or local users." >}}
