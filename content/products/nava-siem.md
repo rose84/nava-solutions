@@ -40,8 +40,12 @@ showthedate = false
 
 {{% /container %}}
 
+<div>
 {{< img src="nava-siem-graphic.svg" id="graphic-desk" >}}
+</div>
+<div>
 {{< img src="nava-siem-graphic-mb.svg" id="graphic-mb" >}}
+</div>
 
 {{% /container %}}
 
