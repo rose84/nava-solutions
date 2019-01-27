@@ -9,11 +9,7 @@ showthedate = false
 {{% container tag="section" class="content-block product" %}}
 {{% container tag="div" class="inner content-center items-center flex-column" %}}
 
-{{% container tag="div" class="logo" %}}
-
-{{< img src="nava-siem.jpg" alt="Nava Siem" >}}
-
-{{% /container %}}
+{{% container tag="div" class="logo" %}}{{< img src="nava-siem.jpg" alt="Nava Siem" >}}{{% /container %}}
 {{% container tag="div" class="info" %}}
 #### Simple, Unique, Flexible, Powerful
 
@@ -43,9 +39,14 @@ showthedate = false
 * Real time output to Windows Event Logs
 
 {{% /container %}}
-{{< img src="nava-siem-graphic.svg" id="graphic-desk" >}}
 
+<div>
+{{< img src="nava-siem-graphic.svg" id="graphic-desk" >}}
+</div>
+<div>
 {{< img src="nava-siem-graphic-mb.svg" id="graphic-mb" >}}
+</div>
+
 {{% /container %}}
 
 {{% /container %}}
@@ -60,11 +61,8 @@ showthedate = false
 {{% container tag="div" class="info" %}}
 #### Supported sources
 {{< item tag="p" class="sub-heading" content="Add the sources which we are currently supporting:" >}}
-
 {{% container tag="div" class="info-list alt-list" %}}
-
 {{% container tag="div" class="list-column" %}}
-
 * Zendesk
   - Zendesk Ticket
   - Zendesk Logs
@@ -82,11 +80,8 @@ showthedate = false
   - Passwords
   - Sharing
   - Team Admin Actions
-
 {{% /container %}}
-
 {{% container tag="div" class="list-column" %}}
-
 * Google Activity
   - Admin
   - Calendar
@@ -100,11 +95,8 @@ showthedate = false
   - Token
 * Google Cloud
 * Okta
-
 {{% /container %}}
-
 {{% /container %}}
-
 {{% /container %}}
 
 {{% container tag="div" class="info columns" %}}
