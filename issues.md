@@ -19,7 +19,14 @@ There are a number of commonly used workarounds for these issues. Due to the nat
 The spacing between elements can cause the empty `p` tags to show up. Eliminating the empty space between Markdown elements reduced the issues.
 
 #### Problem
-Due to the nature of how Markdown is rendered, certain elements can break when too close together.
+Due to the nature of how Markdown is rendered, certain elements can break when they're too close together. Ironically, adding space in certain instances also helps to eliminate the bug.
+
+### Wrapping Content in `div`s
+#### Fix
+Wrapping `img` and other elements inside `div` tags does eliminate the the bug in certain situations.
+
+#### Problem
+There isn't a directly problem caused by wrapping elements in `div`s. However, it is important to keep in mind that this is not semantic HTML and can cause speceficity issues with CSS later on.
 
 ### Inner Shortcode
 #### Fix
