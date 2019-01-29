@@ -49,32 +49,32 @@ This is the most widely used solution. You can see an example of it in the same 
 Line numbers where the Hugo bug is currently showing up in the codebase.
 
 ### [public/about-us/partnership/index.html](public/about-us/partnership/index.html)
-- 337
-- 340
-- 341
+- [337](/public/about-us/partnership/index.html#L337)
+- [340](/public/about-us/partnership/index.html#L340)
+- [341](/public/about-us/partnership/index.html#L341)
 
 ### [public/products/index.html](public/products/index.html)
-- 199
-- 203
-- 205
-- 213
-- 214
-- 218
-- 224
-- 228
-- 229
+- [199](/public/products/index.html#L199)
+- [203](/public/products/index.html#L203)
+- [205](/public/products/index.html#L205)
+- [213](/public/products/index.html#L213)
+- [214](/public/products/index.html#L214)
+- [218](/public/products/index.html#L218)
+- [224](/public/products/index.html#L224)
+- [228](/public/products/index.html#L228)
+- [229](/public/products/index.html#L229)
 
 ### [public/products/nava-siem/index.html](public/products/nava-siem/index.html)
-- 262
-- 264
-- 266
-- 268
-- 272
-- 274
-- 280
-- 282
-- 295
-- 297
-- 313
-- 347
-- 348
+- [262](/public/products/nava-siem/index.html#L262)
+- [264](/public/products/nava-siem/index.html#L264)
+- [266](/public/products/nava-siem/index.html#L266)
+- [268](/public/products/nava-siem/index.html#L268)
+- [272](/public/products/nava-siem/index.html#L272)
+- [274](/public/products/nava-siem/index.html#L274)
+- [280](/public/products/nava-siem/index.html#L280)
+- [282](/public/products/nava-siem/index.html#L282)
+- [295](/public/products/nava-siem/index.html#L295)
+- [297](/public/products/nava-siem/index.html#L297)
+- [313](/public/products/nava-siem/index.html#L313)
+- [347](/public/products/nava-siem/index.html#L347)
+- [348](/public/products/nava-siem/index.html#L348)
