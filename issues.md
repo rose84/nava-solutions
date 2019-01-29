@@ -44,3 +44,37 @@ There aren't any issues with the method itself. But it isn't a solution to the p
 
 #### Comments
 This is the most widely used solution. You can see an example of it in the same Github issue [here](https://github.com/gohugoio/hugo/issues/1642#issuecomment-188693577).
+
+## Issue Locations
+Line numbers where the Hugo bug is currently showing up in the codebase.
+
+### [public/about-us/partnership/index.html](public/about-us/partnership/index.html)
+- 337
+- 340
+- 341
+
+### [public/products/index.html](public/products/index.html)
+- 199
+- 203
+- 205
+- 213
+- 214
+- 218
+- 224
+- 228
+- 229
+
+### [public/products/nava-siem/index.html](public/products/nava-siem/index.html)
+- 262
+- 264
+- 266
+- 268
+- 272
+- 274
+- 280
+- 282
+- 295
+- 297
+- 313
+- 347
+- 348
