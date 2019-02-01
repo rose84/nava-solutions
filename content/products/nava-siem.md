@@ -60,7 +60,9 @@ showthedate = false
 
 {{% container tag="div" class="info" %}}
 #### Supported sources
+
 {{< item tag="p" class="sub-heading" content="Add the sources which we are currently supporting:" >}}
+
 {{% container tag="div" class="info-list alt-list" %}}
 {{% container tag="div" class="list-column" %}}
 * Zendesk
@@ -124,9 +126,14 @@ showthedate = false
 
 {{% container tag="div" class="info" %}}
 #### Downloading and Licensing
+
+<!-- ISSUE: https://github.com/fourjuaneight/nava-solutions/issues/2 -->
 {{% container tag="p" class="sub-heading" %}}
+
 You can download a 5 day free trial version of the product from {{< link href="" content="Linkgard" >}}.
+
 {{% /container %}}
+
 {{% /container %}}
 
 {{% /container %}}
