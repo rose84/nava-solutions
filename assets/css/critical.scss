@@ -250,5 +250,19 @@ main#main {
         width: 160px;
       }
     }
+    div.meta {
+      @extend %content-center;
+      @extend %flex;
+      @extend %items-center;
+      margin: 0 auto 15px;
+      width: 300px;
+      > * {
+        color: #fff;
+      }
+      p {
+        margin: 0;
+        width: auto;
+      }
+    }
   }
 }

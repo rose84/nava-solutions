@@ -525,6 +525,25 @@ section.column-layout {
     }
   }
 }
+article.post {
+  .title {
+    a {
+      @extend %no-decoration;
+    }
+  }
+  div.meta {
+    @extend %content-center;
+    @extend %flex;
+    @extend %items-center;
+    margin: 0 auto 15px;
+    width: 300px;
+    p {
+      display: inline;
+      margin: 0;
+      width: auto;
+    }
+  }
+}
 // Footer
 footer#footer {
   @extend %content-center;
