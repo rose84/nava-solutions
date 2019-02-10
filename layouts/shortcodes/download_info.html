@@ -1,0 +1,8 @@
+{{ $download := resources.Get "js/download.js" | minify }}
+<script src="{{ $download.Permalink }}"></script>
+<div id="download_info">
+<a id="download_link"></a>
+<p></p>
+<p id="message"/>
+</div>
+<script>window.onload = ParseDownloadInfo;</script>
