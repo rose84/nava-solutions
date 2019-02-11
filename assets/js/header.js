@@ -1,3 +1,11 @@
+// Close mobile nav on click
+const navItems = document.querySelectorAll('a.menu-item');
+navItems.forEach(link => {
+  link.addEventListener("click", () => {
+    document.getElementById('toggle').checked = false;
+  }, false);
+})
+
 // Set variables for key elements
 var prodNav = document.getElementById('sub-nav-prod');
 var prodToggle = document.getElementById('drop-prod');
