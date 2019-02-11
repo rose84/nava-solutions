@@ -132,10 +132,10 @@ form.wufoo {
           height: 30px !important;
           label,
           input {
-            height: unset !important;
+            height: 20px !important;
           }
           label {
-            margin-bottom: 0 !important;
+            margin: auto 5px !important;
             padding-bottom: 0 !important;
           }
         }
