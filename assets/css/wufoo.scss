@@ -102,6 +102,9 @@ form.wufoo {
           margin-bottom: 10px;
           padding: 0 5px;
           width: 97% !important;
+          @include media-query-max($phone) {
+            width: 96% !important;
+          }
         }
         input, select {
           height: 40px;
@@ -119,7 +122,13 @@ form.wufoo {
           min-width: unset !important;
           padding: 10px 5px;
           resize: none;
-          width: 98% !important;
+          width: 99% !important;
+          @include media-query-max($tablet) {
+            width: 98% !important;
+          }
+          @include media-query-max($phone) {
+            width: 97% !important;
+          }
         }
         input#saveForm {
           @extend %content-center;
