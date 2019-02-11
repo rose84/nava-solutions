@@ -27,10 +27,12 @@ form.wufoo {
       @extend %flex;
       @extend %flex-column;
       @extend %items-flex-start;
+      clear: unset !important;
+      float: unset !important;
       list-style-type: none;
       margin: 5px 0;
       padding: 0 10px;
-      width: 48%;
+      width: 48% !important;
       input:nth-child(2),
       select:nth-child(2) {
         margin-right: 10px;
