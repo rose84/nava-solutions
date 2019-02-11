@@ -20,7 +20,8 @@
         </ul>
       {{ end }}
       {{ if .Params.heroButton }}
-        <a href="{{ .Site.BareURL }}{{ .Params.redir | urlize }}" id="button" class="button-lg button-alt">{{ .Params.heroButton }}</a>
+        {{ $path := print .Section "/" .Params.redir }}
+        <a href="/{{ $path }}" id="button" class="button-lg button-alt">{{ .Params.heroButton }}</a>
       {{ end }}
     </section>
     {{ .Content }}
