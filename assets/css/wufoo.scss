@@ -1,0 +1,108 @@
+@import 'variables';
+@import 'extends';
+@import 'mixins';
+
+form {
+  @extend %content-center;
+  @extend %flex;
+  @extend %full-width;
+  @extend %items-center;
+  padding: 30px 0;
+  @include media-query-max($phone) {
+    padding: 0;
+  }
+  header#header.info {
+    display: none !important;
+  }
+  ul {
+    @extend %content-flex-start;
+    @extend %flex;
+    @extend %flex-wrap;
+    @extend %full-width;
+    @extend %items-center;
+    margin: 0;
+    padding: 0;
+    li {
+      @extend %content-center;
+      @extend %flex;
+      @extend %flex-column;
+      @extend %items-flex-start;
+      list-style-type: none;
+      margin: 0;
+      padding: 0 10px;
+      width: 50%;
+      input:nth-child(2),
+      select:nth-child(2) {
+        margin-right: 10px;
+        @include media-query-max($phone) {
+          margin-right: 0;
+        }
+      }
+      @include media-query-max(600px) {
+        padding: 0;
+        width: 100%;
+      }
+      &:nth-last-child(3) {
+        @extend %full-width;
+      }
+      &.buttons {
+        @extend %full-width;
+      }
+      &.hide {
+        @extend %none;
+      }
+      label {
+        margin-bottom: 3px;
+      }
+      div {
+        @extend %full-width;
+        input, textarea, select {
+          @extend %full-width;
+          @extend %relative;
+          background-color: rgba($accent,0.1);
+          border: 1px solid rgba($accent,0.3);
+          border-radius: 5px;
+          color: $accent;
+          font-family: 'Lato', sans-serif;
+          font-size: 16px;
+          margin-bottom: 10px;
+          padding: 0 15px;
+        }
+        input, select {
+          height: 40px;
+        }
+        select option {
+          background-color: #fff;
+          border: none;
+        }
+        textarea {
+          height: 172px;
+          padding-top: 15px;
+          resize: none;
+        }
+        input#saveForm {
+          @extend %content-center;
+          @extend %flex;
+          @extend %items-center;
+          @extend %no-decoration;
+          background-color: $main;
+          border-radius: 5px;
+          border: none;
+          color: $bg !important;
+          cursor: pointer;
+          font: 700 16px 'Lato';
+          height: 40px;
+          margin: 0 0 0 auto;
+          padding: 0;
+          text-align: center;
+          width: 200px;
+          &:hover {
+            box-shadow: $box;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}

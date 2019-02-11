@@ -32,6 +32,18 @@ function critical() {
       .pipe(gulp.dest('layouts/partials'))
 }
 
+// Wufoo CSS
+function wufoo() {
+  const plugins = [autoprefixer({browsers: ['> 5%']}), cssnano()];
+  return gulp
+      .src('assets/css/wufoo.scss')
+      .pipe(plumber())
+      .pipe(sass().on('error', sass.logError))
+      .pipe(postcss(plugins))
+      // insert file
+      .pipe(gulp.dest('static/css'))
+}
+
 // Watch asset folder for changes
 function watchFiles() {
   gulp.watch('assets/css/common.scss', critical);
@@ -41,10 +53,12 @@ function watchFiles() {
   gulp.watch('assets/css/mixins.scss', critical);
   gulp.watch('assets/css/reset.scss', critical);
   gulp.watch('assets/css/variables.scss', critical);
+  gulp.watch('assets/css/wufoo.scss', wufoo);
 }
 
 // Tasks
 gulp.task("critical", critical);
+gulp.task("wufoo", wufoo);
 
 // Run Watch as default
 gulp.task('watch', watchFiles);
