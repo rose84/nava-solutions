@@ -59,9 +59,17 @@ form.wufoo {
           padding: 0 10px !important;
         }
         > span {
-          width: 48% !important;
+          width: 47% !important;
+          @include media-query-max(600px) {
+            padding: 0 !important;
+            width: 100% !important;
+          }
+          input {
+            margin-bottom: 5px;
+          }
           label {
-            
+            margin-bottom: 10px;
+            padding: 0;
           }
         }
       }
@@ -93,7 +101,7 @@ form.wufoo {
           font-size: 16px;
           margin-bottom: 10px;
           padding: 0 5px;
-          width: 98% !important;
+          width: 97% !important;
         }
         input, select {
           height: 40px;
@@ -140,8 +148,6 @@ form.wufoo {
           label,
           input {
             height: 20px !important;
-          }
-          label {
             margin: auto 5px !important;
             padding-bottom: 0 !important;
           }
