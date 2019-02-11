@@ -65,7 +65,7 @@ form.wufoo {
       label {
         margin-bottom: 3px;
       }
-      div {
+      div, span {
         @extend %full-width;
         input.text,
         input.search,
@@ -93,6 +93,17 @@ form.wufoo {
           height: 172px;
           padding: 10px 5px;
           resize: none;
+        }
+        fieldset {
+          span.subfield {
+            @extend %content-flex-start;
+            @extend %flex;
+            @extend %items-center;
+            height: 30px !important;
+            label {
+              height: unset !important;
+            }
+          }
         }
         input#saveForm {
           @extend %content-center;
