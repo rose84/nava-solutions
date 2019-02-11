@@ -1,11 +1,11 @@
 <header id="header">
-  <a href="{{ .Site.BaseURL }}" class="home">
+  <a href="{{ .Site.BaseURL }}" class="home" aria-label="Nava Solutions Dot Com Homepage">
     {{ partial "logo.html" . }}
   </a>
   {{ $lr := replaceRE "/nava-(certus|siem)/" "" .RelPermalink }}
   {{ $l := replaceRE "/" "" $lr }}
   <nav class="navigation">
-    <a href="{{ .Site.BaseURL }}" class="nav-item{{ if .IsHome }} active{{ end }}">Home</a>
+    <a href="{{ .Site.BaseURL }}" class="nav-item{{ if .IsHome }} active{{ end }}" aria-label="Nava Solutions Dot Com Homepage">Home</a>
     <div class="drop-container">
       <a id="drop-prod" href="{{ .Site.BaseURL }}products" class="nav-item{{ if eq $l "products" }} active{{ end }}">Products</a>
       <ul id="sub-nav-prod" class="collapsed">
