@@ -220,14 +220,14 @@ main#main {
     @include media-query-max($tablet) {
       padding: 30px;
     }
-    h1, p, li {
+    h1, p, li, time {
       @extend %full-width;
       color: $bg;
       margin-bottom: 15px;
       max-width: 800px;
       text-align: center;
     }
-    p {
+    p, time {
       font-size: 18px;
       line-height: 22px;
       @include media-query-max($tablet) {

@@ -525,6 +525,27 @@ section.column-layout {
     }
   }
 }
+section.events {
+  div.inner {
+    ul.event-list {
+      @extend %full-width;
+      @extend %margin-horizontal-center;
+      max-width: 600px;
+      li {
+        margin: 5px 0 10px;
+        a {
+          @extend %no-decoration;
+          > * {
+            display: inline;
+            font-size: 18px;
+            line-height: 26px;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
 article.post {
   .title {
     a {
