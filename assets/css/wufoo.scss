@@ -52,11 +52,15 @@ form.wufoo {
         width: 100% !important;
       }
       &.fullCell {
+        @extend %content-flex-start;
         @extend %flex-wrap;
         flex-direction: row !important;
         padding: 0;
         > * {
           padding: 0 10px !important;
+          @include media-query-max(600px) {
+            padding: 0 !important;
+          }
         }
         > span {
           width: 47.5% !important;
