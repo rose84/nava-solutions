@@ -30,7 +30,6 @@ form {
       list-style-type: none;
       margin: 5px 0;
       padding: 0 10px;
-      width: 48% !important;
       input:nth-child(2),
       select:nth-child(2) {
         margin-right: 10px;
@@ -40,6 +39,9 @@ form {
       }
       @include media-query-max(600px) {
         padding: 0;
+        width: 100% !important;
+      }
+      &:nth-last-child(4) {
         width: 100% !important;
       }
       &:nth-last-child(3) {
@@ -88,7 +90,7 @@ form {
           @extend %flex;
           @extend %items-center;
           @extend %no-decoration;
-          background-color: $main !important;
+          background: $main !important;
           border-radius: 5px;
           border: none;
           color: $bg !important;
