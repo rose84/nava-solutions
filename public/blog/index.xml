@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blogs on Nava Solutions</title>
+    <title>Blog on Nava Solutions</title>
     <link>/blog/</link>
-    <description>Recent content in Blogs on Nava Solutions</description>
+    <description>Recent content in Blog on Nava Solutions</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nava Solutions | All Rights Reserved</copyright>
+    <lastBuildDate>Thu, 27 Jun 2013 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>This is a post</title>
-      <link>/blog/this-is-a-post/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Nava Certus (Beta) Available for Download</title>
+      <link>/blog/nava-certus-beta-available-for-download/</link>
+      <pubDate>Thu, 27 Jun 2013 00:00:00 +0000</pubDate>
       
-      <guid>/blog/this-is-a-post/</guid>
-      <description>Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? I gave it a cold? I gave it a virus. A computer virus. Checkmate&amp;hellip; Did he just throw my cat out of the window? Remind me to thank John for a lovely weekend. Hey, you know how I&amp;rsquo;m, like, always trying to save the planet? Here&amp;rsquo;s my chance.
-Just my luck, no ice. Must go faster. So you two dig up, dig up dinosaurs?</description>
+      <guid>/blog/nava-certus-beta-available-for-download/</guid>
+      <description>We are proud to announce the Beta release of Nava Certus, our powerful Google Drive migration software.
+With this version of Nava Certus, you will be able to:
+ Migrate files from a file server to a single Google Drive account for centralized sharing Migrate files based on file ownership (Distributed Migration) allowing you to distribute all your files and take advantage of up to 30GB built-in storage in Google Drive for each user.</description>
     </item>
     
   </channel>

@@ -101,6 +101,9 @@
   <link rel="icon" sizes="192x192" href="{{ $i192.RelPermalink }}">
   {{ $i512 := resources.Get "icons/icon-512x512.png" }}
   <link rel="icon" sizes="512x512" href="{{ $i512.RelPermalink }}">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  {{ partial "analytics.html" . }}
 </head>
 <body>
   {{ block "main" . }}

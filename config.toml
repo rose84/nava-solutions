@@ -9,6 +9,8 @@ SectionPagesMenu = "main"
 
 [permalinks]
   blog = "/blog/:title/"
+  events = "/events/:title/"
+  news = "/news/:title/"
 
 [blackfriday]
   hrefTargetBlank = true
@@ -25,7 +27,7 @@ SectionPagesMenu = "main"
   linkedin = "nava-solutions"
 
 [params.google]
-  analytics = ""
+  analytics = "UA-41226205-1"
 
 [outputs]
   home = ["html"]

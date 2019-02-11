@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News on Nava Solutions</title>
+    <link>/events/</link>
+    <description>Recent content in News on Nava Solutions</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Nava Solutions | All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 20 Jun 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/events/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Nava Solutions Intro to Google Apps EMEA resellers</title>
+      <link>/events/nava-solutions-intro-to-google-apps-emea-resellers/</link>
+      <pubDate>Fri, 20 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/events/nava-solutions-intro-to-google-apps-emea-resellers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nava Solutions Intro to Google Apps EMEA resellers</title>
+      <link>/events/nava-solutions-intro-to-google-apps-emea-resellers/</link>
+      <pubDate>Tue, 05 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/events/nava-solutions-intro-to-google-apps-emea-resellers/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
