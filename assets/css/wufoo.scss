@@ -129,6 +129,9 @@ form.wufoo {
           @include media-query-max($phone) {
             width: 97% !important;
           }
+          @include media-query-max(375px) {
+            width: 96% !important;
+          }
         }
         input#saveForm {
           @extend %content-center;
