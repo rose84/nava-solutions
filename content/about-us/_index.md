@@ -1,8 +1,8 @@
 +++
-title = "About Us"
-heroText = "As an independent business unit of LinkGard, Nava Solutions is committed to develop software applications which accelerate the adoption of cloud solutionsin a secure manner. The Nava Solutions software team produces solid, high-level and professional products which are easy to use at the same time."
-draft = false
-showthedate = false
+  title = "About Us"
+  heroText = "As an independent business unit of LinkGard, Nava Solutions is committed to develop software applications which accelerate the adoption of cloud solutionsin a secure manner. The Nava Solutions software team produces solid, high-level and professional products which are easy to use at the same time."
+  draft = false
+  showthedate = false
 +++
 
 {{% container tag="section" class="content-block" %}}

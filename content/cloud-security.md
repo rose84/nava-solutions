@@ -1,9 +1,9 @@
 +++
-title = "Cloud Security"
-heroText = "Nava Solutions considers cloud security as its highest priority. Software architectures are designed and built having requirements of the most security-sensitive organizations in mind. Such approach enables us to provide solutions which assists our customers to securely scale to the cloud, empowering further innovation and value creation."
-heroBg = "hero-security.jpg"
-draft = false
-showthedate = false
+  title = "Cloud Security"
+  heroText = "Nava Solutions considers cloud security as its highest priority. Software architectures are designed and built having requirements of the most security-sensitive organizations in mind. Such approach enables us to provide solutions which assists our customers to securely scale to the cloud, empowering further innovation and value creation."
+  heroBg = "hero-security.jpg"
+  draft = false
+  showthedate = false
 +++
 
 {{% container tag="section" class="content-block cloud" %}}

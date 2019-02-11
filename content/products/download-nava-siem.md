@@ -1,9 +1,9 @@
 +++
-title = "Download Nava Siem Trail"
-heroText = "Fill out the form below and you will receive an email reply with your free trail."
-heroBg = "hero-migration.jpg"
-draft = false
-showthedate = false
+  title = "Download Nava SIEM Agent"
+  heroText = "Thanks for your interest in Nava SIEM Agent, Linkgard’s solution for your log management, compliance, and cloud security problems. Please provide your contact information below so that we may inform you of important product updates. Your download link will be emailed to you after you fill out the form."
+  heroBg = "hero-migration.jpg"
+  draft = false
+  showthedate = false
 +++
 
 {{% container tag="section" class="content-block" %}}

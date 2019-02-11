@@ -1,9 +1,9 @@
 +++
-title = "Nava Certus (Beta) Available for Download"
-author = "Violeta Shamirian"
-date = "2013-06-27"
-draft = false
-showthedate = true
+  title = "Nava Certus (Beta) Available for Download"
+  author = "Violeta Shamirian"
+  date = "2013-06-27"
+  draft = false
+  showthedate = true
 +++
 
 We are proud to announce the Beta release of [Nava Certus](/products/nava-certus), our powerful Google Drive migration software.

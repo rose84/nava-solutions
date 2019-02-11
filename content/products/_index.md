@@ -1,9 +1,9 @@
 +++
-title = "Nava Solutions = Secure Cloud Enablement"
-heroButton = "Learn More"
-heroBg = "hero-products.jpg"
-draft = false
-showthedate = false
+  title = "Nava Solutions = Secure Cloud Enablement"
+  heroButton = "Learn More"
+  heroBg = "hero-products.jpg"
+  draft = false
+  showthedate = false
 +++
 
 

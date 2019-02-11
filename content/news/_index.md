@@ -1,5 +1,5 @@
 +++
-title = "News"
-draft = false
-showthedate = false
+  title = "News"
+  draft = false
+  showthedate = false
 +++

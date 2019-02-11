@@ -1,8 +1,8 @@
 +++
-title = "Cloud Storage Migration & Cloud Security Reseller Opportunity"
-heroText = "Are you a managed service provider such as a Google Apps Authorized Reseller? Do you have customers who are interested in migration to or from cloud storage? At Nava Solutions, we place a high importance on long lasting quality partnerships. We believe that our products will help you excel in what you do and significantly increase your competitiveness."
-draft = false
-showthedate = false
+  title = "Cloud Storage Migration & Cloud Security Reseller Opportunity"
+  heroText = "Are you a managed service provider such as a Google Apps Authorized Reseller? Do you have customers who are interested in migration to or from cloud storage? At Nava Solutions, we place a high importance on long lasting quality partnerships. We believe that our products will help you excel in what you do and significantly increase your competitiveness."
+  draft = false
+  showthedate = false
 +++
 
 {{% container tag="section" class="content-block" id="become-a-partner" %}}

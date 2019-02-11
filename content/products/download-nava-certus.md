@@ -1,9 +1,8 @@
 +++
-title = "Download Nava Certus Trail"
-heroText = "Fill out the form below and you will receive an email reply with your free trail."
-heroBg = "hero-migration.jpg"
-draft = false
-showthedate = false
+  title = "Download Nava Certus"
+  heroText = "Before you download your copy of Nava Certus, please take a moment to fill out the following information. Your download link will be emailed to you as soon as you confirm your email address."
+  draft = false
+  showthedate = false
 +++
 
 {{% container tag="section" class="content-block" %}}

@@ -112,62 +112,6 @@ section.content-block {
       padding: 0;
     }
   }
-  form#form {
-    @extend %content-center;
-    @extend %flex;
-    @extend %flex-column;
-    @extend %full-width;
-    @extend %items-center;
-    padding: 30px 0;
-    @include media-query-max($phone) {
-      padding: 0;
-    }
-    input, textarea, select {
-      @extend %full-width;
-      @extend %relative;
-      background-color: rgba($accent,0.1);
-      border: 1px solid rgba($accent,0.3);
-      border-radius: 5px;
-      color: $accent;
-      font-family: 'Lato', sans-serif;
-      font-size: 16px;
-      margin-bottom: 10px;
-      padding: 0 15px;
-    }
-    input, select {
-      height: 40px;
-    }
-    select option {
-      background-color: #fff;
-      border: none;
-    }
-    textarea {
-      height: 172px;
-      padding-top: 15px;
-      resize: none;
-    }
-    div.form-cell {
-      @extend %content-center;
-      @extend %flex;
-      @extend %full-width;
-      @extend %items-center;
-      input:nth-child(2),
-      select:nth-child(2) {
-        margin-right: 10px;
-        @include media-query-max($phone) {
-          margin-right: 0;
-        }
-      }
-      @include media-query-max($phone) {
-        flex-direction: column;
-      }
-    }
-    button#button {
-      border: none;
-      margin: 0 0 0 auto;
-      padding: 0;
-    }
-  }
   ul.content-list {
     @extend %content-space-around;
     @extend %flex;
