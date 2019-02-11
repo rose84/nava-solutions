@@ -44,15 +44,10 @@ form.wufoo {
         padding: 0;
         width: 100% !important;
       }
-      &:nth-last-child(4) {
-        width: 100% !important;
-        div {
-          width: 100% !important;
-        }
-      }
-      &:nth-last-child(3) {
-        width: 100% !important;
-      }
+      &:nth-last-child(3),
+      &:nth-last-child(4),
+      &:nth-last-child(4) div,
+      &.fullCell,
       &.buttons {
         width: 100% !important;
       }
