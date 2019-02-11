@@ -62,6 +62,9 @@ form.wufoo {
       &.focused {
         background-color: transparent !important;
       }
+      &.middleThird {
+        margin: 0 !important;
+      }
       label {
         margin-bottom: 3px;
       }
@@ -94,17 +97,6 @@ form.wufoo {
           padding: 10px 5px;
           resize: none;
         }
-        fieldset {
-          span.subfield {
-            @extend %content-flex-start;
-            @extend %flex;
-            @extend %items-center;
-            height: 30px !important;
-            label {
-              height: unset !important;
-            }
-          }
-        }
         input#saveForm {
           @extend %content-center;
           @extend %flex;
@@ -126,6 +118,17 @@ form.wufoo {
             box-shadow: $box;
             text-decoration: none;
             transition: all 0.3s ease-in-out;
+          }
+        }
+      }
+      fieldset {
+        div span.subfield {
+          @extend %content-flex-start;
+          @extend %flex;
+          @extend %items-center;
+          height: 30px !important;
+          label {
+            height: unset !important;
           }
         }
       }
