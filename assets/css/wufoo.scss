@@ -2,7 +2,7 @@
 @import 'extends';
 @import 'mixins';
 
-form {
+form.wufoo {
   @extend %content-center;
   @extend %flex;
   @extend %full-width;
@@ -43,6 +43,9 @@ form {
       }
       &:nth-last-child(4) {
         width: 100% !important;
+        div {
+          width: 100% !important;
+        }
       }
       &:nth-last-child(3) {
         width: 100% !important;
@@ -61,7 +64,10 @@ form {
       }
       div {
         @extend %full-width;
-        input, textarea, select {
+        input.text,
+        input.search,
+        textarea.textarea,
+        select {
           @extend %full-width;
           @extend %relative;
           background-color: rgba($accent,0.1);
