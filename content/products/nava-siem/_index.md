@@ -1,9 +1,11 @@
 +++
-title = "Nava SIEM Agent – Seamless cloud security"
-heroText = "Nearly 70% of enterprises rely on the cloud. Adoption varies from one company to the next, yet one thing is certain: enterprises are increasing reliance on the cloud. Is your security program equipped to handle new challenges from the cloud?"
-heroBg = "hero-security.jpg"
-draft = false
-showthedate = false
+  title = "Nava SIEM Agent – Seamless cloud security"
+  heroText = "Nearly 70% of enterprises rely on the cloud. Adoption varies from one company to the next, yet one thing is certain: enterprises are increasing reliance on the cloud. Is your security program equipped to handle new challenges from the cloud?"
+  heroButton = "Download Trial"
+  redir = "/nava-siem/download-nava-siem/"
+  heroBg = "hero-security.jpg"
+  draft = false
+  showthedate = false
 +++
 
 {{% container tag="section" class="content-block product" %}}

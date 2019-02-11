@@ -20,7 +20,7 @@
         </ul>
       {{ end }}
       {{ if .Params.heroButton }}
-        <a href="{{ .Site.BaseURL }}" id="button" class="button-lg button-alt">{{ .Params.heroButton }}</a>
+        <a href="{{ .Site.BareURL }}{{ .Params.redir | urlize }}" id="button" class="button-lg button-alt">{{ .Params.heroButton }}</a>
       {{ end }}
     </section>
     {{ .Content }}

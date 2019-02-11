@@ -1,10 +1,11 @@
 +++
-title = "Cloud Migration Done Right"
-heroText = "Nava Certus, an all-in-one file and cloud storage migration and synchronization solution, offers support for Dropbox, Google Drive, Amazon S3 and local file systems. As a downloadable solution, Nava Certus has additional benefits over other hosted migration solutions, such as performance and migration integrity. Download a free trial today."
-heroButton = "Download Trial"
-heroBg = "hero-migration.jpg"
-draft = false
-showthedate = false
+  title = "Cloud Migration Done Right"
+  heroText = "Nava Certus, an all-in-one file and cloud storage migration and synchronization solution, offers support for Dropbox, Google Drive, Amazon S3 and local file systems. As a downloadable solution, Nava Certus has additional benefits over other hosted migration solutions, such as performance and migration integrity. Download a free trial today."
+  heroButton = "Download Trial"
+  redir = "/nava-certus/download-nava-certus/"
+  heroBg = "hero-migration.jpg"
+  draft = false
+  showthedate = false
 +++
 
 <!-- BEGIN ISSUE: https://github.com/fourjuaneight/nava-solutions/issues/2  --> 

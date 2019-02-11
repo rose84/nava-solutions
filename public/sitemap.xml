@@ -48,6 +48,19 @@
   </url>
   
   <url>
+    <loc>/products/nava-certus/download-nava-certus/</loc>
+  </url>
+  
+  <url>
+    <loc>/products/nava-siem/download-nava-siem/</loc>
+  </url>
+  
+  <url>
+    <loc>/events/</loc>
+    <lastmod>2014-06-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/products/nava-siem/</loc>
   </url>
   
@@ -62,8 +75,7 @@
   </url>
   
   <url>
-    <loc>/events/</loc>
-    <lastmod>2014-06-20T00:00:00+00:00</lastmod>
+    <loc>/news/</loc>
   </url>
   
   <url>
