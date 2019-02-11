@@ -105,6 +105,13 @@ section.content-block {
       margin: 0 auto;
     }
   }
+  div#wufoo-z1kl2dfg0nf9vav {
+    @extend %full-width;
+    padding: 30px 0;
+    @include media-query-max($phone) {
+      padding: 0;
+    }
+  }
   form#form {
     @extend %content-center;
     @extend %flex;
