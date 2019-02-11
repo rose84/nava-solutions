@@ -115,9 +115,10 @@ form.wufoo {
         }
         textarea.textarea {
           height: 172px;
+          max-width: 980px;
+          min-width: unset !important;
           padding: 10px 5px;
           resize: none;
-          max-width: 980px;
         }
         input#saveForm {
           @extend %content-center;
