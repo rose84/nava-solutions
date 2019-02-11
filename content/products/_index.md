@@ -30,7 +30,7 @@ Nava Certus allows cloud storage customers to migrate windows file systems to th
 {{% /container %}}
 {{% /container %}}
 
-{{% container tag="section" class="content-block columns items-self-flex-start" %}}
+{{% container tag="section" class="content-block columns" %}}
 {{% container tag="div" class="inner content-center items-center" %}}
 
 {{% container tag="div" class="logo" %}}
