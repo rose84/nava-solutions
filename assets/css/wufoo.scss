@@ -28,9 +28,9 @@ form {
       @extend %flex-column;
       @extend %items-flex-start;
       list-style-type: none;
-      margin: 0;
+      margin: 5px 0;
       padding: 0 10px;
-      width: 50%;
+      width: 48% !important;
       input:nth-child(2),
       select:nth-child(2) {
         margin-right: 10px;
@@ -40,16 +40,19 @@ form {
       }
       @include media-query-max(600px) {
         padding: 0;
-        width: 100%;
+        width: 100% !important;
       }
       &:nth-last-child(3) {
-        @extend %full-width;
+        width: 100% !important;
       }
       &.buttons {
-        @extend %full-width;
+        width: 100% !important;
       }
       &.hide {
         @extend %none;
+      }
+      &.focuse {
+        background-color: transparent !important;
       }
       label {
         margin-bottom: 3px;
@@ -85,7 +88,7 @@ form {
           @extend %flex;
           @extend %items-center;
           @extend %no-decoration;
-          background-color: $main;
+          background-color: $main !important;
           border-radius: 5px;
           border: none;
           color: $bg !important;
@@ -93,6 +96,7 @@ form {
           font: 700 16px 'Lato';
           height: 40px;
           margin: 0 0 0 auto;
+          outline: none;
           padding: 0;
           text-align: center;
           width: 200px;
