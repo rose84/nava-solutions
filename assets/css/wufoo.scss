@@ -119,6 +119,7 @@ form.wufoo {
           min-width: unset !important;
           padding: 10px 5px;
           resize: none;
+          width: 98% !important;
         }
         input#saveForm {
           @extend %content-center;
