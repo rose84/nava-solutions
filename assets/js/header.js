@@ -1,5 +1,5 @@
 // Close mobile nav on click
-const navItems = document.querySelectorAll('a.menu-item');
+const navItems = document.querySelectorAll('a.close-main');
 navItems.forEach(link => {
   link.addEventListener("click", () => {
     document.getElementById('toggle').checked = false;
@@ -34,3 +34,22 @@ prodNav.addEventListener('mouseleave', hideProd);
 
 auToggle.addEventListener('mouseover', showAu);
 auNav.addEventListener('mouseleave', hideAu);
+
+// Mobile navigation subnav
+if (window.innerWidth < 768) {
+  let sub = document.querySelectorAll('a.menu-item.sub')
+  let close = document.querySelectorAll('div.close')
+  sub.forEach(link => {
+    link.addEventListener('click', () => {
+      const data = link.getAttribute('data-sub')
+      const nav = document.querySelector('ul#side-nav.'+data)
+      nav.classList.add('active')
+    })
+  })
+  close.forEach(back => {
+    back.addEventListener('click', () => {
+      let subNav = back.parentNode
+      subNav.classList.remove('active')
+    })
+  })
+}
