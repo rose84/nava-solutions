@@ -300,15 +300,40 @@ main#main {
     div.meta {
       @extend %content-center;
       @extend %flex;
+      @extend %flex-wrap;
+      @extend %full-width;
       @extend %items-center;
       margin: 0 auto 15px;
-      width: 300px;
       > * {
         color: #fff;
+        margin: 3px 0 !important;
+      }
+      time {
+        max-width: 100px;
       }
       p {
         margin: 0;
         width: auto;
+      }
+      div.tags {
+        @extend %content-flex-start;
+        @extend %flex;
+        @extend %flex-wrap;
+        @extend %items-center;
+        text-align: center;
+        span.meta {
+          color: $accent;
+        }
+        a {
+          @extend %no-decoration;
+          color: #fff;
+          font-size: 18px;
+          font-style: italic;
+          text-transform: capitalize;
+          &:hover {
+            color: $main;
+          }
+        }
       }
     }
   }

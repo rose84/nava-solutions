@@ -1,0 +1,9 @@
+{{ $s := .Section }}
+<div class="tags">
+  <!-- <span aria-hidden="true" class="meta">#</span> -->
+  {{ range $key, $cat := .Params.category }}
+    {{ $item := replaceRE " " "-" $cat }}
+    {{- if ne $key 0 }}<span>,&nbsp;</span>{{ end }}
+    <a href="/{{ $s }}/category/{{ $item }}">{{ $cat }}</a>
+  {{ end }}
+</div>

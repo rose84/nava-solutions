@@ -506,13 +506,30 @@ article.post {
   div.meta {
     @extend %content-center;
     @extend %flex;
+    @extend %flex-wrap;
     @extend %items-center;
     margin: 0 auto 15px;
-    width: 300px;
+    > * {
+      margin: 3px 0 !important;
+    }
     p {
       display: inline;
-      margin: 0;
       width: auto;
+    }
+    div.tags {
+      @extend %content-flex-start;
+      @extend %flex;
+      @extend %flex-wrap;
+      @extend %items-center;
+      text-align: center;
+      span.meta {
+        color: $accent;
+      }
+      a {
+        @extend %no-decoration;
+        font-style: italic;
+        text-transform: capitalize;
+      }
     }
   }
 }

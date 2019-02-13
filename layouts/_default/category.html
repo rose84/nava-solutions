@@ -9,17 +9,16 @@
       <section class="hero" style="background-image: url('{{ $homeHero.Permalink }}');">
     {{ end }}
       <h1>{{ .Title }}</h1>
-      <div class="meta">
-        <time class="date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
-        <p class="divider">&nbsp;&bull;&nbsp;</p>
-        <p class="author">by {{ .Params.author }}</p>
-        <p class="divider">&nbsp;&bull;&nbsp;</p>
-        {{ partial "categories.html" . }}
-      </div>
+      {{ if .Params.heroText }}
+        <p>{{ .Params.heroText }}</p>
+      {{ end }}
     </section>
     <section class="content-block">
-      <div class="inner flex-column items-center">
-        {{ .Content }}
+      <div class="inner items-center">
+        {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") 10 }}
+        {{ range $paginator.Pages }}
+          {{ .Render "li"}}
+        {{ end }}
       </div>
     </section>
   </main>

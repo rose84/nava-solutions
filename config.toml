@@ -11,6 +11,10 @@ SectionPagesMenu = "main"
   blog = "/blog/:title/"
   events = "/events/:title/"
   news = "/news/:title/"
+  category = "/blog/category/:slug/"
+
+[taxonomies]
+  category = "category"
 
 [blackfriday]
   hrefTargetBlank = true

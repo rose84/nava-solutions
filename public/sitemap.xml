@@ -22,12 +22,19 @@
   </url>
   
   <url>
+    <loc>/blog/category/blog/</loc>
+    <lastmod>2013-06-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/blog/</loc>
     <lastmod>2013-06-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>/category/</loc>
+    <lastmod>2013-06-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -61,6 +68,18 @@
   </url>
   
   <url>
+    <loc>/blog/category/google-apps/</loc>
+    <lastmod>2013-06-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/blog/category/nava-certus/</loc>
+    <lastmod>2013-06-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/products/nava-siem/</loc>
   </url>
   
@@ -80,11 +99,6 @@
   
   <url>
     <loc>/request-a-quote/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>

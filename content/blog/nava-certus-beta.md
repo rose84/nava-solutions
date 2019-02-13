@@ -2,6 +2,7 @@
   title = "Nava Certus (Beta) Available for Download"
   author = "Violeta Shamirian"
   date = "2013-06-27"
+  category = ["blog","google apps","nava certus"]
   draft = false
   showthedate = true
 +++
