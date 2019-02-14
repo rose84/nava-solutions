@@ -13,25 +13,25 @@
         <p>{{ .Params.heroText }}</p>
       {{ end }}
     </section>
-    <section class="content-block">
-      <div class="inner items-center flex-column">
-        {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") 10 }}
+    <section id="blog" class="content-block flex-row items-flex-start">
+      <div id="feed" class="inner items-center">
+        {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") 9 }}
         {{ range $paginator.Pages }}
           {{ .Render "li"}}
         {{ end }}
         {{ if or .Paginator.HasPrev .Paginator.HasNext }}
           {{ partial "paginator.html" . }}
         {{ end }}
-        <div class="divider"></div>
-        <section class="tag-selection">
-          <ul class="categories">
-            {{ range $key, $taxonomy := .Site.Taxonomies.category }}
-              {{ $c := replaceRE "-" " " $key }}
-              <li><a class="meta" href="/blog/category/{{ $key }}">{{ $c }}</a></li>
-            {{ end }}
-          </ul>
-        </section>
+        {{/*  <div class="divider"></div>  */}}
       </div>
+      <section class="tag-selection">
+        <ul class="categories">
+          {{ range $key, $taxonomy := .Site.Taxonomies.category }}
+            {{ $c := replaceRE "-" " " $key }}
+            <li><a class="meta" href="/blog/category/{{ $key }}">{{ $c }}</a></li>
+          {{ end }}
+        </ul>
+      </section>
     </section>
   </main>
   {{ partial "footer.html" . }}

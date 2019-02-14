@@ -13,7 +13,7 @@
         <p>{{ .Params.heroText }}</p>
       {{ end }}
     </section>
-    <section class="content-block">
+    <section class="content-block  flex-column items-center">
       <div class="inner items-center flex-column">
         {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") 10 }}
         {{ range $paginator.Pages }}
