@@ -1,21 +1,29 @@
 +++
-  title = "Nava Certus (Beta) Available for Download"
-  author = "Violeta Shamirian"
-  date = "2013-06-27"
-  category = ["blog","google apps","nava certus"]
+  title = "Nava Certus(Beta): Google Drive Migration"
+  author = "Lusine Kolozyan"
+  date = "2013-06-26"
+  category = ["google apps migration","nava certus","products"]
   draft = false
   showthedate = true
 +++
 
-We are proud to announce the Beta release of [Nava Certus](/products/nava-certus), our powerful Google Drive migration software.
+We have been hard at work over the past months and we’re ready now to share our excitement. As of yesterday, we have released the Beta version of Nava Certus, our powerful migration software enabling you to migrate your [file server to Google Drive.](/products/nava-certus/)
 
-With this version of Nava Certus, you will be able to:
+In fact, the product is available as a fully functional trial that you can download for free (up to 1GB). We would love to hear your feedback.
 
-- Migrate files from a file server to a single Google Drive account for centralized sharing
-- Migrate files based on file ownership (Distributed Migration) allowing you to distribute all your files and take advantage of up to 30GB built-in storage in Google Drive for each user.
+With this release, we are able to deliver some cool features, such as:
 
-You can download a trial version of Nava Certus directly from Linkgard. With the fully-functional trial version, you can migrate up to 1GB within 5 days for free. Afterwards, you    may purchase the product directly from within the software.
+  * Preservation of permissions
+  * Recreation of folder hierarchy
+  * Centralized migration (from single source to single user’s Google Drive)
+  * Distributed migration (from single source to multiple users’ Google Drive)
+  * Easy-to-use GUI
+  * Support for scripting and advanced users
 
-For migrations larger than 500GB, please contact us using the [Request a Quote](/request-a-quote) form and we will put you in touch with one of our partners who will be able to sell the software as well as provide migration services.
+Nava Certus will be available for purchase directly from Linkgard’s website for migrations of 500GB or less.
 
-We are also announcing the opening of our Partnership program. If your organization would like to resell Nava Certus and provide associated migration services, you may wish to learn more about our [partnership opportunities](/about-us/partnership).
+If you are an MSP or Google Apps Service Provider, you may be interested to learn about the [Reseller program](/partners) from Nava Solutions.
+
+So go ahead and give Nava Certus a try. We’d love your feedback.
+
+Also, check out our page on the Google Apps Marketplace: {{< link content="Nava Certus – Google Drive Migration" href="http://www.google.com/enterprise/marketplace/viewListing?productListingId=12767+14325826239003241800" >}}

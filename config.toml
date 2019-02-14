@@ -8,9 +8,9 @@ FootnoteReturnLinkContents = "↩"
 SectionPagesMenu = "main"
 
 [permalinks]
-  blog = "/blog/:title/"
-  events = "/events/:title/"
-  news = "/news/:title/"
+  blog = "/blog/:filename/"
+  events = "/events/:year/:month/:title/"
+  news = "/news/:filename/"
   category = "/blog/category/:slug/"
 
 [taxonomies]

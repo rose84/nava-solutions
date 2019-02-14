@@ -7,35 +7,61 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nava Solutions | All Rights Reserved</copyright>
-    <lastBuildDate>Thu, 27 Jun 2013 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/category/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Blog</title>
-      <link>/blog/category/blog/</link>
-      <pubDate>Thu, 27 Jun 2013 00:00:00 +0000</pubDate>
+      <title>Cloud Security</title>
+      <link>/blog/category/cloud-security/</link>
+      <pubDate>Wed, 18 Jun 2014 00:00:00 +0000</pubDate>
       
-      <guid>/blog/category/blog/</guid>
+      <guid>/blog/category/cloud-security/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Google Apps</title>
-      <link>/blog/category/google-apps/</link>
-      <pubDate>Thu, 27 Jun 2013 00:00:00 +0000</pubDate>
+      <title>Cloud Storage Migration</title>
+      <link>/blog/category/cloud-storage-migration/</link>
+      <pubDate>Sun, 07 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>/blog/category/google-apps/</guid>
+      <guid>/blog/category/cloud-storage-migration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google Apps Migration</title>
+      <link>/blog/category/google-apps-migration/</link>
+      <pubDate>Tue, 10 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/category/google-apps-migration/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Nava Certus</title>
       <link>/blog/category/nava-certus/</link>
-      <pubDate>Thu, 27 Jun 2013 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 07 Sep 2014 00:00:00 +0000</pubDate>
       
       <guid>/blog/category/nava-certus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nava Siem Agent</title>
+      <link>/blog/category/nava-siem-agent/</link>
+      <pubDate>Wed, 18 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/category/nava-siem-agent/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Products</title>
+      <link>/blog/category/products/</link>
+      <pubDate>Sun, 07 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/category/products/</guid>
       <description></description>
     </item>
     

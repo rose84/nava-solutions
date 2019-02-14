@@ -14,10 +14,13 @@
       {{ end }}
     </section>
     <section class="content-block">
-      <div class="inner items-center">
+      <div class="inner items-center flex-column">
         {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") 10 }}
         {{ range $paginator.Pages }}
           {{ .Render "li"}}
+        {{ end }}
+        {{ if or .Paginator.HasPrev .Paginator.HasNext }}
+          {{ partial "paginator.html" . }}
         {{ end }}
       </div>
     </section>

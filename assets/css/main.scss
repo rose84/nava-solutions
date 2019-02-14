@@ -29,14 +29,14 @@ section.column-layout {
   @include media-query-max(1020px) {
     flex-wrap: wrap;
   }
-  section.content-block {
+  .content-block {
     width: 770px;
     @include media-query-max(1020px) {
       width: 100%;
     }
   }
 }
-section.content-block {
+.content-block {
   @extend %content-center;
   @extend %flex;
   @extend %flex-column;
@@ -465,7 +465,7 @@ section.partners {
   }
 }
 section.column-layout {
-  section.content-block {
+  .content-block {
     div.inner {
       div.logo {
         margin-right: 20px;
@@ -498,6 +498,7 @@ section.events {
   }
 }
 article.post {
+  margin-bottom: 20px;
   .title {
     a {
       @extend %no-decoration;
@@ -530,6 +531,86 @@ article.post {
         font-style: italic;
         text-transform: capitalize;
       }
+    }
+  }
+}
+article.content-block {
+  div.inner {
+    @extend %relative;
+    overflow: hidden;
+    ul, section {
+      margin-right: auto;
+    }
+    section.table {
+      @extend %full-width;
+      @extend %relative;
+      overflow-x: auto;
+      padding: 0;
+      table {
+        margin: 0 0 10px;
+        thead {
+          background-color: $accent;
+          tr {
+            th {
+              color: $bg;
+              padding: 5px 10px;
+              text-align: center;
+              &:first-child {
+                text-align: start;
+              }
+            }
+          }
+        }
+        tbody {
+          tr {
+            td {
+              padding: 5px;
+              text-align: center;
+              &:first-child {
+                background-color: rgba($accent,.25);
+                text-align: start;
+              }
+            }
+          }
+        }
+      }
+      > p {
+        color: $accent;
+        font-size: 14px;
+        font-style: italic;
+        margin: 10px 0;
+      }
+    }
+  }
+}
+// Paginator
+nav.paginate {
+  a {
+    @extend %content-center;
+    @extend %flex;
+    @extend %items-center;
+    @extend %no-decoration;
+    font-size: 20px;
+    font-weight: bold;
+    height: 30px;
+    &.page-next {
+      margin-left: auto;
+      svg {
+        margin-left: 10px;
+      }
+    }
+    &.page-prev {
+      margin-right: auto;
+      svg {
+        margin-right: 10px;
+      }
+    }
+    svg {
+      height: auto;
+      width: 28px;
+    }
+    &:hover svg {
+      fill: $main;
     }
   }
 }
