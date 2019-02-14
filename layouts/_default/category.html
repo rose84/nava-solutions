@@ -19,6 +19,15 @@
         {{ range $paginator.Pages }}
           {{ .Render "li"}}
         {{ end }}
+        <div class="divider"></div>
+        <section class="tag-selection">
+          <ul class="categories">
+            {{ range $key, $taxonomy := .Site.Taxonomies.category }}
+              {{ $c := replaceRE "-" " " $key }}
+              <li><a class="meta" href="/blog/category/{{ $key }}">{{ $c }}</a></li>
+            {{ end }}
+          </ul>
+        </section>
       </div>
     </section>
   </main>

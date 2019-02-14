@@ -583,6 +583,37 @@ article.content-block {
     }
   }
 }
+// Categories
+section.tag-selection {
+  @extend %full-width;
+  ul.categories {
+    @extend %content-space-around;
+    @extend %flex;
+    @extend %flex-wrap;
+    @extend %full-width;
+    @extend %items-center;
+    margin: 0;
+    padding: 0;
+    li {
+      background-color: rgba($accent,0.25);
+      border: 2px solid $accent;
+      list-style-type: none;
+      margin: 5px;
+      padding: 5px;
+      transition: all .25s ease;
+      &:hover {
+        background-color: $accent;
+        a {
+          color: $main;
+        }
+      }
+      a {
+        @extend %no-decoration;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
 // Paginator
 nav.paginate {
   a {
