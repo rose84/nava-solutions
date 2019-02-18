@@ -1,0 +1,24 @@
+{{ define "main" }}
+  {{ partial "header.html" . }}
+  <main id="main">
+    {{ if .Params.heroBg }}
+      {{ $hero := resources.Get (print "img/hero/" (.Params.heroBg)) }}
+      <section class="hero" style="background-image: url('{{ $hero.Permalink }}');">
+    {{ else }}
+      {{ $homeHero := resources.Get "img/hero/hero-home.jpg" }}
+      <section class="hero" style="background-image: url('{{ $homeHero.Permalink }}');">
+    {{ end }}
+      <h1>{{ .Title }}</h1>
+      <time class="date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+      {{ if .Params.external }}
+        <a href="{{ .Params.external }}" id="button" class="button-lg button-alt">Book on </a>
+      {{ end }}
+    </section>
+    <section class="content-block  flex-column items-center">
+      <div class="inner flex-column items-center">
+        {{ .Content }}
+      </div>
+    </section>
+  </main>
+  {{ partial "footer.html" . }}
+{{ end }}

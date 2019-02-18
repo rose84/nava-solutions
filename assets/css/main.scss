@@ -477,7 +477,6 @@ section.column-layout {
 section.events {
   div.inner {
     ul.event-list {
-      @extend %full-width;
       @extend %margin-horizontal-center;
       max-width: 600px;
       li {
@@ -492,6 +491,14 @@ section.events {
           }
         }
       }
+    }
+  }
+}
+main.news {
+  li.event-items {
+    section.content {
+      padding: 0;
+      margin: 10px 0 15px;
     }
   }
 }

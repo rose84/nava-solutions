@@ -4,8 +4,10 @@
     <p class="author">by {{ .Params.author }}</p>
     <p class="divider">&nbsp;&bull;&nbsp;</p>
     <time class="date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+    {{ if .Params.category }}
     <p class="divider">&nbsp;&bull;&nbsp;</p>
     {{ partial "categories.html" . }}
+    {{ end }}
   </div>
   <p class="content">{{ .Summary }}</p>
 </article>
