@@ -4,7 +4,7 @@
   "description": "Nava Solutions is committed to develop software applications which accelerate the adoption of cloud solutions in a secure manner. The Nava Solutions software team produces solid, high-level and professional products which are easy to use at the same time.",
   "main": "gulpfile.js",
   "scripts": {
-    "build": "gulp build --max_old_space_size=8000; hugo",
+    "build": "NODE_ENV=production webpack; gulp build --max_old_space_size=8000; hugo",
     "clean": "rm -rf public resources",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -27,14 +27,15 @@
     "@babel/preset-env": "^7.3.1",
     "@babel/register": "^7.0.0",
     "autoprefixer": "^9.1.5",
+    "babel-cli": "^6.26.0",
     "babel-loader": "^8.0.5",
     "cssnano": "^4.1.4",
+    "gulp": "^4.0.0",
     "gulp-concat-util": "^0.5.5",
     "gulp-plumber": "^1.2.0",
     "gulp-postcss": "^7.0.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.1",
-    "gulp": "^4.0.0",
     "npm": "6.7.0",
     "postcss-calc": "^7.0.1",
     "postcss-cli": "^6.0.0",
@@ -43,9 +44,11 @@
     "postcss-mixins": "^6.2.0",
     "postcss-nested": "^4.1.0",
     "postcss-simple-vars": "^5.0.1",
+    "script-loader": "^0.7.2",
     "sugarss": "^2.0.0",
     "vanilla-lazyload": "^10.20.1",
+    "webpack": "^4.29.5",
     "webpack-cli": "^3.2.3",
-    "webpack": "^4.29.5"
+    "webpack-dev-server": "^3.2.0"
   }
 }
