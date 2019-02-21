@@ -1,11 +1,16 @@
-"use strict";
+'use strict';
 
 // Load Plugins
 const autoprefixer = require('autoprefixer');
+const cache = require('gulp-cache');
 const concat = require('gulp-concat-util');
 const cp = require('child_process');
 const cssnano = require('cssnano');
 const gulp = require('gulp');
+const imagemin = require('gulp-imagemin');
+const imageminMozjpeg = require('imagemin-mozjpeg');
+const imageminPNGquant = require('imagemin-pngquant');
+const imageminSVGo = require('imagemin-svgo');
 const plumber = require('gulp-plumber');
 const postcss = require('gulp-postcss');
 const rename = require('gulp-rename');
@@ -47,9 +52,34 @@ function wufoo() {
 
 // Run Webpack
 function webpack() {
-  return cp.spawn("webpack", {
-    stderr: "inherit"
+  return cp.spawn('webpack', {
+    stderr: 'inherit'
   });
+}
+
+// Image Optimization
+function optimize() {
+  return gulp
+    .src(['assets/img/*.jpg','assets/img/*.png','assets/img/*.svg'])
+    .pipe(plumber())
+    .pipe(
+      cache(
+        imagemin({
+          use: [
+            imageminMozjpeg({
+              quality: 80
+            }),
+            imageminPNGquant({
+              quality: [0.3, 0.5]
+            }),
+            imageminSVGo({
+              removeViewBox: true
+            })
+          ]
+        })
+      )
+)
+.pipe(gulp.dest('assets/img'));
 }
 
 // Watch asset folder for changes
@@ -69,12 +99,13 @@ function watchFiles() {
 }
 
 // Tasks
-gulp.task("critical", critical);
-gulp.task("wufoo", wufoo);
-gulp.task("webpack", webpack);
+gulp.task('critical', critical);
+gulp.task('wufoo', wufoo);
+gulp.task('webpack', webpack);
+gulp.task('optimize', optimize);
 
 // Run Watch as default
 gulp.task('watch', watchFiles);
 
 // Build
-gulp.task('build', gulp.series(['critical','wufoo']));
+gulp.task('build', gulp.series(['critical','wufoo','optimize']));
