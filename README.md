@@ -30,19 +30,14 @@ npm install
 ```
 
 ### Development
-Running a local build can be done the following commands.
+Running a local build can be done the following commands, running on **separate** terminal windows:
 
-1. Webpack imports, bundles, and minifies our JS and outputs a `bundle.js` file:
-```
-webpack
-```
-
-2. Gulp watches for any changes done to critical CSS files:
+Gulp watches for any changes done to CSS and JS files. When any of these are changes, the corresponding task runs and compiles. Gulp also runs Webpack build.
 ```
 gulp watch
 ```
 
-3. Hugo runs a local server with live reload for the site itself.
+Hugo runs a local server with live reload for the site itself.
 ```
 hugo server
 ```
