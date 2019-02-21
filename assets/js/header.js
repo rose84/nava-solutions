@@ -9,7 +9,6 @@ navItems.forEach(link => {
 // Set variables for key elements
 var prodNav = document.getElementById('sub-nav-prod');
 var prodToggle = document.getElementById('drop-prod');
-
 var auNav = document.getElementById('sub-nav-au');
 var auToggle = document.getElementById('drop-au');
 
@@ -20,7 +19,6 @@ function showProd() {
 function hideProd() {
   prodNav.classList.add('collapsed');
 }
-
 function showAu() {
   auNav.classList.remove('collapsed');
 }
@@ -31,7 +29,6 @@ function hideAu() {
 // Add a click event to run the subNavToggle function
 prodToggle.addEventListener('mouseover', showProd);
 prodNav.addEventListener('mouseleave', hideProd);
-
 auToggle.addEventListener('mouseover', showAu);
 auNav.addEventListener('mouseleave', hideAu);
 
