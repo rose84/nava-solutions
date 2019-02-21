@@ -1,5 +1,1 @@
-<svg width="100%" height="100%" viewBox="0 0 86 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
-  <g transform="matrix(-2.51162,0,-0,2.51162,85.5031,-0.693836)">
-    <path d="M32.82,33.094L7.141,58.774C5.504,60.407 2.855,60.407 1.223,58.774C-0.406,57.141 -0.406,54.492 1.223,52.86L23.945,30.137L1.227,7.418C-0.406,5.785 -0.406,3.137 1.227,1.504C2.859,-0.133 5.508,-0.133 7.141,1.504L32.82,27.184C33.637,28 34.043,29.067 34.043,30.137C34.043,31.207 33.637,32.282 32.82,33.094Z" style="fill-rule:nonzero;fill:#262626;"/>
-  </g>
-</svg>
+<svg viewBox="0 0 86 150" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M3.072 82.426l64.496 64.498c4.111 4.102 10.764 4.102 14.863 0 4.092-4.101 4.092-10.755 0-14.854L25.362 75l57.06-57.062c4.1-4.101 4.1-10.752 0-14.853-4.1-4.112-10.753-4.112-14.854 0L3.072 67.582A10.437 10.437 0 0 0 0 74.999c0 2.687 1.02 5.387 3.072 7.427z" fill-rule="nonzero" fill="#262626"/></svg>
