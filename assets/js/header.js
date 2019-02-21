@@ -39,7 +39,7 @@ if (window.innerWidth < 768) {
   sub.forEach(link => {
     link.addEventListener('click', () => {
       const data = link.getAttribute('data-sub')
-      const nav = document.querySelector('ul#side-nav.'+data)
+      const nav = document.querySelector('ul.side-nav.'+data)
       nav.classList.add('active')
     })
   })

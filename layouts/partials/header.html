@@ -24,7 +24,7 @@
         <li class="sub-item"><a href="{{ .Site.BaseURL }}blog">Blog</a></li>
       </ul>
     </div>
-    <a href="{{ .Site.BaseURL }}request-a-quote" id="button" class="button-sm quote">Request a Quote</a>
+    <a href="{{ .Site.BaseURL }}request-a-quote" class="button button-sm quote">Request a Quote</a>
   </nav>
 
   <input id="toggle" type="checkbox" />
@@ -38,7 +38,7 @@
     {{ $back := resources.Get "img/back.svg" | minify }}
     <a href="{{ .Site.BaseURL }}" class="menu-item close-main{{ if .IsHome }} active{{ end }}" aria-label="Nava Solutions Dot Com Homepage">Home</a>
     <a id="drop" class="menu-item sub{{ if eq $l "products" }} active{{ end }}" data-sub="prod">Products</a>
-    <ul id="side-nav" class="prod">
+    <ul class="side-nav prod">
       <div class="close"><img src="{{ $back.Permalink }}" alt="Back to menu"></div>
       <li class="sub-item"><a class="close-main{{ if eq $l "products" }} active{{ end }}" href="{{ .Site.BaseURL }}products">Products</a></li>
       <li class="sub-item"><a class="close-main" href="{{ .Site.BaseURL }}products/nava-certus">Nava Certus</a></li>
@@ -47,7 +47,7 @@
     <a href="{{ .Site.BaseURL }}cloud-security" class="menu-item close-main{{ if eq $l "cloud-security" }} active{{ end }}">Cloud Security</a>
     <a href="{{ .Site.BaseURL }}cloud-migration" class="menu-item close-main{{ if eq $l "cloud-migration" }} active{{ end }}">Cloud Migration</a>
     <a class="menu-item sub abt{{ if eq $l "about-us" }} active{{ end }}" data-sub="abt">About Us</a>
-    <ul id="side-nav" class="abt">
+    <ul class="side-nav abt">
       <div class="close"><img src="{{ $back.Permalink }}" alt="Back to menu"></div>
       <li class="sub-item"><a class="close-main{{ if eq $l "about-us" }} active{{ end }}" href="{{ .Site.BaseURL }}about-us/">About Us</a></li>
       <li class="sub-item"><a class="close-main" href="{{ .Site.BaseURL }}about-us/partnership#become-a-partner">Become a Partner</a></li>
@@ -55,6 +55,6 @@
       <li class="sub-item"><a class="close-main" href="{{ .Site.BaseURL }}about-us/partnership#cloud-providers-partnerships">Cloud Provider Partnerships</a></li>
       <li class="sub-item"><a href="{{ .Site.BaseURL }}blog">Blog</a></li>
     </ul>
-    <a href="{{ .Site.BaseURL }}request-a-quote" id="button" class="button-sm quote close-main">Request a Quote</a>
+    <a href="{{ .Site.BaseURL }}request-a-quote" class="button button-sm quote close-main">Request a Quote</a>
   </nav>
 </header>

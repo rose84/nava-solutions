@@ -13,7 +13,7 @@
         <p>{{ .Params.heroText }}</p>
       {{ end }}
       {{ if .Params.heroButton }}
-        <a href="{{ .Site.BaseURL }}" id="button" class="button-lg button-alt">{{ .Params.heroButton }}</a>
+        <a href="{{ .Site.BaseURL }}" class="button button-lg button-alt">{{ .Params.heroButton }}</a>
       {{ end }}
     </section>
     {{ .Content }}

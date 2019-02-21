@@ -23,7 +23,7 @@
 Nava Certus allows cloud storage customers to migrate windows file systems to the cloud reliably and quickly. While it is easy enough to be used by any user, it was designed with MSPs in mind to accomplish very large data migrations tasks with ease.
 
 <!-- ISSUE: https://github.com/fourjuaneight/nava-solutions/issues/2 -->
-{{< button href="/products/nava-certus" class="button-lg" content="Learn More" >}}
+{{< button href="/products/nava-certus" class="button-lg" content="Learn More" label="Learn More about Nava Certus" >}}
 
 {{% /container %}}
 {{% /container %}}
@@ -44,7 +44,7 @@ Nava Certus allows cloud storage customers to migrate windows file systems to th
 Secure your cloud infrastructure using Nava SIEM Agent, a revolutionary tool that retrieves audit logs from various data sources, including Google Apps and Amazon S3. Ingest your cloud audit logs into your favorite SIEM solution and have a unified framework for log retention, analysis, compliance, and forensics.
 
 <!-- ISSUE: https://github.com/fourjuaneight/nava-solutions/issues/2 -->
-{{< button href="/products/nava-siem" class="button-lg" content="Learn More" >}}
+{{< button href="/products/nava-siem" class="button-lg" content="Learn More" label="Learn More about Nava Siem" >}}
 
 {{% /container %}}
 {{% /container %}}

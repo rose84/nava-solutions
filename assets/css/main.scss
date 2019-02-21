@@ -97,7 +97,7 @@ section.column-layout {
       margin-left: 15px;
     }
   }
-  a#button {
+  a.button {
     margin: 15px 0 0 auto;
     @include media-query-max($phone) {
       margin: 0 auto;

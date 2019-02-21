@@ -21,7 +21,7 @@
       {{ end }}
       {{ if .Params.heroButton }}
         {{ $path := print .Section "/" .Params.redir }}
-        <a href="/{{ $path }}" id="button" class="button-lg button-alt">{{ .Params.heroButton }}</a>
+        <a href="/{{ $path }}" class="button button-lg button-alt">{{ .Params.heroButton }}</a>
       {{ end }}
     </section>
     {{ .Content }}

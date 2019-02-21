@@ -80,7 +80,7 @@
 }
 
 // Buttons
-#button {
+.button {
   @extend %content-center;
   @extend %flex;
   @extend %items-center;

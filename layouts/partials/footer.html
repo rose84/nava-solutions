@@ -9,7 +9,7 @@
       </li>
     </ul>
     <ul class="nav">
-      <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+      <li><a href="{{ .Site.BaseURL }}" aria-label="Nava Solutions Dot Com Homepage">Home</a></li>
       <li><a href="{{ .Site.BaseURL }}products">Products</a></li>
       <li><a href="{{ .Site.BaseURL }}products/nava-certus">Nava Certus</a></li>
       <li><a href="{{ .Site.BaseURL }}products/nava-siem">Nava Siem Agent</a></li>
@@ -20,7 +20,7 @@
       <li><a href="{{ .Site.BaseURL }}request-a-quote">Request a Quote</a></li>
     </ul>
   </section>
-  <a href="{{ .Site.BaseURL }}" class="home">
+  <a href="{{ .Site.BaseURL }}" class="home" aria-label="Nava Solutions Dot Com Homepage">
     {{ partial "logo.html" . }}
   </a>
   <p class="copy">&copy;&nbsp;{{ time.Now.Format "2006" }}&nbsp;{{ .Site.Copyright }}</p>

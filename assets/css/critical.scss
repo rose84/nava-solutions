@@ -199,10 +199,10 @@ header#header {
         color: $main;
       }
     }
-    a#button {
+    a.button {
       margin: 10px 0;
     }
-    ul#side-nav {
+    ul.side-nav {
       @extend %absolute;
       @extend %content-center;
       @extend %flex;
@@ -288,7 +288,7 @@ main#main {
         margin-bottom: 10px;
       }
     }
-    a#button {
+    a.button {
       text-transform: uppercase;
       @include media-query-max($tablet) {
         font-size: 15px;
