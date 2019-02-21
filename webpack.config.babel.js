@@ -1,7 +1,7 @@
 import path from "path";
 
 export default {
-  mode: process.env.NODE_ENV || 'development',
+  mode: process.env.NODE_ENV || 'production',
   entry: [
     "./assets/js/header.js",
     "./assets/js/wufoo.js",

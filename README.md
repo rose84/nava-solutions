@@ -7,6 +7,13 @@ Install the latest version of [Hugo](https://gohugo.io/getting-started/installin
 
 [npm](https://docs.npmjs.com/getting-started/what-is-npm) is used to managed dependencies. To asure compatibility, version 8.14.0 of node and version 6.4.1 of npm are recommended. You can manage node versions using [nvm](https://github.com/creationix/nvm#installation). Once installed, you can use the config file on the repo to install and download the recommeneded node/npm version.
 
+[Gulp](https://gulpjs.com/docs/en/getting-started/quick-start) v4 is used to compile the critical Sass and output a minified HTML partial that is added to the `baseOf.html` template head for inlined critical CSS.
+
+[Webpack](https://webpack.js.org/concepts) is used to import external libraries, bundle, and minify all our JavaScript assets.
+
+**Note:** Bundling and minification are possible with Hugo Pipes. However, in order to import our external libraries as well, Webpack is used instead. The output file is then called via Hugo Pipes.
+
+### Installation
 From the root directory of the repo, run the install command for the recommended node version:
 ```
 nvm install
@@ -23,14 +30,19 @@ npm install
 ```
 
 ### Development
-Running the local server can be done the following two commands.
+Running a local build can be done the following commands.
 
-Gulp watches for any changes done to critical CSS files:
+1. Webpack imports, bundles, and minifies our JS and outputs a `bundle.js` file:
+```
+webpack
+```
+
+2. Gulp watches for any changes done to critical CSS files:
 ```
 gulp watch
 ```
 
-Hugo runs a local server with live reload for the site itself.
+3. Hugo runs a local server with live reload for the site itself.
 ```
 hugo server
 ```
