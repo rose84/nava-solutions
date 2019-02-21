@@ -57,7 +57,7 @@
         
         var ref = document.getElementsByTagName( "script" )[ 0 ];
         var script = document.createElement( "script" );
-        script.src = "\/js\/critical-fallback.min.js";
+        script.src = "\/js\/font.min.js";
         script.async = true;
         ref.parentNode.insertBefore( script, ref );
       }
@@ -127,14 +127,7 @@ In the past, we recommended to split up migrations into manageable chunks and to
   <link rel="icon" sizes="512x512" href="/icons/icon-512x512.png">
 
   
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41226205-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-41226205-1');
-</script>
+  
 </head>
 <body>
   
@@ -377,14 +370,6 @@ In the past, we recommended to split up migrations into manageable chunks and to
 
 
 
-<script src="/js/bundle.js"></script>
-<script>
-  var myLazyLoad = new LazyLoad({
-    elements_selector: ".lazy",
-    threshold: 500,
-    class_loading: "loading",
-    class_error: "error"
-  });
-</script>
+<script src="/js/bundle.min.js"></script>
 </body>
 </html>

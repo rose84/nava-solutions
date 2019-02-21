@@ -57,7 +57,7 @@
         
         var ref = document.getElementsByTagName( "script" )[ 0 ];
         var script = document.createElement( "script" );
-        script.src = "\/js\/critical-fallback.min.js";
+        script.src = "\/js\/font.min.js";
         script.async = true;
         ref.parentNode.insertBefore( script, ref );
       }
@@ -116,14 +116,7 @@
   <link rel="icon" sizes="512x512" href="/icons/icon-512x512.png">
 
   
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41226205-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-41226205-1');
-</script>
+  
 </head>
 <body>
   
@@ -221,8 +214,8 @@
       <h1>Products</h1>
       
     </section>
-    <section class="content-block  flex-column items-center">
-      <div class="inner items-center flex-column">
+    <section id="blog" class="content-block flex-row items-flex-start">
+      <div id="feed" class="inner items-center">
         
         
           <article class="post">
@@ -231,6 +224,7 @@
     <p class="author">by Lusine Kolozyan</p>
     <p class="divider">&nbsp;&bull;&nbsp;</p>
     <time class="date" datetime="2013-10-15">2013-10-15</time>
+    
     <p class="divider">&nbsp;&bull;&nbsp;</p>
     
 <div class="tags">
@@ -246,6 +240,7 @@
     <a href="/blog/category/products">products</a>
   
 </div>
+    
   </div>
   <p class="content">Hooray! Today we’re releasing the latest version of Nava Certus, our cloud storage migration software. Have you tried it yet? If not, then why not go for the trial and you can migrate up to 1GB for free. Today’s release contains the following new features:
 Support for Amazon S3 storage: Due to popular demand, we’re now supporting migration from Windows file system to Amazon S3. Simply configure the migration job for S3 and within minutes you can be uploading your files to Amazon S3.</p>
@@ -257,6 +252,7 @@ Support for Amazon S3 storage: Due to popular demand, we’re now supporting mig
     <p class="author">by Lusine Kolozyan</p>
     <p class="divider">&nbsp;&bull;&nbsp;</p>
     <time class="date" datetime="2013-09-17">2013-09-17</time>
+    
     <p class="divider">&nbsp;&bull;&nbsp;</p>
     
 <div class="tags">
@@ -272,6 +268,7 @@ Support for Amazon S3 storage: Due to popular demand, we’re now supporting mig
     <a href="/blog/category/products">products</a>
   
 </div>
+    
   </div>
   <p class="content">The latest version (1.0.0.6) of Nava Certus is available for download starting today. With this release, we’re making minor but visible improvements to product functionality. Continue reading below for more info…
  Default User (Distributed): For distributed migrations, a new default user allows the migration of all un-mapped files to a single user. All files, whose owners are not found in the mapping file, will be migrated to the Google Drive account of the default user.</p>
@@ -283,6 +280,7 @@ Support for Amazon S3 storage: Due to popular demand, we’re now supporting mig
     <p class="author">by Lusine Kolozyan</p>
     <p class="divider">&nbsp;&bull;&nbsp;</p>
     <time class="date" datetime="2013-08-21">2013-08-21</time>
+    
     <p class="divider">&nbsp;&bull;&nbsp;</p>
     
 <div class="tags">
@@ -301,6 +299,7 @@ Support for Amazon S3 storage: Due to popular demand, we’re now supporting mig
     <a href="/blog/category/products">products</a>
   
 </div>
+    
   </div>
   <p class="content">If you are planning a Google Drive migration and require assurance that the files at the source are exactly the same as the files at the destination, then you may be interested in our “Migration Integrity” feature.
 One of the features that we designed into Nava Certus from the very beginning is called Migration Integrity. While this feature is not the most visible to the user, it is perhaps one of the most important for our enterprise customers that may want to ensure a certain chain-of-custody within the migration process.</p>
@@ -312,6 +311,7 @@ One of the features that we designed into Nava Certus from the very beginning is
     <p class="author">by Lusine Kolozyan</p>
     <p class="divider">&nbsp;&bull;&nbsp;</p>
     <time class="date" datetime="2013-07-31">2013-07-31</time>
+    
     <p class="divider">&nbsp;&bull;&nbsp;</p>
     
 <div class="tags">
@@ -330,6 +330,7 @@ One of the features that we designed into Nava Certus from the very beginning is
     <a href="/blog/category/products">products</a>
   
 </div>
+    
   </div>
   <p class="content">Enjoy cloud storage, migrate to Google Drive
 This post is another in a series of posts about Nava Certus, our Google Drive migration tool. Specifically, we show you the Distributed feature in NC. The beauty of distributed migration is that it allows you to get rid of your file server, but at the same time possibly stay in the “basic” tier of Google Drive storage, thus avoiding extra Google Drive storage costs.</p>
@@ -341,6 +342,7 @@ This post is another in a series of posts about Nava Certus, our Google Drive mi
     <p class="author">by Lusine Kolozyan</p>
     <p class="divider">&nbsp;&bull;&nbsp;</p>
     <time class="date" datetime="2013-07-27">2013-07-27</time>
+    
     <p class="divider">&nbsp;&bull;&nbsp;</p>
     
 <div class="tags">
@@ -356,6 +358,7 @@ This post is another in a series of posts about Nava Certus, our Google Drive mi
     <a href="/blog/category/products">products</a>
   
 </div>
+    
   </div>
   <p class="content">We decided to make this video to answer some basic questions from customers. It is a demo of a file server to Google Drive migration.
  </p>
@@ -367,6 +370,7 @@ This post is another in a series of posts about Nava Certus, our Google Drive mi
     <p class="author">by Lusine Kolozyan</p>
     <p class="divider">&nbsp;&bull;&nbsp;</p>
     <time class="date" datetime="2013-06-26">2013-06-26</time>
+    
     <p class="divider">&nbsp;&bull;&nbsp;</p>
     
 <div class="tags">
@@ -382,36 +386,51 @@ This post is another in a series of posts about Nava Certus, our Google Drive mi
     <a href="/blog/category/products">products</a>
   
 </div>
+    
   </div>
   <p class="content">We have been hard at work over the past months and we’re ready now to share our excitement. As of yesterday, we have released the Beta version of Nava Certus, our powerful migration software enabling you to migrate your file server to Google Drive.
 In fact, the product is available as a fully functional trial that you can download for free (up to 1GB). We would love to hear your feedback.</p>
 </article>
         
-        <div class="divider"></div>
-        <section class="tag-selection">
-          <ul class="categories">
-            
-              
-              <li><a class="meta" href="/blog/category/cloud-security">cloud security</a></li>
-            
-              
-              <li><a class="meta" href="/blog/category/cloud-storage-migration">cloud storage migration</a></li>
-            
-              
-              <li><a class="meta" href="/blog/category/google-apps-migration">google apps migration</a></li>
-            
-              
-              <li><a class="meta" href="/blog/category/nava-certus">nava certus</a></li>
-            
-              
-              <li><a class="meta" href="/blog/category/nava-siem-agent">nava siem agent</a></li>
-            
-              
-              <li><a class="meta" href="/blog/category/products">products</a></li>
-            
-          </ul>
-        </section>
+        
+          
+<nav class="paginate">
+  
+  
+    <a class="page-prev" href="/blog/category/products/">
+      <svg width="100%" height="100%" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.41421"><g><path d="M13.359,15.762L20.559,8.559C20.719,8.398 20.801,8.16 20.801,8C20.801,7.762 20.719,7.602 20.559,7.441L13.359,0.238C13.199,0.078 13.039,0 12.801,0C12.559,0 12.398,0.078 12.238,0.238L11.121,1.359C10.801,1.68 10.801,2.16 11.121,2.48L14.32,5.68C14.559,5.922 14.398,6.398 14,6.398L0.801,6.398C0.32,6.398 0,6.719 0,7.199L0,8.801C0,9.281 0.32,9.602 0.801,9.602L14.078,9.602C14.398,9.602 14.641,10 14.398,10.32L11.199,13.52C10.879,13.84 10.879,14.32 11.199,14.641L12.32,15.762C12.48,15.922 12.641,16 12.879,16C13.039,16 13.199,15.922 13.359,15.762Z" transform="matrix(-9.61492,0,-0,9.61492,200,23.0806)" fill-rule="nonzero"/></g></svg>
+      Previous
+    </a>
+  
+
+  
+  
+</nav>
+        
       </div>
+      <section class="tag-selection">
+        <ul class="categories">
+          
+            
+            <li><a class="meta" href="/blog/category/cloud-security">cloud security</a></li>
+          
+            
+            <li><a class="meta" href="/blog/category/cloud-storage-migration">cloud storage migration</a></li>
+          
+            
+            <li><a class="meta" href="/blog/category/google-apps-migration">google apps migration</a></li>
+          
+            
+            <li><a class="meta" href="/blog/category/nava-certus">nava certus</a></li>
+          
+            
+            <li><a class="meta" href="/blog/category/nava-siem-agent">nava siem agent</a></li>
+          
+            
+            <li><a class="meta" href="/blog/category/products">products</a></li>
+          
+        </ul>
+      </section>
     </section>
   </main>
   <footer id="footer">
@@ -499,14 +518,6 @@ In fact, the product is available as a fully functional trial that you can downl
 
 
 
-<script src="/js/bundle.js"></script>
-<script>
-  var myLazyLoad = new LazyLoad({
-    elements_selector: ".lazy",
-    threshold: 500,
-    class_loading: "loading",
-    class_error: "error"
-  });
-</script>
+<script src="/js/bundle.min.js"></script>
 </body>
 </html>

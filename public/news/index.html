@@ -57,7 +57,7 @@
         
         var ref = document.getElementsByTagName( "script" )[ 0 ];
         var script = document.createElement( "script" );
-        script.src = "\/js\/critical-fallback.min.js";
+        script.src = "\/js\/font.min.js";
         script.async = true;
         ref.parentNode.insertBefore( script, ref );
       }
@@ -81,6 +81,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/news/" />
 
+<meta property="og:updated_time" content="2019-02-18T00:00:00&#43;00:00"/>
 
   <meta property="og:image" content="/icons/avatar.png">
   
@@ -115,14 +116,7 @@
   <link rel="icon" sizes="512x512" href="/icons/icon-512x512.png">
 
   
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41226205-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-41226205-1');
-</script>
+  
 </head>
 <body>
   
@@ -212,16 +206,33 @@
     <a href="/request-a-quote" id="button" class="button-sm quote close-main">Request a Quote</a>
   </nav>
 </header>
-  <main id="main">
+  <main id="main" class="news">
     
       
       <section class="hero" style="background-image: url('/img/hero/hero-home.jpg');">
     
-      <h1>News</h1>
-      
+      <h1>Latest News</h1>
       
     </section>
-    
+    <section class="content-block events">
+      <div class="inner items-center">
+        <ul class="event-list">
+          
+            <li class="event-items">
+  <a href="/blog/distributed-google-drive-migration/">
+    <h2 class="title">Test News Post</h2>
+    <p class="divider">&nbsp;&mdash;&nbsp;</p>
+    <time class="date" datetime="2019-02-18">Feb 18, 2019</time>
+  </a>
+  <section class="content">
+    <p>They&rsquo;re using our own satellites against us. And the clock is ticking. Did he just throw my cat out of the window? Just my luck, no ice. God help us, we&rsquo;re in the hands of engineers.</p>
+
+  </section>
+</li>
+          
+        </ul>
+      </div>
+    </section>
   </main>
   <footer id="footer">
   <section class="info">
@@ -308,14 +319,6 @@
 
 
 
-<script src="/js/bundle.js"></script>
-<script>
-  var myLazyLoad = new LazyLoad({
-    elements_selector: ".lazy",
-    threshold: 500,
-    class_loading: "loading",
-    class_error: "error"
-  });
-</script>
+<script src="/js/bundle.min.js"></script>
 </body>
 </html>

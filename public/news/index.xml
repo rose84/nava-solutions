@@ -7,9 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nava Solutions | All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 18 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/news/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Test News Post</title>
+      <link>/news/this-is-a-test-new/</link>
+      <pubDate>Mon, 18 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/news/this-is-a-test-new/</guid>
+      <description>They&amp;rsquo;re using our own satellites against us. And the clock is ticking. Did he just throw my cat out of the window? Just my luck, no ice. God help us, we&amp;rsquo;re in the hands of engineers.</description>
+    </item>
     
   </channel>
 </rss>

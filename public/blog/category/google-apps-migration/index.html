@@ -57,7 +57,7 @@
         
         var ref = document.getElementsByTagName( "script" )[ 0 ];
         var script = document.createElement( "script" );
-        script.src = "\/js\/critical-fallback.min.js";
+        script.src = "\/js\/font.min.js";
         script.async = true;
         ref.parentNode.insertBefore( script, ref );
       }
@@ -116,14 +116,7 @@
   <link rel="icon" sizes="512x512" href="/icons/icon-512x512.png">
 
   
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41226205-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-41226205-1');
-</script>
+  
 </head>
 <body>
   
@@ -221,8 +214,8 @@
       <h1>Google Apps Migration</h1>
       
     </section>
-    <section class="content-block  flex-column items-center">
-      <div class="inner items-center flex-column">
+    <section id="blog" class="content-block flex-row items-flex-start">
+      <div id="feed" class="inner items-center">
         
         
           <article class="post">
@@ -231,6 +224,7 @@
     <p class="author">by Lusine Kolozyan</p>
     <p class="divider">&nbsp;&bull;&nbsp;</p>
     <time class="date" datetime="2013-12-10">2013-12-10</time>
+    
     <p class="divider">&nbsp;&bull;&nbsp;</p>
     
 <div class="tags">
@@ -249,6 +243,7 @@
     <a href="/blog/category/products">products</a>
   
 </div>
+    
   </div>
   <p class="content">Google Drive Migration
 Prior to releasing Nava Certus in June/July this year, we conducted a study of the cloud storage and data migration market in an effort to determine our pricing strategy. This was not an easy task since there weren’t (and still aren’t) that many commercially available tools for migrating data to cloud storage and specifically to Google Drive.
@@ -261,6 +256,7 @@ Still, we were able to get an understanding of the market and as a result set th
     <p class="author">by Lusine Kolozyan</p>
     <p class="divider">&nbsp;&bull;&nbsp;</p>
     <time class="date" datetime="2013-11-25">2013-11-25</time>
+    
     <p class="divider">&nbsp;&bull;&nbsp;</p>
     
 <div class="tags">
@@ -276,6 +272,7 @@ Still, we were able to get an understanding of the market and as a result set th
     <a href="/blog/category/nava-certus">nava certus</a>
   
 </div>
+    
   </div>
   <p class="content">Nava Certus 1.2 Today, we’re announcing the latest version of Nava Certus. With this release, we bring support for migration to and from Dropbox as well as migration from cloud storage to local premise servers.
 We’ve been hard at work trying to realize our goal of making Nava Certus synonymous with cloud storage migration. If you have a request for a particular source or destination, please don’t hesitate to respond in the comments.</p>
@@ -287,6 +284,7 @@ We’ve been hard at work trying to realize our goal of making Nava Certus synon
     <p class="author">by Lusine Kolozyan</p>
     <p class="divider">&nbsp;&bull;&nbsp;</p>
     <time class="date" datetime="2013-11-11">2013-11-11</time>
+    
     <p class="divider">&nbsp;&bull;&nbsp;</p>
     
 <div class="tags">
@@ -305,6 +303,7 @@ We’ve been hard at work trying to realize our goal of making Nava Certus synon
     <a href="/blog/category/products">products</a>
   
 </div>
+    
   </div>
   <p class="content">Nava Certus
 Over the past month, we’ve been working on a few new features for Nava Certus. After a lengthy period of testing, we’re happy to finally announce Nava Certus 1.1
@@ -320,6 +319,7 @@ Many new use cases are enabled with the addition of the Google Drive Source feat
     <p class="author">by Lusine Kolozyan</p>
     <p class="divider">&nbsp;&bull;&nbsp;</p>
     <time class="date" datetime="2013-08-21">2013-08-21</time>
+    
     <p class="divider">&nbsp;&bull;&nbsp;</p>
     
 <div class="tags">
@@ -338,6 +338,7 @@ Many new use cases are enabled with the addition of the Google Drive Source feat
     <a href="/blog/category/products">products</a>
   
 </div>
+    
   </div>
   <p class="content">If you are planning a Google Drive migration and require assurance that the files at the source are exactly the same as the files at the destination, then you may be interested in our “Migration Integrity” feature.
 One of the features that we designed into Nava Certus from the very beginning is called Migration Integrity. While this feature is not the most visible to the user, it is perhaps one of the most important for our enterprise customers that may want to ensure a certain chain-of-custody within the migration process.</p>
@@ -349,6 +350,7 @@ One of the features that we designed into Nava Certus from the very beginning is
     <p class="author">by Lusine Kolozyan</p>
     <p class="divider">&nbsp;&bull;&nbsp;</p>
     <time class="date" datetime="2013-07-31">2013-07-31</time>
+    
     <p class="divider">&nbsp;&bull;&nbsp;</p>
     
 <div class="tags">
@@ -367,6 +369,7 @@ One of the features that we designed into Nava Certus from the very beginning is
     <a href="/blog/category/products">products</a>
   
 </div>
+    
   </div>
   <p class="content">Enjoy cloud storage, migrate to Google Drive
 This post is another in a series of posts about Nava Certus, our Google Drive migration tool. Specifically, we show you the Distributed feature in NC. The beauty of distributed migration is that it allows you to get rid of your file server, but at the same time possibly stay in the “basic” tier of Google Drive storage, thus avoiding extra Google Drive storage costs.</p>
@@ -378,6 +381,7 @@ This post is another in a series of posts about Nava Certus, our Google Drive mi
     <p class="author">by Lusine Kolozyan</p>
     <p class="divider">&nbsp;&bull;&nbsp;</p>
     <time class="date" datetime="2013-07-29">2013-07-29</time>
+    
     <p class="divider">&nbsp;&bull;&nbsp;</p>
     
 <div class="tags">
@@ -390,6 +394,7 @@ This post is another in a series of posts about Nava Certus, our Google Drive mi
     <a href="/blog/category/nava-certus">nava certus</a>
   
 </div>
+    
   </div>
   <p class="content">Google Drive Migration Tool
 Do you need to migrate a large quantity of files to Google Drive? Have you tasted the frustration of the “manual” approach? Well, why don’t you try Nava Certus? It is the ultimate Google Drive migration tool. It moves files, copies permissions, recreates the directory hierarchy, and lets you print pretty reports for your boss. And you can take all the credit.
@@ -402,6 +407,7 @@ Here we show the “Centralized” configuration, where all files go to a single
     <p class="author">by Lusine Kolozyan</p>
     <p class="divider">&nbsp;&bull;&nbsp;</p>
     <time class="date" datetime="2013-07-27">2013-07-27</time>
+    
     <p class="divider">&nbsp;&bull;&nbsp;</p>
     
 <div class="tags">
@@ -417,6 +423,7 @@ Here we show the “Centralized” configuration, where all files go to a single
     <a href="/blog/category/products">products</a>
   
 </div>
+    
   </div>
   <p class="content">We decided to make this video to answer some basic questions from customers. It is a demo of a file server to Google Drive migration.
  </p>
@@ -428,6 +435,7 @@ Here we show the “Centralized” configuration, where all files go to a single
     <p class="author">by Violeta Shamirian</p>
     <p class="divider">&nbsp;&bull;&nbsp;</p>
     <time class="date" datetime="2013-06-27">2013-06-27</time>
+    
     <p class="divider">&nbsp;&bull;&nbsp;</p>
     
 <div class="tags">
@@ -440,6 +448,7 @@ Here we show the “Centralized” configuration, where all files go to a single
     <a href="/blog/category/nava-certus">nava certus</a>
   
 </div>
+    
   </div>
   <p class="content">We are proud to announce the Beta release of Nava Certus, our powerful Google Drive migration software.
 With this version of Nava Certus, you will be able to:
@@ -452,6 +461,7 @@ With this version of Nava Certus, you will be able to:
     <p class="author">by Lusine Kolozyan</p>
     <p class="divider">&nbsp;&bull;&nbsp;</p>
     <time class="date" datetime="2013-06-26">2013-06-26</time>
+    
     <p class="divider">&nbsp;&bull;&nbsp;</p>
     
 <div class="tags">
@@ -467,36 +477,37 @@ With this version of Nava Certus, you will be able to:
     <a href="/blog/category/products">products</a>
   
 </div>
+    
   </div>
   <p class="content">We have been hard at work over the past months and we’re ready now to share our excitement. As of yesterday, we have released the Beta version of Nava Certus, our powerful migration software enabling you to migrate your file server to Google Drive.
 In fact, the product is available as a fully functional trial that you can download for free (up to 1GB). We would love to hear your feedback.</p>
 </article>
         
-        <div class="divider"></div>
-        <section class="tag-selection">
-          <ul class="categories">
-            
-              
-              <li><a class="meta" href="/blog/category/cloud-security">cloud security</a></li>
-            
-              
-              <li><a class="meta" href="/blog/category/cloud-storage-migration">cloud storage migration</a></li>
-            
-              
-              <li><a class="meta" href="/blog/category/google-apps-migration">google apps migration</a></li>
-            
-              
-              <li><a class="meta" href="/blog/category/nava-certus">nava certus</a></li>
-            
-              
-              <li><a class="meta" href="/blog/category/nava-siem-agent">nava siem agent</a></li>
-            
-              
-              <li><a class="meta" href="/blog/category/products">products</a></li>
-            
-          </ul>
-        </section>
+        
       </div>
+      <section class="tag-selection">
+        <ul class="categories">
+          
+            
+            <li><a class="meta" href="/blog/category/cloud-security">cloud security</a></li>
+          
+            
+            <li><a class="meta" href="/blog/category/cloud-storage-migration">cloud storage migration</a></li>
+          
+            
+            <li><a class="meta" href="/blog/category/google-apps-migration">google apps migration</a></li>
+          
+            
+            <li><a class="meta" href="/blog/category/nava-certus">nava certus</a></li>
+          
+            
+            <li><a class="meta" href="/blog/category/nava-siem-agent">nava siem agent</a></li>
+          
+            
+            <li><a class="meta" href="/blog/category/products">products</a></li>
+          
+        </ul>
+      </section>
     </section>
   </main>
   <footer id="footer">
@@ -584,14 +595,6 @@ In fact, the product is available as a fully functional trial that you can downl
 
 
 
-<script src="/js/bundle.js"></script>
-<script>
-  var myLazyLoad = new LazyLoad({
-    elements_selector: ".lazy",
-    threshold: 500,
-    class_loading: "loading",
-    class_error: "error"
-  });
-</script>
+<script src="/js/bundle.min.js"></script>
 </body>
 </html>
