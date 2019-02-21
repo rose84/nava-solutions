@@ -4,7 +4,7 @@
   "description": "Nava Solutions is committed to develop software applications which accelerate the adoption of cloud solutions in a secure manner. The Nava Solutions software team produces solid, high-level and professional products which are easy to use at the same time.",
   "main": "gulpfile.js",
   "scripts": {
-    "build": "NODE_ENV=production webpack; gulp build --max_old_space_size=8000; hugo",
+    "build": "webpack; gulp build --max_old_space_size=8000; hugo",
     "clean": "rm -rf public resources",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
