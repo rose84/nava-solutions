@@ -3,11 +3,13 @@ import path from "path";
 export default {
   mode: process.env.NODE_ENV || 'development',
   entry: [
-    "./assets/js/import-lazyload.js",
+    "./assets/js/header.js",
+    "./assets/js/wufoo.js",
+    "./assets/js/lazy.js",
   ],
   output: {
     path: path.resolve(__dirname, "assets", "js"),
-    filename: "lazy.js"
+    filename: "bundle.js"
   },
   module: {
     rules: [

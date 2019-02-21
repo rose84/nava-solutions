@@ -72,35 +72,35 @@
   <link rel="canonical" href="{{ .Permalink }}">
   {{ template "_internal/twitter_cards.html" . }}
   {{ $avatar := resources.Get "icons/avatar.png" }}
-  <meta name="twitter:image" content="{{ $avatar.RelPermalink }}">
+  <meta name="twitter:image" content="{{ $avatar.Permalink }}">
   {{ template "_internal/opengraph.html" . }}
-  <meta property="og:image" content="{{ $avatar.RelPermalink }}">
+  <meta property="og:image" content="{{ $avatar.Permalink }}">
   {{ template "_internal/schema.html" . }}
 
   <!-- Favicon -->
   {{ $favicon := resources.Get "icons/favicon.png" }}
-  <link rel="shortcut icon" href="{{ $favicon.RelPermalink }}" i>
+  <link rel="shortcut icon" href="{{ $favicon.Permalink }}" i>
 
   <!-- Webclip and Apple Touch Icon -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}">
   {{ $ati152 := resources.Get "icons/apple-touch-icon-152x152.png" }}
-  <link rel="apple-touch-icon" sizes="152x152" href="{{ $ati152.RelPermalink }}">
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ $ati152.Permalink }}">
   {{ $ati167 := resources.Get "icons/apple-touch-icon-167x167.png" }}
-  <link rel="apple-touch-icon" sizes="167x167" href="{{ $ati167.RelPermalink }}">
+  <link rel="apple-touch-icon" sizes="167x167" href="{{ $ati167.Permalink }}">
   {{ $ati180 := resources.Get "icons/apple-touch-icon-180x180.png" }}
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ $ati180.RelPermalink }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ $ati180.Permalink }}">
   {{ $spt := resources.Get "icons/safari-pinned-tab.svg" | minify }}
-  <link rel="mask-icon" color="#34C2FC" href="{{ $spt.RelPermalink }}">
+  <link rel="mask-icon" color="#34C2FC" href="{{ $spt.Permalink }}">
 
   <!-- Icons -->
   {{ $i128 := resources.Get "icons/icon-128x128.png" }}
-  <link rel="icon" sizes="128x128" href="{{ $i128.RelPermalink }}">
+  <link rel="icon" sizes="128x128" href="{{ $i128.Permalink }}">
   {{ $i192 := resources.Get "icons/icon-192x192.png" }}
-  <link rel="icon" sizes="192x192" href="{{ $i192.RelPermalink }}">
+  <link rel="icon" sizes="192x192" href="{{ $i192.Permalink }}">
   {{ $i512 := resources.Get "icons/icon-512x512.png" }}
-  <link rel="icon" sizes="512x512" href="{{ $i512.RelPermalink }}">
+  <link rel="icon" sizes="512x512" href="{{ $i512.Permalink }}">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   {{/*  {{ partial "analytics.html" . }}  */}}
@@ -109,6 +109,7 @@
   {{ block "main" . }}
   {{ end }}
 
-  {{ partial "scripts.html" . }}
+  {{ $js := resources.Get "js/bundle.js" }}
+  <script src="{{ $js.Permalink }}"></script>
 </body>
 </html>

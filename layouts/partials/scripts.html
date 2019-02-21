@@ -1,5 +1,0 @@
-{{ $lazy := resources.Get "js/lazy.js" }}
-{{ $header := resources.Get "js/header.js" }}
-{{ $wufoo := resources.Get "js/wufoo.js" }}
-{{ $js := slice $lazy $header $wufoo | resources.Concat "js/bundle.js" | minify }}
-<script src="{{ $js.Permalink }}"></script>
