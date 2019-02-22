@@ -3,7 +3,6 @@
   heroText = "Nava Certus, an all-in-one file and cloud storage migration and synchronization solution, offers support for Dropbox, Google Drive, Amazon S3 and local file systems. As a downloadable solution, Nava Certus has additional benefits over other hosted migration solutions, such as performance and migration integrity. Download a free trial today."
   heroButton = "Download Trial"
   redir = "download-nava-certus"
-  heroBg = "hero-migration.jpg"
   draft = false
   showthedate = false
 +++
@@ -12,9 +11,9 @@
 {{% container tag="section" class="content-block product" %}}
 {{% container tag="div" class="inner content-center items-center flex-wrap" %}}
 {{% container tag="div" class="logo" %}}
-
-{{< img src="nava-certus.jpg" alt="Nava Certus" >}}
-
+<div>
+{{< img src="nava-certus" alt="Nava Certus" type="jpg" >}}
+</div>
 {{% /container %}}
 {{% container tag="div" class="info" %}}
 <!-- END ISSUE: https://github.com/fourjuaneight/nava-solutions/issues/2  --> 
@@ -53,7 +52,7 @@
 
 {{% container tag="div" class="info" %}}
 
-{{< img src="google-drive.png" class="icon" >}}
+{{< img src="google-drive" class="icon" type="png" >}}
 
 #### Google Drive
 
@@ -62,7 +61,7 @@
 
 {{% container tag="div" class="info" %}}
 
-{{< img src="s3.png" class="icon" >}}
+{{< img src="s3" class="icon" type="png" >}}
 
 #### Amazon S3
 
@@ -71,7 +70,7 @@
 
 {{% container tag="div" class="info" %}}
 
-{{< img src="dropbox.png" class="icon" >}}
+{{< img src="dropbox" class="icon" type="png" >}}
 
 #### Dropbox
 
@@ -80,7 +79,7 @@
 
 {{% container tag="div" class="info" %}}
 
-{{< img src="file-system.png" class="icon" >}}
+{{< img src="file-system" class="icon" type="png" >}}
 
 #### File System
 

@@ -1,6 +1,5 @@
 +++
   title = "Nava Solutions = Secure Cloud Enablement"
-  heroBg = "hero-products.jpg"
   draft = false
   showthedate = false
 +++
@@ -10,9 +9,7 @@
 {{% container tag="section" class="content-block columns" %}}
 {{% container tag="div" class="inner content-center items-center" %}}
 {{% container tag="div" class="logo" %}}
-
-{{< img src="nava-certus.jpg" alt="Nava Certus" >}}
-
+{{< img src="nava-certus" alt="Nava Certus" type="jpg" >}}
 {{% /container %}}
 
 {{% container tag="div" class="info" %}}
@@ -34,7 +31,7 @@ Nava Certus allows cloud storage customers to migrate windows file systems to th
 
 {{% container tag="div" class="logo" %}}
 
-{{< img src="nava-siem.jpg" alt="Nava Siem" >}}
+{{< img src="nava-siem" alt="Nava Siem" type="jpg" >}}
 
 {{% /container %}}
 

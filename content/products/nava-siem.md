@@ -3,7 +3,6 @@
   heroText = "Nearly 70% of enterprises rely on the cloud. Adoption varies from one company to the next, yet one thing is certain: enterprises are increasing reliance on the cloud. Is your security program equipped to handle new challenges from the cloud?"
   heroButton = "Download Trial"
   redir = "download-nava-siem"
-  heroBg = "hero-security.jpg"
   draft = false
   showthedate = false
 +++
@@ -11,7 +10,11 @@
 {{% container tag="section" class="content-block product" %}}
 {{% container tag="div" class="inner content-center items-center flex-column" %}}
 
-{{% container tag="div" class="logo" %}}{{< img src="nava-siem.jpg" alt="Nava Siem" >}}{{% /container %}}
+{{% container tag="div" class="logo" %}}
+<div>
+{{< img src="nava-siem" alt="Nava Siem" type="jpg" >}}
+</div>
+{{% /container %}}
 {{% container tag="div" class="info" %}}
 #### Simple, Unique, Flexible, Powerful
 
@@ -43,10 +46,10 @@
 {{% /container %}}
 
 <div>
-{{< img src="nava-siem-graphic.svg" id="graphic-desk" >}}
+{{< svg src="nava-siem-graphic.svg" id="graphic-desk" >}}
 </div>
 <div>
-{{< img src="nava-siem-graphic-mb.svg" id="graphic-mb" >}}
+{{< svg src="nava-siem-graphic-mb.svg" id="graphic-mb" >}}
 </div>
 
 {{% /container %}}

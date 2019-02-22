@@ -54,7 +54,7 @@ Here is an example how Google Apps partners derive more value by partnering with
 * Special "White Label" build of Nava Certus customized with Reseller's logo and trademark. (Yearly maintanence fee)
 {{% /container %}}
 <!-- ISSUE: https://github.com/fourjuaneight/nava-solutions/issues/2 -->
-{{< img src="how-it-works.svg" alt="How it works, graphics." id="graphic" >}}
+{{< svg src="how-it-works.svg" alt="How it works, graphics." id="graphic" >}}
 {{% /container %}}
 
 {{% /container %}}
