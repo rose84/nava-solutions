@@ -52,7 +52,7 @@
 
 {{% container tag="div" class="info" %}}
 
-{{< img src="google-drive" class="icon" type="png" >}}
+{{< img src="google-drive" class="icon" type="png" alt="Google Drive icon" >}}
 
 #### Google Drive
 
@@ -61,7 +61,7 @@
 
 {{% container tag="div" class="info" %}}
 
-{{< img src="s3" class="icon" type="png" >}}
+{{< img src="s3" class="icon" type="png" alt="Amazon S3 icon" >}}
 
 #### Amazon S3
 
@@ -70,7 +70,7 @@
 
 {{% container tag="div" class="info" %}}
 
-{{< img src="dropbox" class="icon" type="png" >}}
+{{< img src="dropbox" class="icon" type="png" alt="Dropbox icon" >}}
 
 #### Dropbox
 
@@ -79,7 +79,7 @@
 
 {{% container tag="div" class="info" %}}
 
-{{< img src="file-system" class="icon" type="png" >}}
+{{< img src="file-system" class="icon" type="png" alt="File System icon" >}}
 
 #### File System
 
