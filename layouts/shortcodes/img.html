@@ -1,4 +1,8 @@
-{{ $img := resources.Get (print "img/" (.Get "src")) | fingerprint }}
-<figure {{ with .Get "id" }}id="{{.}}"{{ end }}>
+{{ $type := (print "." (.Get "type")) }}
+{{ $webp := resources.Get (print "img/" (.Get "src") ".webp") | fingerprint }}
+{{ $img := resources.Get (print "img/" (.Get "src") $type) | fingerprint }}
+<picture {{ with .Get "id" }}id="{{.}}"{{ end }}>
+  <source data-srcset="{{ $webp.RelPermalink }}" type="image/webp">
+  <source data-srcset="{{ $img.RelPermalink }}" type="image/{{ $type }}">
   <img data-src="{{ $img.Permalink }}" {{ with .Get "alt"}}alt="{{.}}"{{ end }} class="lazy {{ with .Get "class" }}{{.}}{{ end }}"/>
-</figure>
+</picture>

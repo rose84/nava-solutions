@@ -26,13 +26,14 @@ body {
   color: $text;
 }
 body,
+picture,
 figure,
 h1, h2, h3, h4,
 nav > *,
 p {
   margin: 0;
 }
-figure{
+picture, figure {
   background-color: transparent;
 }
 figcaption p,

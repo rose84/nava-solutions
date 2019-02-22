@@ -6,6 +6,7 @@ const cache = require('gulp-cache');
 const concat = require('gulp-concat-util');
 const cp = require('child_process');
 const cssnano = require('cssnano');
+const gm = require('gulp-gm');
 const gulp = require('gulp');
 const imagemin = require('gulp-imagemin');
 const imageminMozjpeg = require('imagemin-mozjpeg');
@@ -57,6 +58,19 @@ function webpack() {
   });
 }
 
+// Image Conversion
+function convert() {
+  return gulp
+    .src(['assets/img/*.jpg','assets/img/*.png'])
+    .pipe(plumber())
+    .pipe(
+      gm(function(gmfile) {
+        return gmfile.setFormat('webp');
+      })
+    )
+    .pipe(gulp.dest('assets/img'));
+}
+
 // Image Optimization
 function optimize() {
   return gulp
@@ -95,6 +109,7 @@ function watchFiles() {
   gulp.watch('assets/js/download.js', webpack);
   gulp.watch('assets/js/header.js', webpack);
   gulp.watch('assets/js/lazy.js', webpack);
+  gulp.watch('assets/js/webp.js', webpack);
   gulp.watch('assets/js/wufoo.js', webpack);
 }
 
@@ -102,6 +117,7 @@ function watchFiles() {
 gulp.task('critical', critical);
 gulp.task('wufoo', wufoo);
 gulp.task('webpack', webpack);
+gulp.task('convert', convert);
 gulp.task('optimize', optimize);
 
 // Run Watch as default

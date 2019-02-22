@@ -1,8 +1,8 @@
 {{ define "main" }}
   {{ partial "header.html" . }}
   <main id="main">
-    {{ $homeHero := resources.Get "img/hero-home.jpg" }}
-    <section class="hero" style="background-image: url('{{ $homeHero.Permalink }}');">
+    {{ $class := replaceRE "/" "" .RelPermalink }}
+    <section class="hero {{ $class }}">
       <h1>Simplify Your Journey To The Cloud With Nava Solutions</h1>
       <p>Software tools to help cloud solution providers. We develop tools to enable worry-free migrations to the cloud and to keep your cloud infrastructure secure once you've migrated.</p>
       <a href="{{ .Site.BaseURL }}products" class="button button-lg button-alt" aria-label="Learn more about our products">Learn More</a>
@@ -10,16 +10,26 @@
     <section class="content-block flex-column items-center">
       <div class="inner content-center items-center flex-column">
         <h2>Secure Cloud Enablement</h2>
-        <h4 class="normal"> Nava Solutions is committed to develop software applications which accelerate the adoption of cloud solutions in a secure manner</h4>
+        <h4 class="normal">Nava Solutions is committed to develop software applications which accelerate the adoption of cloud solutions in a secure manner</h4>
       </div>
       <div class="products">
         <a href="{{ .Site.BaseURL }}products/nava-certus">
-          {{ $navaCertus := resources.Get "img/nava-certus.jpg" }}
-          <img src="{{ $navaCertus.RelPermalink }}" alt="Nava Certus" class="prod-logo">
+          <picture>
+            {{ $ncw := resources.Get "img/nava-certus.webp" }}
+            {{ $ncj := resources.Get "img/nava-certus.jpg" }}
+            <source data-srcset="{{ $ncw.RelPermalink }}" type="image/webp">
+            <source data-srcset="{{ $ncj.RelPermalink }}" type="image/jpg">
+            <img data-src="{{ $ncj.RelPermalink }}" alt="Nava Certus" class="lazy prod-logo">
+          </picture>
         </a>
         <a href="{{ .Site.BaseURL }}products/nava-siem">
-          {{ $navaSiem := resources.Get "img/nava-siem.jpg" }}
-          <img src="{{ $navaSiem.RelPermalink }}" alt="Nava Siem Agent" class="prod-logo">
+          <picture>
+            {{ $nsw := resources.Get "img/nava-siem.webp" }}
+            {{ $nsj := resources.Get "img/nava-siem.jpg" }}
+            <source data-srcset="{{ $nsw.RelPermalink }}" type="image/webp">
+            <source data-srcset="{{ $nsj.RelPermalink }}" type="image/jpg">
+            <img data-src="{{ $nsj.RelPermalink }}" alt="Nava Siem Agent" class="lazy prod-logo">
+          </picture>
         </a>
       </div>
     </section>
@@ -27,7 +37,7 @@
       <ul class="content-list">
         <li>
           <div class="header">
-            {{ $migration := resources.Get "img/cloud-migration.svg" | minify }}
+            {{ $migration := resources.Get "img/cloud-migration.svg" }}
             <div><img src="{{ $migration.RelPermalink }}" alt="Cloud Migration" class="icon"></div>
             <p class="title"><a href="{{ .Site.BaseURL }}cloud-migration">Cloud Migration</a></p>
           </div>
@@ -35,7 +45,7 @@
         </li>
         <li>
           <div class="header">
-            {{ $security := resources.Get "img/cloud-security.svg" | minify }}
+            {{ $security := resources.Get "img/cloud-security.svg" }}
             <div><img src="{{ $security.RelPermalink }}" alt="Cloud Security" class="icon"></div>
             <p class="title"><a href="{{ .Site.BaseURL }}cloud-security">Cloud Security</a></p>
           </div>
@@ -43,7 +53,7 @@
         </li>
         <li>
           <div class="header">
-            {{ $resellers := resources.Get "img/resellers.svg" | minify }}
+            {{ $resellers := resources.Get "img/resellers.svg" }}
             <div><img src="{{ $resellers.RelPermalink }}" alt="Resellers" class="icon"></div>
             <p class="title"><a href="{{ .Site.BaseURL }}partnership">Resellers</a></p>
           </div>

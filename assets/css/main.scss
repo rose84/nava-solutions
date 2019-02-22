@@ -179,7 +179,7 @@ section.column-layout {
         text-align: start;
       }
     }
-    figure {
+    picture, figure {
       margin: 15px 0;
       max-width: 500px;
       width: 100%;
@@ -214,7 +214,7 @@ section.column-layout {
           padding-left: 15px;
           text-align: left;
         }
-        figure {
+        picture, figure {
           @extend %content-center;
           @extend %flex;
           @extend %items-center;
@@ -265,7 +265,7 @@ section.column-layout {
             margin-top: 40px;
           }
         }
-        figure {
+        picture, figure {
           height: 355px;
           width: 450px;
           img {
@@ -308,7 +308,7 @@ section.column-layout {
           @extend %flex-column;
           @extend %full-width;
           @extend %items-center;
-          figure {
+          picture, figure {
             height: 90px;
             img.icon {
               height: 90px;

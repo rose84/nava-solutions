@@ -1,13 +1,7 @@
 {{ define "main" }}
   {{ partial "header.html" . }}
   <main id="main">
-    {{ if .Params.heroBg }}
-      {{ $hero := resources.Get (print "img/" (.Params.heroBg)) }}
-      <section class="hero" style="background-image: url('{{ $hero.Permalink }}');">
-    {{ else }}
-      {{ $homeHero := resources.Get "img/hero-home.jpg" }}
-      <section class="hero" style="background-image: url('{{ $homeHero.Permalink }}');">
-    {{ end }}
+    <section class="hero">
       <h1>{{ .Title }}</h1>
       <time class="date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
       {{ if .Params.external }}

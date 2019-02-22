@@ -1,13 +1,7 @@
 {{ define "main" }}
   {{ partial "header.html" . }}
   <main id="main">
-    {{ if .Params.heroBg }}
-      {{ $hero := resources.Get (print "img/" (.Params.heroBg)) }}
-      <section class="hero" style="background-image: url('{{ $hero.Permalink }}');">
-    {{ else }}
-      {{ $homeHero := resources.Get "img/hero-home.jpg" }}
-      <section class="hero" style="background-image: url('{{ $homeHero.Permalink }}');">
-    {{ end }}
+    <section class="hero">
       <h1>{{ .Title }}</h1>
       {{ if .Params.heroText }}
         <p>{{ .Params.heroText }}</p>

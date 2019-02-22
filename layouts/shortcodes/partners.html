@@ -1,8 +1,13 @@
 <ul class="partners-list">
   <li class="partners-item">
     <div class="front">
-      {{ $accenture := resources.Get "img/accenture.png" | fingerprint }}
-      <img class="lazy" data-src="{{ $accenture.Permalink }}" alt="Accenture">
+      <picture>
+        {{ $accenturew := resources.Get "img/accenture.webp" | fingerprint }}
+        {{ $accenturep := resources.Get "img/accenture.png" | fingerprint }}
+        <source data-srcset="{{ $accenturew.Permalink }}" type="image/webp">
+        <source data-srcset="{{ $accenturep.Permalink }}" type="image/png">
+        <img class="lazy" data-src="{{ $accenturep.Permalink }}" alt="Accenture">
+      </picture>
     </div>
     <div class="back">
       <p><a href="https://www.accenture.com/">Accenture</a></p>
@@ -10,8 +15,13 @@
   </li>
   <li class="partners-item">
     <div class="front">
-      {{ $ancoris := resources.Get "img/ancoris.png" | fingerprint }}
-      <img class="lazy" data-src="{{ $ancoris.Permalink }}" alt="Ancoris">
+      <picture>
+        {{ $ancorisw := resources.Get "img/ancoris.webp" | fingerprint }}
+        {{ $ancorisp := resources.Get "img/ancoris.png" | fingerprint }}
+        <source data-srcset="{{ $ancorisw.Permalink }}" type="image/webp">
+        <source data-srcset="{{ $ancorisp.Permalink }}" type="image/png">
+        <img class="lazy" data-src="{{ $ancorisp.Permalink }}" alt="Ancoris">
+      </picture>
     </div>
     <div class="back">
       <p><a href="https://www.ancoris.com/">Ancoris</a></p>
@@ -19,8 +29,13 @@
   </li>
   <li class="partners-item">
     <div class="front">
-      {{ $valleyapps := resources.Get "img/valleyapps.png" | fingerprint }}
-      <img class="lazy" data-src="{{ $valleyapps.Permalink }}" alt="ValleyApps">
+      <picture>
+        {{ $valleyappsw := resources.Get "img/valleyapps.webp" | fingerprint }}
+        {{ $valleyappsp := resources.Get "img/valleyapps.png" | fingerprint }}
+        <source data-srcset="{{ $valleyappsw.Permalink }}" type="image/webp">
+        <source data-srcset="{{ $valleyappsp.Permalink }}" type="image/png">
+        <img class="lazy" data-src="{{ $valleyappsp.Permalink }}" alt="ValleyApps">
+      </picture>
     </div>
     <div class="back">
       <p><a href="http://valleyapps.com/">ValleyApps</a></p>
@@ -28,8 +43,13 @@
   </li>
   <li class="partners-item">
     <div class="front">
-      {{ $cumulusglobal := resources.Get "img/cumulusglobal.png" | fingerprint }}
-      <img class="lazy" data-src="{{ $cumulusglobal.Permalink }}" alt="Cumulus Global">
+      <picture>
+        {{ $cumulusglobalw := resources.Get "img/cumulusglobal.webp" | fingerprint }}
+        {{ $cumulusglobalp := resources.Get "img/cumulusglobal.png" | fingerprint }}
+        <source data-srcset="{{ $cumulusglobalw.Permalink }}" type="image/webp">
+        <source data-srcset="{{ $cumulusglobalp.Permalink }}" type="image/png">
+        <img class="lazy" data-src="{{ $cumulusglobalp.Permalink }}" alt="Cumulus Global">
+      </picture>
     </div>
     <div class="back">
       <p><a href="http://www.cumulusglobal.com/">Cumulus Global</a></p>
@@ -37,8 +57,13 @@
   </li>
   <li class="partners-item">
     <div class="front">
-      {{ $agosto := resources.Get "img/agosto.png" | fingerprint }}
-      <img class="lazy" data-src="{{ $agosto.Permalink }}" alt="Agosto">
+      <picture>
+        {{ $agostow := resources.Get "img/agosto.webp" | fingerprint }}
+        {{ $agostop := resources.Get "img/agosto.png" | fingerprint }}
+        <source data-srcset="{{ $agostow.Permalink }}" type="image/webp">
+        <source data-srcset="{{ $agostop.Permalink }}" type="image/png">
+        <img class="lazy" data-src="{{ $agostop.Permalink }}" alt="Agosto">
+      </picture>
     </div>
     <div class="back">
       <p><a href="https://www.agosto.com/">Agosto</a></p>
@@ -46,8 +71,13 @@
   </li>
   <li class="partners-item">
     <div class="front">
-      {{ $ditoweb := resources.Get "img/ditoweb.png" | fingerprint }}
-      <img class="lazy" data-src="{{ $ditoweb.Permalink }}" alt="Dito">
+      <picture>
+        {{ $ditowebw := resources.Get "img/ditoweb.webp" | fingerprint }}
+        {{ $ditowebp := resources.Get "img/ditoweb.png" | fingerprint }}
+        <source data-srcset="{{ $ditowebw.Permalink }}" type="image/webp">
+        <source data-srcset="{{ $ditowebp.Permalink }}" type="image/png">
+        <img class="lazy" data-src="{{ $ditowebp.Permalink }}" alt="Dito">
+      </picture>
     </div>
     <div class="back">
       <p><a href="https://www.ditoweb.com/">Dito</a></p>
@@ -55,8 +85,13 @@
   </li>
   <li class="partners-item">
     <div class="front">
-      {{ $cloudbakers := resources.Get "img/cloudbakers.png" | fingerprint }}
-      <img class="lazy" data-src="{{ $cloudbakers.Permalink }}" alt="cloudbakers">
+      <picture>
+        {{ $cloudbakersw := resources.Get "img/cloudbakers.webp" | fingerprint }}
+        {{ $cloudbakersp := resources.Get "img/cloudbakers.png" | fingerprint }}
+        <source data-srcset="{{ $cloudbakersw.Permalink }}" type="image/webp">
+        <source data-srcset="{{ $cloudbakersp.Permalink }}" type="image/png">
+        <img class="lazy" data-src="{{ $cloudbakersp.Permalink }}" alt="cloudbakers">
+      </picture>
     </div>
     <div class="back">
       <p><a href="https://www.cloudbakers.com/">cloudbakers</a></p>
@@ -64,8 +99,13 @@
   </li>
   <li class="partners-item">
     <div class="front">
-      {{ $esourcecapital := resources.Get "img/esourcecapital.png" | fingerprint }}
-      <img class="lazy" data-src="{{ $esourcecapital.Permalink }}" alt="eSource Capital">
+      <picture>
+        {{ $esourcecapitalw := resources.Get "img/esourcecapital.webp" | fingerprint }}
+        {{ $esourcecapitalp := resources.Get "img/esourcecapital.png" | fingerprint }}
+        <source data-srcset="{{ $esourcecapitalw.Permalink }}" type="image/webp">
+        <source data-srcset="{{ $esourcecapitalp.Permalink }}" type="image/png">
+        <img class="lazy" data-src="{{ $esourcecapitalp.Permalink }}" alt="eSource Capital">
+      </picture>
     </div>
     <div class="back">
       <p><a href="https://www.esourcecapital.com/">eSource Capital</a></p>
