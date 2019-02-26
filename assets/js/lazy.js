@@ -1,12 +1,12 @@
-import LazyLoad from "vanilla-lazyload";
+// Lazy Loader: https://github.com/verlok/lazyload#-recipes
+import LazyLoad from 'vanilla-lazyload';
 
-// Lazy Loader options
-// see https://github.com/verlok/lazyload#-recipes
+// Options
 const lazyLoadOptions = {
-  elements_selector: ".lazy",
+  class_error: 'error',
+  class_loading: 'loading',
+  elements_selector: '.lazy',
   threshold: 500,
-  class_loading: "loading",
-  class_error: "error"
 };
 
-const pageLazyLoad = new LazyLoad(lazyLoadOptions);
+const myLazyLoad = new LazyLoad(lazyLoadOptions); // eslint-disable-line no-unused-vars

@@ -151,17 +151,17 @@
       document.body
         ? a()
         : document.addEventListener
-          ? document.addEventListener('DOMContentLoaded', function c() {
-              document.removeEventListener('DOMContentLoaded', c);
-              a();
-            })
-          : document.attachEvent('onreadystatechange', function k() {
-              if (
-                'interactive' == document.readyState ||
-                'complete' == document.readyState
-              )
-                document.detachEvent('onreadystatechange', k), a();
-            });
+        ? document.addEventListener('DOMContentLoaded', function c() {
+            document.removeEventListener('DOMContentLoaded', c);
+            a();
+          })
+        : document.attachEvent('onreadystatechange', function k() {
+            if (
+              'interactive' == document.readyState ||
+              'complete' == document.readyState
+            )
+              document.detachEvent('onreadystatechange', k), a();
+          });
     }
     function r(a) {
       this.a = document.createElement('div');

@@ -1,18 +1,22 @@
 // Close mobile nav on click
 const navItems = document.querySelectorAll('a.close-main');
 navItems.forEach(link => {
-  link.addEventListener("click", () => {
-    document.getElementById('toggle').checked = false;
-  }, false);
-})
+  link.addEventListener(
+    'click',
+    () => {
+      document.getElementById('toggle').checked = false;
+    },
+    false
+  );
+});
 
-// Set variables for key elements
-var prodNav = document.getElementById('sub-nav-prod');
-var prodToggle = document.getElementById('drop-prod');
-var auNav = document.getElementById('sub-nav-au');
-var auToggle = document.getElementById('drop-au');
+// Set constiables for key elements
+const prodNav = document.getElementById('sub-nav-prod');
+const prodToggle = document.getElementById('drop-prod');
+const auNav = document.getElementById('sub-nav-au');
+const auToggle = document.getElementById('drop-au');
 
-// Establish a function to toggle the class "collapse"
+// Establish a function to toggle the class 'collapse'
 function showProd() {
   prodNav.classList.remove('collapsed');
 }
@@ -34,19 +38,19 @@ auNav.addEventListener('mouseleave', hideAu);
 
 // Mobile navigation subnav
 if (window.innerWidth < 768) {
-  let sub = document.querySelectorAll('a.menu-item.sub')
-  let close = document.querySelectorAll('div.close')
+  const sub = document.querySelectorAll('a.menu-item.sub');
+  const close = document.querySelectorAll('div.close');
   sub.forEach(link => {
     link.addEventListener('click', () => {
-      const data = link.getAttribute('data-sub')
-      const nav = document.querySelector('ul.side-nav.'+data)
-      nav.classList.add('active')
-    })
-  })
+      const data = link.getAttribute('data-sub');
+      const nav = document.querySelector(`ul.side-nav.${data}`);
+      nav.classList.add('active');
+    });
+  });
   close.forEach(back => {
     back.addEventListener('click', () => {
-      let subNav = back.parentNode
-      subNav.classList.remove('active')
-    })
-  })
+      const subNav = back.parentNode;
+      subNav.classList.remove('active');
+    });
+  });
 }
