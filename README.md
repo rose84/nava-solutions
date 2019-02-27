@@ -7,6 +7,8 @@ Install the latest version of [Hugo](https://gohugo.io/getting-started/installin
 
 [npm](https://docs.npmjs.com/getting-started/what-is-npm) is used to managed dependencies. To asure compatibility, version 8.14.0 of node and version 6.4.1 of npm are recommended. You can manage node versions using [nvm](https://github.com/creationix/nvm#installation). Once installed, you can use the config file on the repo to install and download the recommeneded node/npm version.
 
+**Note:** nvm does not support Windows. Alternative which is now being tested is: [nvm-windows](https://github.com/coreybutler/nvm-windows)
+
 [Gulp](https://gulpjs.com/docs/en/getting-started/quick-start) v4 is used for various tasks. It compiles the critical Sass and output a minified HTML partial that is added to the `baseOf.html` template head for inlined critical CSS. It watches for changes in JavaScript and runs Webpacks. And lastly, it optimizes images.
 
 [Webpack](https://webpack.js.org/concepts) is used to import external libraries, bundle, and minify all our JavaScript assets.
