@@ -713,7 +713,7 @@ footer#footer {
       &.nav {
         @extend %content-flex-start;
         @extend %flex-wrap;
-        @extend %items-center;
+        @extend %items-flex-start;
         height: 147px;
         width: 320px;
         li {

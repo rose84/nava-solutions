@@ -6,6 +6,7 @@
   "scripts": {
     "build": "webpack; gulp build --max_old_space_size=8000; hugo",
     "clean": "rm -rf public resources",
+    "clean-node": "rm -rf node_modules package-lock.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

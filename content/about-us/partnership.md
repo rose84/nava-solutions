@@ -26,7 +26,7 @@ As a Nava Solutions partner, you will be able to:
 
 {{% container tag="section" class="content-block partners" id="some-of-our-top-partners" %}}
 {{% container tag="div" class="inner flex-column items-center" %}}
-## Some of Our Top Partners
+## Channel Partners
 
 {{< partners >}}
 {{% /container %}}
@@ -36,7 +36,7 @@ As a Nava Solutions partner, you will be able to:
 
 {{% container tag="section" class="alt-content content-block" id="cloud-providers-partnerships" %}}
 {{% container tag="div" class="inner flex-column items-center" %}}
-## Cloud Provider Partnerships
+## Cloud Partners
 
 Here is an example how Google Apps partners derive more value by partnering with Nava Solutions.
 

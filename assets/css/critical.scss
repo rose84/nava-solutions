@@ -64,12 +64,8 @@ header#header {
           right: 490px;
         }
         &#sub-nav-au {
-          max-height: 192px;
+          max-height: 200px;
           right: 140px;
-          li.sub-item:nth-child(3),
-          li.sub-item:last-child {
-            border-top: 2px solid $bg;
-          }
         }
         &.collapsed {
           border: none;
@@ -80,10 +76,11 @@ header#header {
           @extend %flex;
           @extend %full-width;
           @extend %items-center;
+          border-top: 2px solid $bg;
           list-style: none;
           margin: 0;
           &:first-child {
-            border-bottom: 2px solid $bg;
+            border-top: none;
           }
           &:hover {
             background-color: $bg;
