@@ -258,9 +258,9 @@ main#main {
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50vh;
-    max-height: 550px;
-    min-height: 390px;
+    height: 30vh;
+    max-height: 450px;
+    min-height: 400px;
     padding: 60px 30px;
     &.webp {
       background-image: url('/img/hero-home.webp');
@@ -292,7 +292,7 @@ main#main {
       @extend %full-width;
       color: $bg;
       margin-bottom: 15px;
-      max-width: 800px;
+      max-width: 950px;
       text-align: center;
     }
     p, time {
