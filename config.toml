@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://nava-solutions.netlify.com/"
 copyright = "Nava Solutions | All Rights Reserved"
 enableRobotsTXT = "true"
 languageCode = "en-us"
