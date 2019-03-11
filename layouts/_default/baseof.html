@@ -30,7 +30,7 @@
 
   <!-- Stylesheets -->
   {{ $styles := resources.Get "css/main.scss" | toCSS | postCSS | minify }}
-  <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+  <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen" nonce="c06d5d143002">
 
   <!-- Open Graph -->
   <link rel="canonical" href="{{ .Permalink }}">
