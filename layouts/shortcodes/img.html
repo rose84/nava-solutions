@@ -2,7 +2,7 @@
 {{ $webp := resources.Get (print "img/" (.Get "src") ".webp") | fingerprint }}
 {{ $img := resources.Get (print "img/" (.Get "src") $type) | fingerprint }}
 <picture {{ with .Get "id" }}id="{{.}}"{{ end }}>
-  <source data-srcset="{{ $webp.RelPermalink }}" type="image/webp">
-  <source data-srcset="{{ $img.RelPermalink }}" type="image/{{ $type }}">
+  <source data-srcset="{{ $webp.Permalink }}" type="image/webp">
+  <source data-srcset="{{ $img.Permalink }}" type="image/{{ $type }}">
   <img data-src="{{ $img.Permalink }}" {{ with .Get "alt"}}alt="{{.}}"{{ end }} class="lazy {{ with .Get "class" }}{{.}}{{ end }}"/>
 </picture>
