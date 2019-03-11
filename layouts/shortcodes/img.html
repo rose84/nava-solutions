@@ -1,6 +1,6 @@
 {{ $type := (print "." (.Get "type")) }}
-{{ $webp := resources.Get (print "img/" (.Get "src") ".webp") | fingerprint }}
-{{ $img := resources.Get (print "img/" (.Get "src") $type) | fingerprint }}
+{{ $webp := resources.Get (print "img/" (.Get "src") ".webp") }}
+{{ $img := resources.Get (print "img/" (.Get "src") $type) }}
 <picture {{ with .Get "id" }}id="{{.}}"{{ end }}>
   <source data-srcset="{{ $webp.Permalink }}" type="image/webp">
   <source data-srcset="{{ $img.Permalink }}" type="image/{{ $type }}">
