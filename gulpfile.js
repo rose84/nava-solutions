@@ -26,7 +26,7 @@ function critical() {
       .pipe(sass().on('error', sass.logError))
       .pipe(postcss(plugins))
       // wrap with style tags
-      .pipe(concat.header('<style>'))
+      .pipe(concat.header('<style nonce="98cbe9dc4ef">'))
       .pipe(concat.footer('</style>'))
       // convert it to an include file
       .pipe(
