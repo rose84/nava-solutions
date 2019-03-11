@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cloud Storage Migration on Nava Solutions</title>
-    <link>/blog/category/cloud-storage-migration/</link>
+    <link>https://nava-solutions.netlify.com/blog/category/cloud-storage-migration/</link>
     <description>Recent content in Cloud Storage Migration on Nava Solutions</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nava Solutions | All Rights Reserved</copyright>
     <lastBuildDate>Sun, 07 Sep 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/blog/category/cloud-storage-migration/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nava-solutions.netlify.com/blog/category/cloud-storage-migration/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Announcing Nava Certus 1.6 for migrations to Sharepoint and OneDrive</title>
-      <link>/blog/nava-certus-for-migrations-to-sharepoint-and-onedrive/</link>
+      <link>https://nava-solutions.netlify.com/blog/nava-certus-for-migrations-to-sharepoint-and-onedrive/</link>
       <pubDate>Sun, 07 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>/blog/nava-certus-for-migrations-to-sharepoint-and-onedrive/</guid>
+      <guid>https://nava-solutions.netlify.com/blog/nava-certus-for-migrations-to-sharepoint-and-onedrive/</guid>
       <description>Nava Certus 1.6 is now available as a fully supported download. We now add support for SharePoint and OneDrive as migration targets. Also learn what Google has to say about Nava Certus in its blog post on Drive migrations.
 The major focus for us in 1.6 has been to work towards completing the Sharepoint and OneDrive story. In our commitment to produce a universal cloud data migration solution, we’re happy to announce that version 1.</description>
     </item>
     
     <item>
       <title>Nava Certus now supports migration to AODocs (beta)</title>
-      <link>/blog/nava-certus-now-supports-migration-to-aodocs/</link>
+      <link>https://nava-solutions.netlify.com/blog/nava-certus-now-supports-migration-to-aodocs/</link>
       <pubDate>Sun, 13 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/blog/nava-certus-now-supports-migration-to-aodocs/</guid>
+      <guid>https://nava-solutions.netlify.com/blog/nava-certus-now-supports-migration-to-aodocs/</guid>
       <description>Here is a more complete list of changes in Nava Certus 1.5:
 With Nava Certus, cloud storage migration has never been easier. Today, we’re expanding our features to include another migration target, AODocs a document management solution for Google Apps.
 While the functionality is still in Beta and we’re actively testing and getting this version ready for shipment, you are welcome to contact us and we’ll be happy to give you an advance version to test.</description>
@@ -35,30 +35,30 @@ While the functionality is still in Beta and we’re actively testing and gettin
     
     <item>
       <title>There are now 10,000&#43; Google Apps resellers!</title>
-      <link>/blog/10000-google-apps-resellers/</link>
+      <link>https://nava-solutions.netlify.com/blog/10000-google-apps-resellers/</link>
       <pubDate>Sat, 08 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>/blog/10000-google-apps-resellers/</guid>
+      <guid>https://nava-solutions.netlify.com/blog/10000-google-apps-resellers/</guid>
       <description>The Google Apps partner ecosystem is growing. If your company is in the Google Apps business, is enough being done to differentiate from other competitors? Continue reading to learn some ways that your firm can stand out by partnering with Nava Solutions.
 Google Partners - Are you differentiating yourself? Google Apps now has more than 10000 resellers! This was one of the major announcements stemming from the Google Enterprise Partner Summit, which took place in San Francisco last week.</description>
     </item>
     
     <item>
       <title>30 cloud storage migration paths, including Sharepoint, OneDrive, and Google Cloud Storage</title>
-      <link>/blog/30-cloud-storage-migration-paths/</link>
+      <link>https://nava-solutions.netlify.com/blog/30-cloud-storage-migration-paths/</link>
       <pubDate>Thu, 20 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>/blog/30-cloud-storage-migration-paths/</guid>
+      <guid>https://nava-solutions.netlify.com/blog/30-cloud-storage-migration-paths/</guid>
       <description>oday, we’re happy to announce the availability of Nava Certus 1.4 our most comprehensive release to date. As a result, we now support nearly 30 different unique migration paths with strong support for Google Drive and Google Cloud Storage as migration destinations.
 We aim to be the clear leader in cloud storage migration and are constantly at work developing support for new sources/destinations. Do you have a feature requirement we don’t yet support?</description>
     </item>
     
     <item>
       <title>Nava Certus: Google Drive migration webinar for EU-based Google Apps resellers</title>
-      <link>/blog/nava-certus-webinar-for-eu-based-google-apps-resellers/</link>
+      <link>https://nava-solutions.netlify.com/blog/nava-certus-webinar-for-eu-based-google-apps-resellers/</link>
       <pubDate>Tue, 04 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>/blog/nava-certus-webinar-for-eu-based-google-apps-resellers/</guid>
+      <guid>https://nava-solutions.netlify.com/blog/nava-certus-webinar-for-eu-based-google-apps-resellers/</guid>
       <description>Time: 11:00am – 12:00pm CET (Europe)
 Are you a Google Apps Authorized reseller in Europe? If so, then check out our upcoming webinar on Google Drive migration services and how your company can leverage Nava Certus to deliver accurate migration services. During the webinar, we will also announce the release of Nava Certus 1.4 containing many new and exciting features.
 We are looking for partners worldwide and this is a great opportunity to increase your revenue and value as a Google Apps reseller.</description>
@@ -66,20 +66,20 @@ We are looking for partners worldwide and this is a great opportunity to increas
     
     <item>
       <title>Nava Certus 1.3: Migration deltas, Synchronization</title>
-      <link>/blog/nava-certus-1-3-migration-deltas-synchronization/</link>
+      <link>https://nava-solutions.netlify.com/blog/nava-certus-1-3-migration-deltas-synchronization/</link>
       <pubDate>Wed, 25 Dec 2013 00:00:00 +0000</pubDate>
       
-      <guid>/blog/nava-certus-1-3-migration-deltas-synchronization/</guid>
+      <guid>https://nava-solutions.netlify.com/blog/nava-certus-1-3-migration-deltas-synchronization/</guid>
       <description>Customers using Nava Certus, may have noticed a few logistical complications with extremely large migrations. If a migration was large and the source files were still in used by users, then by the time you migrate the data there will be new versions of some files at the source.
 In the past, we recommended to split up migrations into manageable chunks and to enforce a ‘freeze’ on the source during the migration.</description>
     </item>
     
     <item>
       <title>Nava Certus pricing change</title>
-      <link>/blog/nava-certus-pricing-change/</link>
+      <link>https://nava-solutions.netlify.com/blog/nava-certus-pricing-change/</link>
       <pubDate>Tue, 10 Dec 2013 00:00:00 +0000</pubDate>
       
-      <guid>/blog/nava-certus-pricing-change/</guid>
+      <guid>https://nava-solutions.netlify.com/blog/nava-certus-pricing-change/</guid>
       <description>Google Drive Migration
 Prior to releasing Nava Certus in June/July this year, we conducted a study of the cloud storage and data migration market in an effort to determine our pricing strategy. This was not an easy task since there weren’t (and still aren’t) that many commercially available tools for migrating data to cloud storage and specifically to Google Drive.
 Still, we were able to get an understanding of the market and as a result set the introductory price to $4.</description>
@@ -87,20 +87,20 @@ Still, we were able to get an understanding of the market and as a result set th
     
     <item>
       <title>Dropbox migration; Cloud migration to premise</title>
-      <link>/blog/dropbox-migration-cloud-migration-to-premise/</link>
+      <link>https://nava-solutions.netlify.com/blog/dropbox-migration-cloud-migration-to-premise/</link>
       <pubDate>Mon, 25 Nov 2013 00:00:00 +0000</pubDate>
       
-      <guid>/blog/dropbox-migration-cloud-migration-to-premise/</guid>
+      <guid>https://nava-solutions.netlify.com/blog/dropbox-migration-cloud-migration-to-premise/</guid>
       <description>Nava Certus 1.2 Today, we’re announcing the latest version of Nava Certus. With this release, we bring support for migration to and from Dropbox as well as migration from cloud storage to local premise servers.
 We’ve been hard at work trying to realize our goal of making Nava Certus synonymous with cloud storage migration. If you have a request for a particular source or destination, please don’t hesitate to respond in the comments.</description>
     </item>
     
     <item>
       <title>Nava Certus 1.1 – Migrate from Google, File Conversion</title>
-      <link>/blog/nava-certus-1-1-migrate-from-google-to-google-drive/</link>
+      <link>https://nava-solutions.netlify.com/blog/nava-certus-1-1-migrate-from-google-to-google-drive/</link>
       <pubDate>Mon, 11 Nov 2013 00:00:00 +0000</pubDate>
       
-      <guid>/blog/nava-certus-1-1-migrate-from-google-to-google-drive/</guid>
+      <guid>https://nava-solutions.netlify.com/blog/nava-certus-1-1-migrate-from-google-to-google-drive/</guid>
       <description>Nava Certus
 Over the past month, we’ve been working on a few new features for Nava Certus. After a lengthy period of testing, we’re happy to finally announce Nava Certus 1.1
 The main features in this release include:
@@ -111,40 +111,40 @@ Many new use cases are enabled with the addition of the Google Drive Source feat
     
     <item>
       <title>Nava Certus 1.0.0.7: Migration to Amazon S3, Permission Analyzer</title>
-      <link>/blog/nava-certus-migration-to-amazon-s3/</link>
+      <link>https://nava-solutions.netlify.com/blog/nava-certus-migration-to-amazon-s3/</link>
       <pubDate>Tue, 15 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>/blog/nava-certus-migration-to-amazon-s3/</guid>
+      <guid>https://nava-solutions.netlify.com/blog/nava-certus-migration-to-amazon-s3/</guid>
       <description>Hooray! Today we’re releasing the latest version of Nava Certus, our cloud storage migration software. Have you tried it yet? If not, then why not go for the trial and you can migrate up to 1GB for free. Today’s release contains the following new features:
 Support for Amazon S3 storage: Due to popular demand, we’re now supporting migration from Windows file system to Amazon S3. Simply configure the migration job for S3 and within minutes you can be uploading your files to Amazon S3.</description>
     </item>
     
     <item>
       <title>Nava Certus 1.0.0.6 released</title>
-      <link>/blog/nava-certus-1-0-0-6/</link>
+      <link>https://nava-solutions.netlify.com/blog/nava-certus-1-0-0-6/</link>
       <pubDate>Tue, 17 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>/blog/nava-certus-1-0-0-6/</guid>
+      <guid>https://nava-solutions.netlify.com/blog/nava-certus-1-0-0-6/</guid>
       <description>The latest version (1.0.0.6) of Nava Certus is available for download starting today. With this release, we’re making minor but visible improvements to product functionality. Continue reading below for more info…
  Default User (Distributed): For distributed migrations, a new default user allows the migration of all un-mapped files to a single user. All files, whose owners are not found in the mapping file, will be migrated to the Google Drive account of the default user.</description>
     </item>
     
     <item>
       <title>Migration Integrity – Ensuring Chain of Custody with Nava Certus</title>
-      <link>/blog/google-drive-migration-integrity/</link>
+      <link>https://nava-solutions.netlify.com/blog/google-drive-migration-integrity/</link>
       <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>/blog/google-drive-migration-integrity/</guid>
+      <guid>https://nava-solutions.netlify.com/blog/google-drive-migration-integrity/</guid>
       <description>If you are planning a Google Drive migration and require assurance that the files at the source are exactly the same as the files at the destination, then you may be interested in our “Migration Integrity” feature.
 One of the features that we designed into Nava Certus from the very beginning is called Migration Integrity. While this feature is not the most visible to the user, it is perhaps one of the most important for our enterprise customers that may want to ensure a certain chain-of-custody within the migration process.</description>
     </item>
     
     <item>
       <title>HOWTO: Distributed Google Drive Migration</title>
-      <link>/blog/distributed-google-drive-migration/</link>
+      <link>https://nava-solutions.netlify.com/blog/distributed-google-drive-migration/</link>
       <pubDate>Wed, 31 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>/blog/distributed-google-drive-migration/</guid>
+      <guid>https://nava-solutions.netlify.com/blog/distributed-google-drive-migration/</guid>
       <description>Enjoy cloud storage, migrate to Google Drive
 This post is another in a series of posts about Nava Certus, our Google Drive migration tool. Specifically, we show you the Distributed feature in NC. The beauty of distributed migration is that it allows you to get rid of your file server, but at the same time possibly stay in the “basic” tier of Google Drive storage, thus avoiding extra Google Drive storage costs.</description>
     </item>

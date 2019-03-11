@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Events on Nava Solutions</title>
-    <link>/events/</link>
+    <link>https://nava-solutions.netlify.com/events/</link>
     <description>Recent content in Events on Nava Solutions</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nava Solutions | All Rights Reserved</copyright>
     <lastBuildDate>Fri, 20 Jun 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/events/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nava-solutions.netlify.com/events/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Nava Solutions Intro to Google Apps EMEA resellers</title>
-      <link>/events/2014/06/nava-solutions-intro-to-google-apps-emea-resellers/</link>
+      <link>https://nava-solutions.netlify.com/events/2014/06/nava-solutions-intro-to-google-apps-emea-resellers/</link>
       <pubDate>Fri, 20 Jun 2014 00:00:00 +0000</pubDate>
       
-      <guid>/events/2014/06/nava-solutions-intro-to-google-apps-emea-resellers/</guid>
+      <guid>https://nava-solutions.netlify.com/events/2014/06/nava-solutions-intro-to-google-apps-emea-resellers/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Nava Solutions Intro to Google Apps EMEA resellers</title>
-      <link>/events/2013/02/nava-solutions-intro-to-google-apps-emea-resellers/</link>
+      <link>https://nava-solutions.netlify.com/events/2013/02/nava-solutions-intro-to-google-apps-emea-resellers/</link>
       <pubDate>Tue, 05 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>/events/2013/02/nava-solutions-intro-to-google-apps-emea-resellers/</guid>
+      <guid>https://nava-solutions.netlify.com/events/2013/02/nava-solutions-intro-to-google-apps-emea-resellers/</guid>
       <description></description>
     </item>
     
