@@ -10,7 +10,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'self' *.netlify.com; script-src 'self' *.wufoo.com *.youtube.com; img-src 'self' *.cloudfront.net; connect-src 'self' data"
+    Content-Security-Policy = "default-src 'self' *.netlify.com; script-src 'self' *.wufoo.com *.youtube.com; img-src 'self' *.cloudfront.net; connect-src 'self' data:image; style-src 'nonce-98cbe9dc4ef'; font-src 'self' data:font"
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
