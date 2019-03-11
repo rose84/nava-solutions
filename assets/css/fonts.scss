@@ -1,15 +1,5 @@
 @font-face {
   font-display: swap;
-  font-family: 'Lato-optimized';
-  font-weight: 400;
-  font-style: normal;
-  src: local(lato-optimized),
-       local(lato-optimized),
-       url("/fonts/lato-optimized.woff2") format("woff2"),
-       url("/fonts/lato-optimized.woff") format("woff");
-}
-@font-face {
-  font-display: swap;
   font-family: 'Lato';
   font-weight: 400;
   font-style: normal;
@@ -38,13 +28,6 @@
        url("/fonts/lato-bold.woff2") format("woff2"),
        url("/fonts/lato-bold.woff") format("woff");
 }
-
 body {
-  font-family: sans-serif;
-}
-.fonts-loaded-1 body {
-  font-family: 'Lato-optimized';
-}
-.fonts-loaded-2 body {
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
 }
