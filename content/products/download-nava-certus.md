@@ -8,7 +8,7 @@
 {{% container tag="section" class="content-block" %}}
 {{% container tag="div" class="inner content-center items-center" %}}
 
-{{< certus >}}
+{{< nava_certus_download_form >}}
 
 {{% /container %}}
 {{% /container %}}

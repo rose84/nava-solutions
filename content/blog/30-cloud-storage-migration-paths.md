@@ -7,7 +7,7 @@
   showthedate = true
 +++
 
-oday, we’re happy to announce the availability of Nava Certus 1.4 our most comprehensive release to date. As a result, we now support nearly 30 different unique migration paths with strong support for Google Drive and Google Cloud Storage as migration destinations.
+Today, we’re happy to announce the availability of Nava Certus 1.4 our most comprehensive release to date. As a result, we now support nearly 30 different unique migration paths with strong support for Google Drive and Google Cloud Storage as migration destinations.
 
 We aim to be the clear leader in cloud storage migration and are constantly at work developing support for new sources/destinations. Do you have a feature requirement we don’t yet support? Feel free to request it in our UserVoice forum or in the comments below.
 

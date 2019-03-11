@@ -135,7 +135,7 @@
 <!-- ISSUE: https://github.com/fourjuaneight/nava-solutions/issues/2 -->
 {{% container tag="p" class="sub-heading" %}}
 
-You can download a 5 day free trial version of the product from {{< link href="" content="Linkgard" >}}.
+You can download a 5 day free trial version of the product from the [Download page](/products/download-nava-siem).
 
 {{% /container %}}
 
