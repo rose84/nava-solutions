@@ -1,5 +1,8 @@
+# Ignoring as following the linter rules will break some of the rules
 webpack.config.babel.js
 gulpfile.js
 postcss.config.js
+# Ignoring to keep bundle minified
 assets/js/bundle.js
+# Ignoring to avoid touching Wufoo's specified code for the forms.
 assets/js/wufoo.js

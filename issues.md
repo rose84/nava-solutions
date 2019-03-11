@@ -1,5 +1,5 @@
 # Hugo Related Issues
-Hugo utilizes [Blackfriday](https://github.com/russross/blackfriday), a Go Markdown processor, to render into HTML. There are a number of Markdown issues that are directly linked to Blackfriday. One particular issue is when HTML elements are wrapped around `p` tags. This document serves as a reference on how these issues affect the Nava Solutions website.
+There are a number of Markdown issues with Hugo. One particular issue is when HTML elements are wrapped around `p` tags. This document serves as a reference on how these issues affect the Nava Solutions website.
 
 ## Issues
 There are two ways the issue is manifested:

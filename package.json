@@ -4,9 +4,11 @@
   "description": "Nava Solutions is committed to develop software applications which accelerate the adoption of cloud solutions in a secure manner. The Nava Solutions software team produces solid, high-level and professional products which are easy to use at the same time.",
   "main": "gulpfile.js",
   "scripts": {
-    "build": "webpack; gulp build --max_old_space_size=8000; hugo",
+    "build": "gulp build --max_old_space_size=8000; hugo",
     "clean": "rm -rf public resources",
     "clean-node": "rm -rf node_modules package-lock.json",
+    "develop-gulp": "gulp build; bulp watch",
+    "develop-hugo": "hugo; hugo serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -41,10 +43,12 @@
     "eslint-config-prettier": "^4.0.0",
     "eslint-import-resolver-webpack": "^0.11.0",
     "eslint-loader": "^2.1.2",
+    "eslint-plugin-html": "^5.0.3",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-react-hooks": "^1.5.0",
     "gulp": "^4.0.0",
     "gulp-cache": "^1.1.1",
     "gulp-concat-util": "^0.5.5",

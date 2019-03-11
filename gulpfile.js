@@ -54,7 +54,9 @@ function wufoo() {
 // Run Webpack
 function webpack() {
   return cp.spawn('webpack', {
-    stderr: 'inherit'
+  	err: true,
+  	stderr: true,
+  	stdout: true
   });
 }
 
@@ -124,4 +126,4 @@ gulp.task('optimize', optimize);
 gulp.task('watch', watchFiles);
 
 // Build
-gulp.task('build', gulp.series(['critical','wufoo','optimize']));
+gulp.task('build', gulp.series(['critical','wufoo','optimize', 'webpack']));
