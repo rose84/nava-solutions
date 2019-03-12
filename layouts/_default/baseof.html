@@ -67,8 +67,8 @@
   <link rel="icon" sizes="512x512" href="{{ $i512.Permalink }}">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  {{ if .Site.Params.google.analytics }}
-   <!-- {{ partial "analytics.html" . }} -->
+  {{if hugo.Environment | eq "production" }}
+    {{ partial "analytics.html" . }}
   {{ end }}
 </head>
 <body>
