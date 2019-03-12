@@ -8,6 +8,7 @@ const cp = require('child_process');
 const cssnano = require('cssnano');
 const gm = require('gulp-gm');
 const gulp = require('gulp');
+const htmlmin = require('gulp-htmlmin');
 const imagemin = require('gulp-imagemin');
 const imageminMozjpeg = require('imagemin-mozjpeg');
 const imageminPNGquant = require('imagemin-pngquant');
@@ -15,6 +16,7 @@ const imageminSVGo = require('imagemin-svgo');
 const plumber = require('gulp-plumber');
 const postcss = require('gulp-postcss');
 const rename = require('gulp-rename');
+const replace = require('gulp-replace');
 const sass = require('gulp-sass');
 
 // Critical CSS
@@ -54,9 +56,9 @@ function wufoo() {
 // Run Webpack
 function webpack() {
   return cp.spawn('webpack', {
-  	err: true,
-  	stderr: true,
-  	stdout: true
+    err: true,
+    stderr: true,
+    stdout: true
   });
 }
 
@@ -94,8 +96,27 @@ function optimize() {
           ]
         })
       )
-)
-.pipe(gulp.dest('assets/img'));
+    )
+    .pipe(gulp.dest('assets/img'));
+}
+
+// Minify
+function minify() {
+  return gulp
+  .src(['public/**/*.html'])
+  .pipe(plumber())
+  .pipe(htmlmin({ collapseWhitespace: true }))
+  .pipe(gulp.dest('public'));
+}
+
+// Replace
+function clean() {
+  return gulp
+  .src(['public/**/*.html'])
+  .pipe(plumber())
+  .pipe(replace(/<p><(div|section|h1|h2|h3|h4|ul|li|img|figure|picture)(.*?)>/g, '<$1$2>'))
+  .pipe(replace(/<.(div|section|h1|h2|h3|h4|ul|li|img|figure|picture)><.p>/g, '<$1>'))
+  .pipe(gulp.dest('public'));
 }
 
 // Watch asset folder for changes
@@ -121,6 +142,9 @@ gulp.task('wufoo', wufoo);
 gulp.task('webpack', webpack);
 gulp.task('convert', convert);
 gulp.task('optimize', optimize);
+gulp.task('minify', minify);
+gulp.task('clean', clean);
+gulp.task('hugo-clean', gulp.series(['minify', 'clean']));
 
 // Run Watch as default
 gulp.task('watch', watchFiles);
