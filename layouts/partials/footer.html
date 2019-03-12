@@ -21,7 +21,8 @@
     </ul>
   </section>
   <a href="{{ .Site.BaseURL }}" class="home" aria-label="Nava Solutions Dot Com Homepage">
-    {{ partial "logo.html" . }}
+    {{ $lf := resources.Get "img/logo-footer.svg" | minify }}
+    <img src="{{ $lf.Permalink }}" alt="Nava Solutions Logo">
   </a>
   <p class="copy">&copy;&nbsp;{{ time.Now.Format "2006" }}&nbsp;{{ .Site.Copyright }}</p>
 </footer>

@@ -1,6 +1,7 @@
 <header id="header">
   <a href="{{ .Site.BaseURL }}" class="home" aria-label="Nava Solutions Dot Com Homepage">
-    {{ partial "logo.html" . }}
+    {{ $logo := resources.Get "img/logo.svg" | minify }}
+    <img src="{{ $logo.Permalink }}" alt="Nava Solutions Logo">
   </a>
   {{ $lr := replaceRE "/nava-(certus|siem)/" "" .RelPermalink }}
   {{ $l := replaceRE "/" "" $lr }}
