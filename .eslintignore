@@ -2,6 +2,7 @@
 webpack.config.babel.js
 gulpfile.js
 postcss.config.js
+.eslintrc.js
 # Ignoring to keep bundle minified
 assets/js/bundle.js
 # Ignoring to avoid touching Wufoo's specified code for the forms.
