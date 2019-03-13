@@ -8,25 +8,25 @@
   <nav class="navigation">
     <a href="{{ .Site.BaseURL }}" class="nav-item{{ if .IsHome }} active{{ end }}" aria-label="Nava Solutions Dot Com Homepage">Home</a>
     <div class="drop-container">
-      <a id="drop-prod" href="{{ .Site.BaseURL }}/products" class="nav-item{{ if eq $l "products" }} active{{ end }}">Products</a>
+      <a id="drop-prod" href="/products" class="nav-item{{ if eq $l "products" }} active{{ end }}">Products</a>
       <ul id="sub-nav-prod" class="collapsed">
-        <li class="sub-item"><a href="{{ .Site.BaseURL }}/products/nava-certus">Nava Certus</a></li>
-        <li class="sub-item"><a href="{{ .Site.BaseURL }}/products/nava-siem">Nava Siem Agent</a></li>
+        <li class="sub-item"><a href="/products/nava-certus">Nava Certus</a></li>
+        <li class="sub-item"><a href="/products/nava-siem">Nava Siem Agent</a></li>
       </ul>
     </div>
-    <a href="{{ .Site.BaseURL }}/cloud-security" class="nav-item{{ if eq $l "cloud-security" }} active{{ end }}">Cloud Security</a>
-    <a href="{{ .Site.BaseURL }}/cloud-migration" class="nav-item{{ if eq $l "cloud-migration" }} active{{ end }}">Cloud Migration</a>
+    <a href="/cloud-security" class="nav-item{{ if eq $l "cloud-security" }} active{{ end }}">Cloud Security</a>
+    <a href="/cloud-migration" class="nav-item{{ if eq $l "cloud-migration" }} active{{ end }}">Cloud Migration</a>
     <div class="drop-container">
-      <a id="drop-au" href="{{ .Site.BaseURL }}/about-us" class="nav-item{{ if or (eq $l "about-us") (eq $l "partnership") }} active{{ end }}">About Us</a>
+      <a id="drop-au" href="/about-us" class="nav-item{{ if or (eq $l "about-us") (eq $l "partnership") }} active{{ end }}">About Us</a>
       <ul id="sub-nav-au" class="collapsed">
-        <li class="sub-item"><a href="{{ .Site.BaseURL }}/about-us/partnership#become-a-partner">Become a Partner</a></li>
-        <li class="sub-item"><a href="{{ .Site.BaseURL }}/about-us/partnership#channel-partners">Channel Partners</a></li>
-        <li class="sub-item"><a href="{{ .Site.BaseURL }}/about-us/partnership#cloud-partners">Cloud Partners</a></li>
-        <li class="sub-item"><a href="{{ .Site.BaseURL }}/news">News</a></li>
-        <li class="sub-item"><a href="{{ .Site.BaseURL }}/blog">Blog</a></li>
+        <li class="sub-item"><a href="/about-us/partnership#become-a-partner">Become a Partner</a></li>
+        <li class="sub-item"><a href="/about-us/partnership#channel-partners">Channel Partners</a></li>
+        <li class="sub-item"><a href="/about-us/partnership#cloud-partners">Cloud Partners</a></li>
+        <li class="sub-item"><a href="/news">News</a></li>
+        <li class="sub-item"><a href="/blog">Blog</a></li>
       </ul>
     </div>
-    <a href="{{ .Site.BaseURL }}/request-a-quote" class="button button-sm quote">Request a Quote</a>
+    <a href="/request-a-quote" class="button button-sm quote">Request a Quote</a>
   </nav>
 
   <input id="toggle" type="checkbox" />
@@ -42,22 +42,22 @@
     <a id="drop" class="menu-item sub{{ if eq $l "products" }} active{{ end }}" data-sub="prod">Products</a>
     <ul class="side-nav prod">
       <div class="close"><img src="{{ $back.Permalink }}" alt="Back to menu"></div>
-      <li class="sub-item"><a class="close-main{{ if eq $l "products" }} active{{ end }}" href="{{ .Site.BaseURL }}/products">Products</a></li>
-      <li class="sub-item"><a class="close-main" href="{{ .Site.BaseURL }}/products/nava-certus">Nava Certus</a></li>
-      <li class="sub-item"><a class="close-main" href="{{ .Site.BaseURL }}/products/nava-siem">Nava Siem Agent</a></li>
+      <li class="sub-item"><a class="close-main{{ if eq $l "products" }} active{{ end }}" href="/products">Products</a></li>
+      <li class="sub-item"><a class="close-main" href="/products/nava-certus">Nava Certus</a></li>
+      <li class="sub-item"><a class="close-main" href="/products/nava-siem">Nava Siem Agent</a></li>
     </ul>
-    <a href="{{ .Site.BaseURL }}/cloud-security" class="menu-item close-main{{ if eq $l "cloud-security" }} active{{ end }}">Cloud Security</a>
-    <a href="{{ .Site.BaseURL }}/cloud-migration" class="menu-item close-main{{ if eq $l "cloud-migration" }} active{{ end }}">Cloud Migration</a>
+    <a href="/cloud-security" class="menu-item close-main{{ if eq $l "cloud-security" }} active{{ end }}">Cloud Security</a>
+    <a href="/cloud-migration" class="menu-item close-main{{ if eq $l "cloud-migration" }} active{{ end }}">Cloud Migration</a>
     <a class="menu-item sub abt{{ if eq $l "about-us" }} active{{ end }}" data-sub="abt">About Us</a>
     <ul class="side-nav abt">
       <div class="close"><img src="{{ $back.Permalink }}" alt="Back to menu"></div>
-      <li class="sub-item"><a class="close-main{{ if eq $l "about-us" }} active{{ end }}" href="{{ .Site.BaseURL }}/about-us/">About Us</a></li>
-      <li class="sub-item"><a class="close-main" href="{{ .Site.BaseURL }}/about-us/partnership#become-a-partner">Become a Partner</a></li>
-      <li class="sub-item"><a class="close-main" href="{{ .Site.BaseURL }}/about-us/partnership#channel-partners">Channel Partners</a></li>
-      <li class="sub-item"><a class="close-main" href="{{ .Site.BaseURL }}/about-us/partnership#cloud-partners">Cloud Partners</a></li>
-      <li class="sub-item"><a href="{{ .Site.BaseURL }}/news">News</a></li>
-      <li class="sub-item"><a href="{{ .Site.BaseURL }}/blog">Blog</a></li>
+      <li class="sub-item"><a class="close-main{{ if eq $l "about-us" }} active{{ end }}" href="/about-us/">About Us</a></li>
+      <li class="sub-item"><a class="close-main" href="/about-us/partnership#become-a-partner">Become a Partner</a></li>
+      <li class="sub-item"><a class="close-main" href="/about-us/partnership#channel-partners">Channel Partners</a></li>
+      <li class="sub-item"><a class="close-main" href="/about-us/partnership#cloud-partners">Cloud Partners</a></li>
+      <li class="sub-item"><a href="/news">News</a></li>
+      <li class="sub-item"><a href="/blog">Blog</a></li>
     </ul>
-    <a href="{{ .Site.BaseURL }}/request-a-quote" class="button button-sm quote close-main">Request a Quote</a>
+    <a href="/request-a-quote" class="button button-sm quote close-main">Request a Quote</a>
   </nav>
 </header>
