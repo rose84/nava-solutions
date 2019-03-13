@@ -19,6 +19,11 @@ const rename = require('gulp-rename');
 const replace = require('gulp-replace');
 const sass = require('gulp-sass');
 
+// Generating Hash
+let max = Math.pow(10, 3);
+let now = max * +new Date();
+let hash = (now + 0).toString();
+
 // Critical CSS
 function critical() {
   const plugins = [autoprefixer({browsers: ['> 5%']}), cssnano()];
@@ -28,7 +33,7 @@ function critical() {
       .pipe(sass().on('error', sass.logError))
       .pipe(postcss(plugins))
       // wrap with style tags
-      .pipe(concat.header('<style nonce="98cbe9dc4ef">'))
+      .pipe(concat.header(`<style nonce="${hash}">`))
       .pipe(concat.footer('</style>'))
       // convert it to an include file
       .pipe(
@@ -119,6 +124,16 @@ function clean() {
   .pipe(gulp.dest('public'));
 }
 
+// Nonce
+function nonce() {
+  return gulp
+    .src(['layouts/_default/baseof.html', 'layouts/partials/critical.html'])
+    .pipe(plumber())
+    .pipe(replace(/nonce\D{2}(\d{16})\D/g, `nonce="${hash}"`))
+    .pipe(gulp.dest('layouts/partials'))
+    .pipe(gulp.dest('layouts/_default'));
+  
+}
 // Watch asset folder for changes
 function watchFiles() {
   gulp.watch('assets/css/common.scss', critical);
@@ -142,6 +157,7 @@ gulp.task('wufoo', wufoo);
 gulp.task('webpack', webpack);
 gulp.task('convert', convert);
 gulp.task('optimize', optimize);
+gulp.task('nonce', nonce);
 gulp.task('minify', minify);
 gulp.task('clean', clean);
 gulp.task('hugo-clean', gulp.series(['minify', 'clean']));
@@ -150,4 +166,4 @@ gulp.task('hugo-clean', gulp.series(['minify', 'clean']));
 gulp.task('watch', watchFiles);
 
 // Build
-gulp.task('build', gulp.series(['critical','wufoo','optimize', 'webpack']));
+gulp.task('build', gulp.series(['wufoo','optimize', 'webpack']));

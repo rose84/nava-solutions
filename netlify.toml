@@ -18,11 +18,12 @@
 
 [context.branch-deploy.environment]
   HUGO_VERSION = "0.53"
+  HUGO_ENV = "development"
 
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'self' *.netlify.com *.cloudfront.net *.wufoo.com data:; style-src 'nonce-98cbe9dc4ef' 'self' *.netlify.com"
+    Content-Security-Policy = "default-src 'self' *.netlify.com *.cloudfront.net *.wufoo.com data:; style-src 'nonce-1552456212981000' 'self' *.netlify.com"
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
