@@ -4,13 +4,14 @@
 const replace = require('replace-in-file');
 
 // Generate ramdom 16 digit number
-const generate = () => {
-  const max = 10 ** 3;
-  const now = max * +new Date();
-  const result = (now + 0).toString();
-  return result;
-};
-const hash = generate();
+/*
+Array(16) creates an Array Object with a length of 16.
+The "..." is the spread operator and allow the creation of an Array with 16 undefined elements.
+A random number is generated between o and 36.
+The toString() method returns a string representation of the object in the specified radix; in this case 36.
+This is mapped over the array and join, creating 16 character alphanumeric string.
+*/
+let hash = [...Array(16)].map(_=>(Math.random()*36|0).toString(36)).join``;
 
 // Pass Replace option
 const options = {
