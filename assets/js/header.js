@@ -1,3 +1,8 @@
+/*
+Authored by Juan Villela.
+https://github.com/fourjuaneight
+*/
+
 // Close mobile nav on click
 const navItems = document.querySelectorAll('a.close-main');
 navItems.forEach(link => {
