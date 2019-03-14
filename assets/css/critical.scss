@@ -358,4 +358,12 @@ main#main {
       }
     }
   }
+  section.content-block {
+    div.wufoo-wrap {
+      iframe {
+        min-width: calc(100vw - 60px);
+        max-width: 1000px;
+      }
+    }
+  }
 }
