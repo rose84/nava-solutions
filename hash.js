@@ -7,11 +7,12 @@ const replace = require('replace-in-file');
 /*
 Array(16) creates an Array Object with a length of 16.
 The "..." is the spread operator and allow the creation of an Array with 16 undefined elements.
-A random number is generated between o and 36.
+A random number is generated between 0 and 36.
 The toString() method returns a string representation of the object in the specified radix; in this case 36.
 This is mapped over the array and join, creating 16 character alphanumeric string.
 */
-let hash = [...Array(16)].map(_=>(Math.random()*36|0).toString(36)).join``;
+const hash = [...Array(16)].map(() => ((Math.random() * 36) | 0).toString(36)) // eslint-disable-line no-bitwise
+  .join``;
 
 // Pass Replace option
 const options = {
@@ -20,7 +21,7 @@ const options = {
     'layouts/partials/critical.html',
     'layouts/partials/analytics.html',
   ],
-  from: /(generateHash|\d{16})/g,
+  from: /(generateHash|[a-z0-9]{16})/g,
   to: hash,
 };
 
