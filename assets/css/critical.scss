@@ -362,7 +362,9 @@ main#main {
     div.wufoo-wrap {
       iframe {
         max-width: 1000px;
-        width: 100vw !important;
+        @include media-query-min(1000px) {
+          width: 100vw !important;
+        }
       }
     }
   }
