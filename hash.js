@@ -11,7 +11,7 @@ A random number is generated between 0 and 36.
 The toString() method returns a string representation of the object in the specified radix; in this case 36.
 This is mapped over the array and join, creating 16 character alphanumeric string.
 */
-const hash = [...Array(16)].map(() => ((Math.random() * 36) | 0).toString(36)) // eslint-disable-line no-bitwise
+const hash = [...Array(24)].map(() => ((Math.random() * 36) | 0).toString(36)) // eslint-disable-line no-bitwise
   .join``;
 
 // Pass Replace option
@@ -20,8 +20,9 @@ const options = {
     'netlify.toml',
     'layouts/partials/critical.html',
     'layouts/partials/analytics.html',
+    'assets/js/wufoo.js',
   ],
-  from: /(generateHash|[a-z0-9]{16})/g,
+  from: /(generateHash|[a-z0-9]{24})/g,
   to: hash,
 };
 

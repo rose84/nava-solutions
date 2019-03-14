@@ -23,7 +23,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'self' *.netlify.com *.cloudfront.net *.wufoo.com data:; style-src 'nonce-u03xegztbo3rsl8w' 'self' *.netlify.com; script-src 'nonce-u03xegztbo3rsl8w' 'self' www.google-analytics.com *.wufoo.com"
+    Content-Security-Policy = "default-src 'self' *.netlify.com *.cloudfront.net *.wufoo.com data:; style-src 'nonce-99siuh1um48oe63w6ftunmec' 'self' *.netlify.com; script-src 'nonce-99siuh1um48oe63w6ftunmec' 'self' www.google-analytics.com *.wufoo.com"
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
