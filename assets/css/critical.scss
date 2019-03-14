@@ -72,7 +72,7 @@ header#header {
           max-height: 0 !important;
         }
         li.sub-item {
-          @extend %content-center;
+          @extend %content-flex-start;
           @extend %flex;
           @extend %full-width;
           @extend %items-center;
@@ -90,7 +90,7 @@ header#header {
           }
           a {
             @extend %no-decoration;
-            padding: 10px 0;
+            padding: 10px;
             text-align: center;
           }
         }
